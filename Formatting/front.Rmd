@@ -10,7 +10,7 @@
 \textbf{Andrew Ithurburn}\\
 \begin{figure}[ht]
 \begin{center}
-\includegraphics[width=!,totalheight=!,scale=0.25]{EdUniCrest.jpg}
+\includegraphics[width=!,totalheight=!,scale=0.25]{../Formatting/EdUniCrest.jpg}
 \end{center}
 \end{figure}
 {\setstretch{1.7} 

@@ -43,7 +43,7 @@ abstract: |
 keywords          : "keywords"
 wordcount         :  "2004"
 
-bibliography      : ["../references.json"]
+bibliography      : ["../References/references.json"]
 
 floatsintext      : yes
 numbersections    : yes
@@ -77,7 +77,7 @@ header-includes:
   - \doublespacing
  
 documentclass     : "apa7"
-csl               : "apa7.csl"
+csl               : "../Formatting/apa7.csl"
 class             : doc, 12pt, a4paper
 classoption       : "donotrepeattitle"
 output            : papaja::apa6_pdf
@@ -85,10 +85,11 @@ output            : papaja::apa6_pdf
 
 ```{r setup, include = FALSE}
 library("papaja")
-source("../libraries.R")
+setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
+source("./R/libraries.R")
 ```
 
-```{r child = "../front.Rmd"}
+``` {r child = "../Formatting/front.rmd"}
 
 ```
 

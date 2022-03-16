@@ -1,8 +1,8 @@
 ---
-bibliography : ["../references.json"]
+bibliography : ["/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/References/references.json"]
 ---
 ```{r include = FALSE}
-source("../indexfile.R")
+source("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/R/indexfile.R")
 ```
 # Chapter 1:  
 ## Literature Review
