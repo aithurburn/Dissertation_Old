@@ -100,13 +100,13 @@ source("./R/libraries.R")
 \newpage
 
 
-```{r child = "./Introduction.Rmd"}
+```{r child = "../Chapters/Introduction.Rmd"}
 ```
 
-```{r child = "./Chapter2.Rmd"}
+```{r child = "../Chapters/Chapter2.Rmd"}
 ```
 
-```{r child = "./Chapter3.Rmd"}
+```{r child = "../Chapters/Chapter3.Rmd"}
 ```
 
 \newpage
