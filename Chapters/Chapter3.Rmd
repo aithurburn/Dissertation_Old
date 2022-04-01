@@ -26,19 +26,19 @@ In a demographic questionnaire administered prior to the main survey, participan
 
 ### *Sexual Risk-taking Behavior Scale*
 
-The 54-item Sexual Risk-taking Behavior Scale (SRTB; Spiegal & Pollak, 2019), is a scale measuring individuals on their risk-taking by requesting they respond to a series of statements and their agreement on three different domains (i.e., Risk perception, likelihood, and benefit perception). They are then given a series of statements of sexual activities and the frequency that they have engaged in those behaviors. Example items for the first three domains are "Sexual activity with multiple participants" and "Sex under influence of substances (drugs/alcohol)." For frequency, participants are asked to rate each sexual behavior on a scale of never [1] to at least once a day [8]. 
+The 54-item Sexual Risk-taking Behavior Scale (SRTB; @spiegel2019), is a scale measuring individuals on their risk-taking by requesting they respond to a series of statements and their agreement on three different domains (i.e., Risk perception, likelihood, and benefit perception). They are then given a series of statements of sexual activities and the frequency that they have engaged in those behaviors. Example items for the first three domains are "Sexual activity with multiple participants" and "Sex under influence of substances (drugs/alcohol)." For frequency, participants are asked to rate each sexual behavior on a scale of never [1] to at least once a day [8]. 
 
 ### *Sociosexual Orientation Inventory*
 
-The Sociosexual Orientation Inventory (SOI-R; Penke & Asendorpf, 2008) is a 9 item scale asking participants a series of questions of how many times participants have engaged in the questioned sexual behaviors. Example items are "With how many different partners have you had sex with in the past 12 months?" and "With how many different partners have you had sexual intercourse on one and only one occasion?" rated on a scale from 0 to 20 or more. 
+The Sociosexual Orientation Inventory (SOI-R; @penke2008) is a 9 item scale asking participants a series of questions of how many times participants have engaged in the questioned sexual behaviors. Example items are "With how many different partners have you had sex with in the past 12 months?" and "With how many different partners have you had sexual intercourse on one and only one occasion?" rated on a scale from 0 to 20 or more. 
 
 ### *Dominance, Prestige, and Leadership*
 
-The 18-item Dominance, Prestige, and Leadership scale (DoPL; Sussenbach et al., 2008), measures dominance, prestige, and leadership orientation. Each question corresponds to one of the three domains. Each domain is scored across 6 unique items related to those domains (e.g., "I relish opportunities in which I can lead others" for leadership) rated on a scale from 0 (Strongly disagree) to 5 (Strongly agree). 
+The 18-item Dominance, Prestige, and Leadership scale (DoPL; @sussenbach2011), measures dominance, prestige, and leadership orientation. Each question corresponds to one of the three domains. Each domain is scored across 6 unique items related to those domains (e.g., "I relish opportunities in which I can lead others" for leadership) rated on a scale from 0 (Strongly disagree) to 5 (Strongly agree). 
 
 ### *Pathological Narcissism*
 
-The brief Pathological Narcissism Inventory (B-PNI; Schoenleber et al., 2015) is a 28 item inventory measuring individuals on 7 aspects of pathological narcissism facet scales. Example items are "I feel important when others rely on me" and "Sacrificing for others makes me the better person" rated on a scale from 1 (not at all like me) to 5 (Very much like me).
+The brief Pathological Narcissism Inventory (B-PNI; @schoenleber2015) is a 28 item inventory measuring individuals on 7 aspects of pathological narcissism facet scales. Example items are "I feel important when others rely on me" and "Sacrificing for others makes me the better person" rated on a scale from 1 (not at all like me) to 5 (Very much like me).
 
 ## Procedure
 
