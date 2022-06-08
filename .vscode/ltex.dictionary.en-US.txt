@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-educationOptions
-=======
-educationOptions
->>>>>>> master
