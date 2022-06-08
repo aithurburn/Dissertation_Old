@@ -57,7 +57,7 @@ source("../R/indexfile.r")
 
 ```
 
-``` {r child = "../Chapters/Experiment_1.Rmd"}
+``` {r child = "./Chapters/Experiment_1.Rmd"}
 ```
 
 \newpage

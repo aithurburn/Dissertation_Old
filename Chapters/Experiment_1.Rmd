@@ -1,3 +1,6 @@
+```{r include = FALSE}
+source("../R/indexfile.r")
+```
 ## Experiment One
 
 ## Method
@@ -50,7 +53,7 @@ Participants were recruited on Prolific Academic. Participants must be 18-years 
 
 Once participants accessed the main survey, they were presented with the consent form for which to accept they responded by selecting "Yes". Participants were then asked to provide demographic characteristics such as gender, ethnicity, and educational attainment. Participants would then complete in order, the spitefulness scale, the sexual relationship power scale, the sexual jealousy subscale, and sexuality self-esteem subscale. Next, participants were presented ten vignettes where they were instructed to rate on the level of justification for the action carried out in the vignette. After each vignette, participants would rate the realism of the scenario. Upon completion of the survey (median completion time 20 minutes SD = 10 Minutes 30 seconds), participants were shown a debriefing message and shown the contact information of the Primary Investigator (Andrew Ithurburn). Participants were then compensated at £8/hr. via Prolific Academic. 
 
-```{r table1, echo=FALSE, fig.pos='p', out.width='\textwidth'}
+```{r, echo=FALSE, fig.pos='p', out.width='\textwidth'}
 apa_table(
  demographictable, stub_indents = list('Age' = c(1:2), 'Gender' = c(3, 4), 'Ethnic Origin' = c(5:12), 'Education' = c(13:18), 'Ethnicity' = c(19:22)), col.names = c('Demographic Characteristic', ''), cap = 'Participant Demographic Information (Experiment 1)'
 )

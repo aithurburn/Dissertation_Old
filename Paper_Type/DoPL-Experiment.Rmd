@@ -5,6 +5,7 @@ shorttitle        : "DoPL and DOSPERT"
 author: 
   - name          : "Ithurburn, Andrew"
     affiliation   : "1"
+    
     corresponding : yes    # Define only one corresponding author
     address       : "7 George Square, Edinburgh, EH8 9JZ"
     email         : "a.ithurburn@sms.ed.ac.uk"
@@ -31,9 +32,9 @@ wordcount         :  !expr wordcountaddin::word_count("../Chapters/Chapter2.Rmd"
 
 bibliography      : ["../References/references.bib"]
 
-floatsintext      : yes
+floatsintext       : yes
 numbersections    : yes
-figurelist        : no
+figurelist         : no
 tablelist         : no
 footnotelist      : no
 linenumbers       : yes
@@ -41,7 +42,8 @@ mask              : no
 draft             : no
 mainfont          : "Times New Roman"
 geometry          :  a4paper, left = 4cm, right = 2.5cm, top = 2cm, bottom = 4cm
-always_allow_html: true
+always_allow_html : true
+link-citations    : true
 header-includes:
   - \setcounter{tocdepth}{3}
   - \linespread{1.2}
@@ -59,21 +61,12 @@ output            : papaja::apa6_pdf
 
 ```{r setup, include = FALSE}
 library("papaja")
-source("../R/libraries.R")
-
+setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
+source("./R/libraries.R")
+source("./R/data_file_index.r")
 ```
 
 
 ```{r child = "../Chapters/Chapter2.Rmd"}
+
 ```
-
-# References
-
-\begingroup
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{0.5in}
-
-<div id="refs" custom-style="Bibliography"></div>
-\endgroup
-
-\newpage
