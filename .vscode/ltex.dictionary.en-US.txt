@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 educationOptions
+=======
+educationOptions
+>>>>>>> master
