@@ -1,0 +1,72 @@
+---
+title             : "The psychology of risk and power: Power desires and sexual choices"
+shorttitle        : "Risk and Power"
+
+author: 
+  - name          : "Ithurburn, Andrew"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "7 George Square, Edinburgh, EH8 9JZ"
+    email         : "a.ithurburn@sms.ed.ac.uk"
+    role:         # Contributorship roles (e.g., CRediT, https://casrai.org/credit/)
+      - Conceptualization
+      - Writing - Original Draft Preparation
+      - Writing - Review & Editing
+  - name          : "Moore, Adam"
+    affiliation   : "1"
+    role:
+      - Writing - Review & Editing
+
+affiliation:
+  - id            : "1"
+    institution   : "The University of Edinburgh"
+
+authornote: |
+  University of Edinburgh Department of Psychology
+
+abstract: |
+ 
+  
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "keywords"
+wordcount         : "2222"
+
+bibliography      : "../References/references.bib"
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+mainfont: "Times New Roman" 
+always_allow_html: true
+header-includes:
+  - \raggedbottom
+documentclass     : "apa7"
+csl               : "../Formatting/apa7.csl"
+classoption       : "a4paper"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+source("../R/indexfile.r")
+
+```
+
+``` {r child = "./Chapters/Experiment_1.Rmd"}
+```
+
+\newpage
+
+# References
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id="refs" custom-style="Bibliography"></div>
+\endgroup
