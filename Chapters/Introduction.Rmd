@@ -6,12 +6,14 @@ source("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Res
 ```
 # Chapter 1:  
 ## Literature Review
+
 ### General Introduction
 Research in decision-making is not only concerned with understanding monumental decisions done in a study or saving a life, but equally in more mundane decisions such as understanding choosing what tea to drink in the morning, what clothes to wear that day or whether a couple should have a divorce. Making models of decisions can be difficult given uncertainty is involved along with risk [citation]. For example, two adult men [or a man and a woman] that are intending to have sex need to make the decision of whether or not to use a condom. Added uncertainty is involved with the decision-making process. One partner may have multiple sexual partners while the other may have only had one, one partner may have a sexually transmitted infection and might not feel the need or feel comfortable with informing their partner of their status. Consequences of not informing can have dire consequences on both partners. 
 
-In 2016, the year of most recent global  data collection, there were 376 million necases of the four curable sexually transmitted infections, chlamydia, gonorrheatrichomoniasis, and syphilis [@worldhealthorganization2018]. The World HealtOrganization [WHO] further estimates that there are one million new cases of a curablsexually transmitted infection each day. Due to multiple factors, certain minoritpopulations are more at risk for contracting new sexually transmitted infections, e., men who have sex with men and female sex workers [@worldhealthorganization2018].  Some factors includcertain societal beliefs men who have sex with men might engage in nonrelational sex "just trying to figure things out…it's just a hook up phase" [@elder2015a] , ambiguous laws concerning the legality of sex work interfering witsafe and available locations for such activity, as well as. There may alsbe some difficulties in their willingness in their activities be it forced by anotheor sheer necessity. For countries like Scotland there have been a reduction ithe amount of new cases of STIs like HIV amongst key populations, however new risks oantibiotic resistant gonorrhea, _Neisseria gonorrhoaeae_, have shown a new prevalence in many countries [@ison2011].
+In 2016, the year of most recent global  data collection, there were 376 million necases of the four curable sexually transmitted infections, chlamydia, gonorrheatrichomoniasis, and syphilis [@worldhealthorganization2018]. The World HealtOrganization [WHO] further estimates that there are one million new cases of a curablsexually transmitted infection each day. Due to multiple factors, certain minoritpopulations are more at risk for contracting new sexually transmitted infections, e., men who have sex with men and female sex workers [@worldhealthorganization2018].  Some factors includcertain societal beliefs men who have sex with men might engage in nonrelational sex "just trying to figure things out it's just a hook up phase" [@elder2015a] , ambiguous laws concerning the legality of sex work interfering witsafe and available locations for such activity, as well as. There may alsbe some difficulties in their willingness in their activities be it forced by anotheor sheer necessity. For countries like Scotland there have been a reduction ithe amount of new cases of STIs like HIV amongst key populations, however new risks antibiotic resistant gonorrhea, _Neisseria gonorrhoaeae_, have shown a new prevalence in many countries [@ison2011].
 
 ### Who is at risk?
+
 There is then the arduous task of how to research the topic of sexually transmitted infections and methods of then understanding what is occurring in the individual. There are neurobiological explanations such as certain brain formations occurring that cause individuals to have difficulty understanding the consequences of their actions [@moll2005; @schaichborg2008; @tsoi2018]. There are also more cognitive explanations as well that have shown promising results. For example in the cognitive sub-area of metacognition there is an understanding that there are certain cognitive mechanisms that aid in the individuals ability to regulate their own cognitive understanding of their decisions [@anderson2002; @yeung2012]. This self-regulation then contributes to their ability to control whether they act on their baser needs or are able to understand the consequences of what they might or might not engage in [@crandall2017; @anderson2002]. How individuals had reached the information on the effectiveness of certain behavioral changes that reduce the chances of contracting an STI is also in question. For example, research shows that individuals that have a greater understanding of the impact and chances of contracting HIV, actually engage in risky sexual behaviors and therefore increase their chances of contracting the very infection they have more knowledge [@kirby2007]. Skills based training showed more positive results on practicing safer sex practices. How an individual sees themselves as either a sexual person or person in general is also a factor in how they later may meet an STI  [@gesink2016; @andersen1994; @andersen1999; @elder2015a]. Aggression, in the cognitive sense, also has an impact as well demonstrating a dominance over another person that may cause difficulties in their own ability to make decisions on their sexual health [@malamuth1996; @williams2017].
 
 Aggression is one method of exerting control over another individual. Overall, the exertion of control itself denotes a power disparity between parties which varies in effects, methods, and domains. [citation]. For example, most research has looked at power-over or one person controlling the behavior of another person. This area of research connects the cognitive explanation to behavioral outcomes. Research in power also includes looking at minority populations and aspects of power over to help explain the increased prevalence of certain STIs by discussing and researching certain power dynamics [citations]. The institutional support of those power dynamics often reflect power based on age, gender, political orientation, sexual orientation and gender identity [@anderson2002; @volpe2013; @winter1988; @chiappori2019]. Investigations of the power structure of a family unit has shown to have some interesting consequences on sexual health depending on the type of parenting style and parental attachment [@bugental2002; @chiappori2019; @kim2020; citations]. A new area of research coming out of power and cognition is the phenomenon where an individual will harm themselves in some way to also inflict harm on another. This type of behavior has been researched extensively in the animal kingdom and is known as spiteful behavior in that one brings down their own wellbeing to spite the other person. There would be interesting avenues to research how spiteful thinking may affect an individual in how they choose one course of action over another.
@@ -37,7 +39,7 @@ The social effects of sexuality in general influence how people see themselves. 
 Individuals that have contracted an STI are also more likely to be ostracized from their immediate community. For example, gay men who contracted HIV in the beginning of the AIDs crisis were often ostracized by society even when they were seeking treatment in the hospital. Nurses would often, for lack of knowledge of transmission of the virus, would often drop medication in front of the patient's door and would rarely physically interact with them [citations]. This ostracization further compounds the psychological and physical trauma that individuals with HIV already have. As more knowledge of how HIV is transmitted individuals can get more efficient and better treatment. However, ostracization often occurs [citations].
 
 ## Moral Judgment and Decision-Making
-Sam has frequent and unprotected sex with multiple partners, resulting in a sexually transmitted infection that causes visible sores on the mouth and hands. On the way to the chemist one day, Sam has an acute heart attack. Bystanders rush to help, but see the sores on Sam's mouth and hands. How would the bystanders react? Would they resuscitate Sam? Would it be morally wrong for them not to risk contracting an unknown disease from Sam, even if it may cost Sam's life? Similar sorts of dilemmas are often used to study moral decision making of various sorts [citations]. the thought experiment of the trolley dilemma. Research by Haidt and colleagues, compared psychologically normal adults to psychopathic traits and performance on the Moral Foundations Questionnaire [MFQ; @graham2011]. Findings included higher psychopathic tendencies were associated with lower likelihood of following justice-based norms, a weak relationship with disgust-based and in-group norms, and finally an increased willingness to violate any type of norms for money [Glenn et al., 2008].  The key factor in the Moral Foundations Questionnaire are these moral foundations of which there are five moral domains: harm versus care, fairness versus cheating, loyalty versus betrayal, authority versus subversion, and purity versus degradation [citations]. Each of these moral domains have a good and bad component compared to the action type.
+Sam has frequent and unprotected sex with multiple partners, resulting in a sexually transmitted infection that causes visible sores on the mouth and hands. On the way to the chemist one day, Sam has an acute heart attack. Bystanders rush to help, but see the sores on Sam's mouth and hands. How would the bystanders react? Would they resuscitate Sam? Would it be morally wrong for them not to risk contracting an unknown disease from Sam, even if it may cost Sam's life? Similar sorts of dilemmas are often used to study moral decision making of various sorts [@clifford2015]. the thought experiment of the trolley dilemma. Research by Haidt and colleagues, compared psychologically normal adults to psychopathic traits and performance on the Moral Foundations Questionnaire [MFQ; @graham2011]. Findings included higher psychopathic tendencies were associated with lower likelihood of following justice-based norms, a weak relationship with disgust-based and in-group norms, and finally an increased willingness to violate any type of norms for money [@glenn2009].  The key factor in the Moral Foundations Questionnaire are these moral foundations of which there are five moral domains: harm versus care, fairness versus cheating, loyalty versus betrayal, authority versus subversion, and purity versus degradation [@clifford2015]. Each of these moral domains have a good and bad component compared to the action type.
 
 The MFQ has been extensively used in research on moral decision-making, with common subjects being on political thought [citation]. In the early studies of moral foundations theory, Haidt investigated the moral foundational differences between individuals that lean either politically liberal or conservative. Of the five moral domains, differences appeared in the likelihood of how either conservatism or liberalism affects the likelihood of individuals to endorse each domain. For example, liberalism suggests protecting the individual from harm by the society, especially if they are a member of a minority group. Conversely, conservatism, namely religious conservatism suggests a propensity for sanctity and purity, along with respecting authority and following the societal moral codes [citations]. Emotional valence is often the best predictors of moral judgments [citation]. The more emotional valence the faster the response time the decision-maker decides and the more staunchly held they are to their decision. Interestingly, participants would be unable to express or support the decisions that they made. Often, participants would downplay their decisions by laughing or stuttering [@haidt2001]. Additionally, as their emotional valence of the decision is higher, people are consistently holding on to their judgments regardless if they were able to support their judgements when asked or not. It then makes sense why some individuals are more politically intransigent given their deeply held moral codes.
 
@@ -106,11 +108,12 @@ Often aggression and discrimination can be understood through the schematic mode
 
 Pertinent after the advent of the me-too movement, see section 3, issues of how these power over views of women, especially women of color and trans women of color, become learned and develop in sexual aggression. Sexual aggression in and of itself is a subgroup of aggression where the intent to harm is sexual in nature [@anderson2002; @malamuth1995]. Many of the targets of sexual aggression are women of color and trans women of color [citations]. In the reported cases men are often the perpetrators of the crimes [@anderson2002]. The aggression itself appears to be domain specific to one gender, women. Often, acts of sexual aggression are verbal in nature, such as asking repeatedly for sex or threatening to break up with them [@testa2015]. When individuals gain power they may aggress more over those that have less power, which may pay head to the continued sexual aggression and sexual violence against women of color and trans women of color for whom have historically low levels of power [citations].
 
-Recent research by Garnett and Mann investigate the cognitive and empathetical processes of those that commit a sexual aggression or sexual violence, labelled as sexual offending [-@barnett2013]. Common to research on sexual offenses, research contends that those that do offend do so with a lack of empathy towards their victims [@marshall1993]. As noted in the previous section on moral judgment, see section 3, empathetic processing by these offenders are more complex than the simple inability to "feel" or identify the emotions of others. There is a recurring theme amongst offenders of women being deceitful and sexually entitled [@barnett2013; @gannon2009]. The offenders often feel slighted when a woman denies their sexual advances which then tends to lead to some sexual aggression [@williams2017; @gannon2009].
+Recent research by Garnett and Mann investigate the cognitive and empathetical processes of those that commit a sexual aggression or sexual violence, labeled as sexual offending [-@barnett2013]. Common to research on sexual offenses, research contends that those that do offend do so with a lack of empathy towards their victims [@marshall1993]. As noted in the previous section on moral judgment, see section 3, empathetic processing by these offenders are more complex than the simple inability to "feel" or identify the emotions of others. There is a recurring theme amongst offenders of women being deceitful and sexually entitled [@barnett2013; @gannon2009]. The offenders often feel slighted when a woman denies their sexual advances which then tends to lead to some sexual aggression [@williams2017; @gannon2009].
 
 The rejection of the sexual advances of the man often damage their sense of masculinity [@malamuth1996]. Relating back to beliefs on condom use amongst men, even the request of wearing condom could be interpreted as damaging their sense of masculinity [@castrovazquez2000]. If the woman, in a heterosexual relationship, brings the condom they are damaging the males masculinity but if the male brings the condom he could also be considered a thoughtful individual. While the woman would be seen as easy. This could then lead to bullying behavior and ostracization from the moral judgment of the community on the woman's purity, see section moral judgment.
 
-## Experiment One
+### Exploratory Experiment
+
 
 ## Method
 
@@ -121,10 +124,6 @@ Participants were a convenience sample of `r length(experimenttwoDS$ResponseId)`
 ### Demographic Questionnaire
 
 Prior to the psychometric scales, participants are asked to share their demographic characteristics (e.g., age, gender, ethnicity, ethnic origin, and educational attainment).
-
-### Dominance, Prestige, and Leadership Orientation
-
-The 18-item Dominance, Prestige, and Leadership scale [DoPL; @suessenbach2019], is used to measure dominance, prestige, and leadership orientation. Each question corresponds to one of the three domains. Each domain is scored across six unique items related to those domains (e.g., "I relish opportunities in which I can lead others" for leadership) rated on a scale from 0 (Strongly disagree) to 5 (Strongly agree). Internal consistency reliability for the current sample is $\alpha$ = `r psych::alpha(newDF[,doplQuestions])$total$std.alpha`. 
 
 ### Spitefulness Scale
 
@@ -174,80 +173,5 @@ Demographic characteristics were analyzed using a one-way analysis for continuou
 
 Bayesian multilevel models were used to test differences between levels of justifications of vignettes that are either sexually or non-sexually vindictive in behavior.
 
-```{r, echo=FALSE, fig.pos='H', out.width='\textwidth'}
-
-corr.df <- corr.mod[, -c(2, 5, 6, 7)]
-apa_table(corr.df, align = c("l", "r", "r", "r"), col.name = c("", "Estimate", "Upper CI", "Lower CI"), caption = "Bayesian Correlation with 95% Crediblility Intervals")
-```
-
-## Results and Discussion
-
-`r str_to_title(english::as.english(nrow(experimenttwoDS)))` individuals participated in the present experiment. A majority of the participants in experiment 1 identified as male (*n* = `r genderresults$freq[2]`). Table 1 shows the demographic information for experiment 1. Table 2 presents the results of a Bayesian correlational matrix of all measures. As evidenced in the Bayesian correlational matrix, most surveys positively correlated with one another.
-
-### Spitefulness
-
-For this analysis we used the Bayesian parameter estimation using R and brms [@rcoreteam2021; @burkner2018]. An annotated r script file, including all necessary information is available at [https://osf.io/jz6qb](https://osf.io/jz6qb). On average, individuals were not rated as being more spiteful, (*M* = `r mean(analysisDF$Spite)`, *SD* = `r sd(analysisDF$Spite)`, Min-max = [`r min(analysisDF$Spite)` - `r max(analysisDF$Spite)`]). Justification as a function of the four indices was moderately explained by the model (*R^2^* = `r bayes.dm5[1]`). We conducted an exploratory Bayesian correlation analysis on the data, where we investigated correlations between 8 of the indices (e.g., Spite, Dominance, Prestige, Leadership, Sexual Jealousy, Sexual Self-Esteem, and Sexual Relationship Power Scale).
-
-Selected notable non-null correlations were found between Spite and Sexual Jealousy (95% CI: [`r corr.mod["Spite * SJS", 3:4]`]), Spite and Dominance (95% CI: [`r corr.mod["Spite * Dominance", 3:4]`]), and Sexual Relationship Power and Dominance (95% CI: [`r corr.mod["SRPS * Dominance", 3:4]`]). Table 2 contains a complete list of all Bayesian correlations.
-
-## Limitations and Future Directions
-
-## Experiment 2
-
-## Methods
-
-Materials remain the same in terms of the (1) Demographic Questionnaire, (2) Dominance, Prestige, and Leadership Questionnaire, and (3) DOSPERT Questionnaire. However, we added the Brief-Pathological Narcissism Inventory to assess possible interactions of dominance and narcissism in risky decision-making. Materials and methods were approved by the University of 
-## Participants
-
-Following experiment 1, participants were a convenience sample of 111 individuals from Prolific Academic's crowdsourcing platform (www.prolific.io). Prolific Academic is an online crowdsourcing service that provides participants access to studies hosted on third-party websites. Participants were required to be 18 years of age or older and be able to read and understand English. Participants received £4.00, which is above the current minimum wage pro-rata in the United Kingdom, as compensation for completing the survey. The Psychology Research Ethics Committee at the University of Edinburgh approved all study procedures [ref: 212-2021/2]. The present study was pre-registered along with a copy of anonymized data and a copy of the R code is available at ([https://osf.io/s4j7y](https://osf.io/s4j7y)).
-
-## Materials
-
-
-### *Brief-Pathological Narcissism Inventory* 
-
-The 28 item Brief Pathological Narcissism Inventory (B-PNI; Schoenleber et al., 2015) is a modified scale of the original 52-item Pathological Narcissism Inventory (PNI; Pincus et al., 2009). Like the PNI the B-PNI is a scale measuring individuals' pathological narcissism. Items in the B-PNI retained all 7 pathological narcissism facets from the original PNI (e.g., exploitativeness, self-sacrificing self-enhancement, grandiose fantasy, contingent self-esteem, hiding the self, devaluing, and entitlement rage). Each item is rated on a 5 point Likert scale ranging from 1 (not at all like me) to 5 (very much like me). Example items include "I find it easy to manipulate people" and "I can read people like a book." 
-
-## Procedure
-
-Participants were recruited via a study landing page on Prolific's website or via a direct e-mail to eligible participants [@prolificacademic2018]. The study landing page included a brief description of the study including any risks and benefits along with expected compensation for successful completion. Participants accepted participation in the experiment and were directed to the main survey on pavlovia.org (an online JavaScript hosting website similar to Qualtrics) where they were shown a brief message on study consent.
-
-Once participants consented to participate in the experiment they answered a series of demographic questions. Once completed, participants completed the Dominance, Prestige, and Leadership Scale and the Domain Specific Risk-taking scale. An additional survey was added (the novel aspect of experiment 2) where participants, in addition to the two previous surveys, were asked to complete the brief-pathological narcissism inventory. The three scales were counterbalanced to account for order effects. After completion of the main survey, participants were shown a debriefing statement that briefly mentions the purpose of the experiment along with the contact information of the main researcher (AI). Participants were compensated £4.00 via Prolific Academic. 
-
-## Data analysis
-
-Demographic characteristics were analyzed using multiple regression for continuous variables (age) and Chi-square tests for categorical variables (gender, race, ethnicity, ethnic origin, and education). Means and standard deviations were calculated for the relevant scales (i.e., DoPL and DOSPERT). All analyses were done using [@rcoreteam2021] along with [@burkner2017] package.
-
-The use of bayesian statistics has a multitude of benefits to statistical analysis and research design. One important benefit is through the use of prior data in future analyses. Termed as priors, is the use of prior distributions for future analysis. This allows for the separation of how the data might have been collected or what the intention was. In essence, the data is the data without the interpretation of the scientist. 
-
-All relevant analyses were conducted in a Bayesian framework using the brms package [@burkner2018] along with the cmdstanr packages notes [@gabry2021]. In addition to the aforementioned packages, we used bayestestR, rstan, and papaja for analysis along with the creation of this manuscript [@makowski2019; @aust2020; @standevelopmentteam2020].
-
-## Results
-
-
-## Preregistered Analyses
-
-
-
-### *Demographic and DoPL*
-
-
-
-## Domain-Specific Risk-Taking
-
-## Interactions
-
-
-## Discussion
-## Limitations
-
-## Future Implications
-
-\newpage
-
-```{r}
-dm5hdi <- bayestestR::hdi(dm5, effects = 'fixed', component = 'conditional', ci = .95)
-apa_table(dm5hdi[sign(dm5hdi$CI_low) == sign(dm5hdi$CI_high),
-            c('Parameter', 'CI','CI_low', 'CI_high')])
-  
+``` {r child = "Experiment_1.Rmd"}
 ```
