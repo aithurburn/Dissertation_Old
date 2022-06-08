@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.6)  8 JUN 2022 18:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.6)  8 JUN 2022 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -671,24 +671,24 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (./Dissertation.aux)
 \openout1 = `Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -729,7 +729,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 209.
+Package hyperref Info: Link coloring OFF on input line 199.
 (./Dissertation.out) (./Dissertation.out)
 \@outlinefile=\write4
 \openout4 = `Dissertation.out'.
@@ -744,48 +744,48 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Using title for running head
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 210.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 200.
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 210.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 200.
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 210.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 200.
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 210.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 200.
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 210.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 200.
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 210.
+(Font)              <17.28> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 210.
+(Font)              <12> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 210.
+(Font)              <10> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 210.
+(Font)              <8> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 210.
+(Font)              <6> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 210.
+(Font)              <7> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 210.
+(Font)              <5> on input line 200.
 LaTeX Info: Completed page discarded.
-[2{/Users/andrew/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [3
+[2
 
-]
-<../Formatting/EdUniCrest.jpg, id=478, 501.875pt x 507.8975pt>
+{/Users/andrew/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<../Formatting/EdUniCrest.jpg, id=471, 501.875pt x 507.8975pt>
 File: ../Formatting/EdUniCrest.jpg Graphic file (type jpg)
 <use ../Formatting/EdUniCrest.jpg>
-Package pdftex.def Info: ../Formatting/EdUniCrest.jpg  used on input line 227.
+Package pdftex.def Info: ../Formatting/EdUniCrest.jpg  used on input line 217.
 (pdftex.def)             Requested size: 125.46843pt x 126.97406pt.
 [1
 
@@ -793,15 +793,10 @@ Package pdftex.def Info: ../Formatting/EdUniCrest.jpg  used on input line 227.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.240 \mbox{}\thispagestyle{empty}\clearpage
+l.230 \mbox{}\thispagestyle{empty}\clearpage
                                              [2
 
-] (./Dissertation.toc
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.28 ...Esteem Subscale}{42}{subsubsection.1.10.5}
-                                                  % [3
+] (./Dissertation.toc [3
 
 ] [4] [5] [6])
 \tf@toc=\write5
@@ -871,7 +866,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [34] [35] [36] [37]
-Underfull \hbox (badness 3735) in paragraph at lines 413--414
+Underfull \hbox (badness 3735) in paragraph at lines 403--404
 []\T1/lmr/m/n/12 Following Wor-ley and Samp in their 2014 pa-per on us-ing vi-
  []
 
@@ -879,12 +874,12 @@ Underfull \hbox (badness 3735) in paragraph at lines 413--414
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [39] [40] [41] [42] [43]
-Underfull \hbox (badness 3735) in paragraph at lines 532--533
+Underfull \hbox (badness 3735) in paragraph at lines 522--523
 []\T1/lmr/m/n/12 Following Wor-ley and Samp in their 2014 pa-per on us-ing vi-
  []
 
 [44] [45] [46] [47] [48] [49] [50] [51] [52]
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
+Underfull \hbox (badness 10000) in paragraph at lines 753--754
 
  []
 
@@ -895,12 +890,12 @@ Underfull \vbox (badness 8094) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 770--771
+Underfull \hbox (badness 10000) in paragraph at lines 760--761
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 777--778
+Underfull \hbox (badness 10000) in paragraph at lines 767--768
 
  []
 
@@ -911,38 +906,38 @@ Underfull \vbox (badness 5064) has occurred while \output is active []
 Underfull \vbox (badness 6141) has occurred while \output is active []
 
 [61] [62] [63] [64]
-Underfull \hbox (badness 1448) in paragraph at lines 925--926
+Underfull \hbox (badness 1448) in paragraph at lines 915--916
  \T1/lmr/bx/it/12 4.6.1.2 Pres-tige.[][] \T1/lmr/m/n/12 Dif-fer-en-ti-at-ing be-tween DoPL do-mains, males
  []
 
 [65] [66] [67]
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance, Prestige, and Leadership Distribution-1.pdf, id=1363, 469.755pt x 325.215pt>
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance, Prestige, and Leadership Distribution-1.pdf, id=1357, 469.755pt x 325.215pt>
 File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance, Prestige, and Leadership Distribution-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance, Prestige, and Leadership Distribution-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance, Prestige, and Leadership Distribution-1.pdf  used on input line 962.
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance, Prestige, and Leadership Distribution-1.pdf  used on input line 952.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
 
-Overfull \hbox (36.1314pt too wide) in paragraph at lines 962--963
+Overfull \hbox (36.1314pt too wide) in paragraph at lines 952--953
 [][] 
  []
 
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance-1.pdf, id=1364, 469.755pt x 325.215pt>
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance-1.pdf, id=1358, 469.755pt x 325.215pt>
 File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance-1.pdf  used on input line 964.
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance-1.pdf  used on input line 954.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
 
-Overfull \hbox (36.1314pt too wide) in paragraph at lines 964--965
+Overfull \hbox (36.1314pt too wide) in paragraph at lines 954--955
 [][] 
  []
 
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Prestige-1.pdf, id=1365, 469.755pt x 325.215pt>
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Prestige-1.pdf, id=1359, 469.755pt x 325.215pt>
 File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Prestige-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Prestige-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Prestige-1.pdf  used on input line 966.
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Prestige-1.pdf  used on input line 956.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
 
-Overfull \hbox (36.1314pt too wide) in paragraph at lines 966--967
+Overfull \hbox (36.1314pt too wide) in paragraph at lines 956--957
 [][] 
  []
 
@@ -950,42 +945,42 @@ Overfull \hbox (36.1314pt too wide) in paragraph at lines 966--967
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [68 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance, Prestige, and Leadership Distribution-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Dominance-1.pdf>]
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Leadership-1.pdf, id=1382, 469.755pt x 325.215pt>
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Leadership-1.pdf, id=1377, 469.755pt x 325.215pt>
 File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Leadership-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Leadership-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Leadership-1.pdf  used on input line 968.
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Leadership-1.pdf  used on input line 958.
+(pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
+
+Overfull \hbox (36.1314pt too wide) in paragraph at lines 958--959
+[][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 960.
+(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \hbox (32.03525pt too wide) in paragraph at lines 962--962
+[]\T1/lmtt/m/n/12 ## Warning: Removed 8 rows containing non-finite values (stat_ydensity).[] 
+ []
+
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DOSPERT Preferences_Gender-1.pdf, id=1378, 469.755pt x 325.215pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DOSPERT Preferences_Gender-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DOSPERT Preferences_Gender-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DOSPERT Preferences_Gender-1.pdf  used on input line 968.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
 
 Overfull \hbox (36.1314pt too wide) in paragraph at lines 968--969
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 970.
-(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Overfull \hbox (32.03525pt too wide) in paragraph at lines 972--972
-[]\T1/lmtt/m/n/12 ## Warning: Removed 8 rows containing non-finite values (stat_ydensity).[] 
- []
-
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DOSPERT Preferences_Gender-1.pdf, id=1383, 469.755pt x 325.215pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DOSPERT Preferences_Gender-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DOSPERT Preferences_Gender-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DOSPERT Preferences_Gender-1.pdf  used on input line 978.
-(pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
-
-Overfull \hbox (36.1314pt too wide) in paragraph at lines 978--979
-[][] 
- []
-
 [69 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Prestige-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/Leadership-1.pdf>]
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DoPL Domains Experiment 2-1.pdf, id=1399, 469.755pt x 325.215pt>
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DoPL Domains Experiment 2-1.pdf, id=1394, 469.755pt x 325.215pt>
 File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DoPL Domains Experiment 2-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DoPL Domains Experiment 2-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DoPL Domains Experiment 2-1.pdf  used on input line 980.
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/Dissertation_files/figure-latex/DoPL Domains Experiment 2-1.pdf  used on input line 970.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
 
-Overfull \hbox (36.1314pt too wide) in paragraph at lines 980--981
+Overfull \hbox (36.1314pt too wide) in paragraph at lines 970--971
 [][] 
  []
 
@@ -994,7 +989,7 @@ Overfull \hbox (36.1314pt too wide) in paragraph at lines 980--981
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (14.33519pt too wide) in paragraph at lines 1060--1088
+Overfull \hbox (14.33519pt too wide) in paragraph at lines 1050--1078
  [] 
  []
 
@@ -1005,7 +1000,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (63.76508pt too wide) in paragraph at lines 1128--1149
+Overfull \hbox (63.76508pt too wide) in paragraph at lines 1118--1139
  [] 
  []
 
@@ -1019,7 +1014,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (44.76828pt too wide) in paragraph at lines 1232--1255
+Overfull \hbox (44.76828pt too wide) in paragraph at lines 1222--1245
  [] 
  []
 
@@ -1027,7 +1022,7 @@ Overfull \hbox (44.76828pt too wide) in paragraph at lines 1232--1255
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [71] [72]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1278.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1268.
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [73]
@@ -1052,7 +1047,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [85]
-Underfull \hbox (badness 2142) in paragraph at lines 1564--1566
+Underfull \hbox (badness 2142) in paragraph at lines 1554--1556
  []\T1/lmr/m/n/12 Kouchaki, M., Dob-son, K. S. H., Waytz, A., & Kteily, N. S.
  []
 
@@ -1063,17 +1058,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [87]
-Underfull \hbox (badness 1484) in paragraph at lines 1612--1614
+Underfull \hbox (badness 1484) in paragraph at lines 1602--1604
  []\T1/lmr/m/n/12 Papanek, H. (1972). Pathol-ogy of power striv-ing and its treat-
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 1612--1614
+Underfull \hbox (badness 1596) in paragraph at lines 1602--1604
  \T1/lmr/m/n/12 ment. \T1/lmr/m/it/12 Jour-nal of In-di-vid-ual Psy-chol-ogy; Chicago, Ill.\T1/lmr/m/n/12 , \T1/lmr/m/it/12 28\T1/lmr/m/n/12 (1),
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 1612--1614
+Underfull \hbox (badness 2837) in paragraph at lines 1602--1604
  \T1/lmr/m/n/12 25--32. []$http : / / search . proquest . com / docview / 1303447697 / citation /$
  []
 
@@ -1081,12 +1076,12 @@ Underfull \hbox (badness 2837) in paragraph at lines 1612--1614
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [88]
-Underfull \hbox (badness 1762) in paragraph at lines 1630--1632
+Underfull \hbox (badness 1762) in paragraph at lines 1620--1622
  []\T1/lmr/m/n/12 Prolific Aca-demic. (2018). \T1/lmr/m/it/12 How do par-tic-i-pants find out about
  []
 
 
-Underfull \hbox (badness 5077) in paragraph at lines 1630--1632
+Underfull \hbox (badness 5077) in paragraph at lines 1620--1622
  \T1/lmr/m/it/12 my study? []$\T1/lmr/m/n/12 https : / / researcher -[] help . proli^^\c . co / hc / en -[] gb / articles /$
  []
 
@@ -1110,18 +1105,18 @@ Package rerunfilecheck Info: File `Dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: CB58A36CB8ABE713A352B78242879B4B;17649.
  ) 
 Here is how much of TeX's memory you used:
- 25735 strings out of 480253
- 493623 string characters out of 5893429
- 781866 words of memory out of 5000000
+ 25734 strings out of 480253
+ 493607 string characters out of 5893429
+ 781294 words of memory out of 5000000
  42687 multiletter control sequences out of 15000+600000
  562425 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,11n,103p,2828b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri8.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Dissertation.pdf (98 pages, 626645 bytes).
+{/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri8.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on Dissertation.pdf (97 pages, 596114 bytes).
 PDF statistics:
- 2008 PDF objects out of 2073 (max. 8388607)
- 1857 compressed objects within 19 object streams
- 478 named destinations out of 1000 (max. 500000)
+ 1999 PDF objects out of 2073 (max. 8388607)
+ 1850 compressed objects within 19 object streams
+ 477 named destinations out of 1000 (max. 500000)
  960 words of extra memory for PDF output out of 10000 (max. 10000000)
 
