@@ -45,9 +45,9 @@ wordcount         :  "2004"
 
 bibliography      : ["../References/references.json"]
 
-floatsintext      : yes
+floatsintext       : yes
 numbersections    : yes
-figurelist        : no
+figurelist         : no
 tablelist         : no
 footnotelist      : no
 linenumbers       : yes
@@ -55,7 +55,8 @@ mask              : no
 draft             : no
 mainfont          : "Times New Roman"
 geometry          :  a4paper, left = 4cm, right = 2.5cm, top = 2cm, bottom = 4cm
-always_allow_html: true
+always_allow_html : true
+link-citations    : true
 header-includes:
   - \pagestyle{plain}
   - \setcounter{tocdepth}{5}
@@ -77,7 +78,7 @@ header-includes:
   - \doublespacing
  
 documentclass     : "apa7"
-csl               : "../Formatting/apa7.csl"
+csl               : "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Formatting/apa7.csl"
 class             : doc, 12pt, a4paper
 classoption       : "donotrepeattitle"
 output            : papaja::apa6_pdf
@@ -86,7 +87,7 @@ output            : papaja::apa6_pdf
 ```{r setup, include = FALSE}
 library("papaja")
 setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
-source("./R/libraries.R")
+source("./R/libraries.r")
 ```
 
 ``` {r child = "../Formatting/front.rmd"}
@@ -100,14 +101,18 @@ source("./R/libraries.R")
 \newpage
 
 
-```{r child = "./Introduction.Rmd"}
+```{r child = "../Chapters/Introduction.Rmd"}
+
 ```
 
-```{r child = "./Chapter2.Rmd"}
+```{r child = "../Chapters/Chapter2.Rmd"}
+
 ```
 
-```{r child = "./Chapter3.Rmd"}
+```{r child = "../Chapters/Chapter3.Rmd"}
+
 ```
+
 
 \newpage
 

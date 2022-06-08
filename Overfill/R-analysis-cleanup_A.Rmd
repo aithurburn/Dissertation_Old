@@ -13,7 +13,10 @@ library(ggplot2)
 library(ggthemes)
 library(tidyverse)
 library(papaja)
-experiment_1_Dataset <- read.csv("DoPL_DOSPERT.csv", stringsAsFactors = FALSE)
+experiment_1_Dataset <- read.csv("./CSV_Files/DoPL_DOSPERT.csv", stringsAsFactors = FALSE)
+
+
+
 
 locfunc <- function(data, to){
   which(colnames({{data}})=={{to}})
@@ -162,6 +165,7 @@ socialQuestionsRisk <- c('risk_1',
 'risk_38')
 
 riskPerceptionQuestions <- c('riskPerception_1', 'riskPerception_2', 'riskPerception_3', 'riskPerception_4', 'riskPerception_5', 'riskPerception_6', 'riskPerception_7', 'riskPerception_8', 'riskPerception_9', 'riskPerception_10', 'riskPerception_11', 'riskPerception_12', 'riskPerception_13', 'riskPerception_14', 'riskPerception_15', 'riskPerception_16', 'riskPerception_17', 'riskPerception_18', 'riskPerception_19', 'riskPerception_20', 'riskPerception_21', 'riskPerception_22', 'riskPerception_23', 'riskPerception_24', 'riskPerception_25', 'riskPerception_26', 'riskPerception_27', 'riskPerception_28', 'riskPerception_29', 'riskPerception_30', 'riskPerception_31', 'riskPerception_32', 'riskPerception_33', 'riskPerception_34', 'riskPerception_35', 'riskPerception_36', 'riskPerception_37', 'riskPerception_38', 'riskPerception_39', 'riskPerception_40')
+
 
 ethicalQuestionsPerception <- c('riskPerception_7', 
 'riskPerception_10',
@@ -349,7 +353,7 @@ DOSPERT_models <- c("ethicala",
 "ethicalb", 
 "socialb", 
 "recreationalb",
-"healthAndSafet",
+"healthAndSafetyb",
 "financialb" )
 
 
@@ -368,7 +372,8 @@ experiment_dataset_analysis$recreationalPreference  <- rowSums(recreationalPrefe
 # General risk perception, benefit sum 
 riska <- lm(riskBenefitSum ~ riskSum, data = experiment_dataset_analysis)
 riskb <- lm(riskBenefitSum ~ riskPerceptionSum, data = experiment_dataset_analysis)
-experiment_dataset_analysis$generalRiskPreference  <- (experiment_1_Dataset[, "riskBenefitSum"] * riska$coefficients[2]) + (experiment_1_Dataset[, "riskPerceptionSum"] * riskb$coefficients[2])
+ experiment_dataset_analysis$generalRiskPreference  <- (experiment_1_Dataset[, "riskBenefitSum"] * riska$coefficients[2]) + (experiment_1_Dataset[, "riskPerceptionSum"] * riskb$coefficients[2])
+
 
 
 ```
