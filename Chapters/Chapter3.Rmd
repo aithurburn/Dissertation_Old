@@ -2,12 +2,19 @@
 ## Experiment 1:
 ## Experiment 1 Review
 
-In an extension of the previous research, we sought other areas of possible interest in what could be affecting individuals' likelihood to engage in either immoral or risky behaviors. So far we have shown a connection with power motives such as Dominance, Prestige, and leadership (DoPL); along with investigating the connection between DoPL and the domain-specific risk-taking scale. An intriguing area that has not been extensively researched is narcissism. Personality research is often the viewpoint at which narcissism is investigated such as using the five-factor model concept where the primary traits are extraversion and agreeableness [@hyatt2018]. 
+In an extension of the previous research, we sought other areas of possible interest in what could be affecting individuals' likelihood to engage in either immoral or risky behaviors. So far we have shown a connection with power motives such as Dominance, Prestige, and leadership (DoPL); along with investigating the connection between DoPL and the domain-specific risk-taking scale. An intriguing area that has not been extensively researched is narcissism. Personality research is often the viewpoint at which narcissism is investigated such as using the five-factor model concept where the primary traits are extraversion and agreeableness [@hyatt2018].
+
 
 ## Narcissism
 
 Narcissism is a personality trait that originally was seen as a method or mechanism to shield the individual from feelings of low self-worth [@yakeley2018]. The understanding of what narcissism soon shifted with a focus on empirical understandings of the individual. Researchers such as Jeffrey Young, who expanded on the work of Aaron Beck, theorized that the core beliefs of an individual along with negative self-schemas influence the individual to seek out or act in ways in line with a narcissitic personality [@young2006]. Conceptualizations of narcissism would soon entail it to be an understanding of grandiose sense of self, fantastical beliefs of success and general superiority, along with a general lack of empathy [@americanpsychiatricassociation2013; @yakeley2018; @okada2010]./
 The earliest understandings of narcissism were through Sigmund Freud. However, the term was first coined by Havelock Ellis who used the eponymous Narcissus myth in the explanation of narcissism. Freud would then publish the text *On Narcissism* to further our understanding of narcissism. Future understandings of narcissism would develop from a social cognitive framework of the indvidual in relation to their environment. Such as Kernberg's assestment that narcissism stems from an aggressive and conflict filled childhood affecting the childs development and later aggression and envy towards others [@russell1985a].
+
+* note on the early understandings of how narcissism was interpreted as being, i.e., a defense mechanism @yakeley2018
+
+* continued lack of consensus on what consitutes narcissism @ackerman2017
+
+    * Also the discussion of social dominance in regard to narcissistic personality disorder @ackerman2017
 
 ## The present Experiments
 
@@ -25,23 +32,23 @@ In a demographic questionnaire administered prior to the main survey, participan
 
 ### *Sexual Risk-taking Behavior Scale*
 
-The 54-item Sexual Risk-taking Behavior Scale (SRTB; Spiegal & Pollak, 2019), is a scale measuring individuals on their risk-taking by requesting they respond to a series of statements and their agreement on three different domains (i.e., Risk perception, likelihood, and benefit perception). They are then given a series of statements of sexual activities and the frequency that they have engaged in those behaviors. Example items for the first three domains are "Sexual activity with multiple participants" and "Sex under influence of substances (drugs/alcohol)." For frequency, participants are asked to rate each sexual behavior on a scale of never [1] to at least once a day [8]. 
+The 54-item Sexual Risk-taking Behavior Scale (SRTB; @spiegel2019), is a scale measuring individuals on their risk-taking by requesting they respond to a series of statements and their agreement on three different domains (i.e., Risk perception, likelihood, and benefit perception). They are then given a series of statements of sexual activities and the frequency that they have engaged in those behaviors. Example items for the first three domains are "Sexual activity with multiple participants" and "Sex under influence of substances (drugs/alcohol)." For frequency, participants are asked to rate each sexual behavior on a scale of never [1] to at least once a day [8]. 
 
 ### *Sociosexual Orientation Inventory*
 
-The Sociosexual Orientation Inventory (SOI-R; Penke & Asendorpf, 2008) is a 9 item scale asking participants a series of questions of how many times participants have engaged in the questioned sexual behaviors. Example items are "With how many different partners have you had sex with in the past 12 months?" and "With how many different partners have you had sexual intercourse on one and only one occasion?" rated on a scale from 0 to 20 or more. 
+The Sociosexual Orientation Inventory (SOI-R; @penke2008) is a 9 item scale asking participants a series of questions of how many times participants have engaged in the questioned sexual behaviors. Example items are "With how many different partners have you had sex with in the past 12 months?" and "With how many different partners have you had sexual intercourse on one and only one occasion?" rated on a scale from 0 to 20 or more. 
 
 ### *Dominance, Prestige, and Leadership*
 
-The 18-item Dominance, Prestige, and Leadership scale (DoPL; Sussenbach et al., 2008), measures dominance, prestige, and leadership orientation. Each question corresponds to one of the three domains. Each domain is scored across 6 unique items related to those domains (e.g., "I relish opportunities in which I can lead others" for leadership) rated on a scale from 0 (Strongly disagree) to 5 (Strongly agree). 
+The 18-item Dominance, Prestige, and Leadership scale (DoPL; @sussenbach2011), measures dominance, prestige, and leadership orientation. Each question corresponds to one of the three domains. Each domain is scored across 6 unique items related to those domains (e.g., "I relish opportunities in which I can lead others" for leadership) rated on a scale from 0 (Strongly disagree) to 5 (Strongly agree). 
 
 ### *Pathological Narcissism*
 
-The brief Pathological Narcissism Inventory (B-PNI; Schoenleber et al., 2015) is a 28 item inventory measuring individuals on 7 aspects of pathological narcissism facet scales. Example items are "I feel important when others rely on me" and "Sacrificing for others makes me the better person" rated on a scale from 1 (not at all like me) to 5 (Very much like me).
+The brief Pathological Narcissism Inventory (B-PNI; @schoenleber2015) is a 28 item inventory measuring individuals on 7 aspects of pathological narcissism facet scales. Example items are "I feel important when others rely on me" and "Sacrificing for others makes me the better person" rated on a scale from 1 (not at all like me) to 5 (Very much like me).
 
 ## Procedure
 
-Participants were recruited via a study landing page on Prolific's website or via a direct e-mail to eligible participants [@prolificacademic2018]. The study landing page included a brief description of the study including any risks and benefits along with expected compensation for successful completion. Participants accepted participation in the experiment and were directed to the main survey (Pavlovia.org) where they were shown a brief message on study consent.
+In study 2, participants were recruited via a study landing page on Prolific's website or via a direct e-mail to eligible participants [@prolificacademic2018]. The study landing page included a brief description of the study including any risks and benefits along with expected compensation for successful completion. Participants accepted participation in the experiment and were directed to the main survey (Pavlovia.org) where they were shown a brief message on study consent.
 
 Once participants consented to participate in the experiment they answered a series of demographic questions. Once completed, participants completed the Dominance, Prestige, and Leadership Scale and the Domain Specific Risk-taking scale. The two scales were counterbalanced to account for order effects. After completion of the main survey, participants were shown a debriefing statement that briefly mentions the purpose of the experiment along with the contact information of the main researcher (AI). Participants were compensated with course credit on the University of Edinburgh's SONA system.
 
@@ -51,7 +58,7 @@ Demographic characteristics were analyzed using multiple regression for continuo
 
 The use of bayesian statistics has a multitude of benefits to statistical analysis and research design. One important benefit is through the use of prior data in future analyses. Termed as priors, is the use of prior distributions for future analysis. This allows for the separation of how the data might have been collected or what the intention was. In essence, the data is the data without the interpretation of the scientist. 
 
-All relevant analyses were conducted in a Bayesian framework using the brms package [@burkner2018] along with the cmdstanr packages notes [@gabry2021]. In addition to the aforementioned packages, we used bayestestR, rstan, and papaja [@makowski2019; @aust2020; @standevelopmentteam2020]. 
+All relevant analyses were conducted in a Bayesian framework using the brms package [@burkner2018] along with the cmdstanr packages notes [@gabry2021]. In addition to the aforementioned packages, we used bayestestR, rstan, and papaja for further analysis and creation of this manuscript [@makowski2019; @standevelopmentteam2020; @aust2020]. 
 
 ## Results
 
