@@ -79,6 +79,7 @@ output            : papaja::apa6_pdf
 library("papaja")
 setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
 source("./R/libraries.r")
+knitr::opts_knit$set(root.dir = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
 ```
 
 ``` {r child = "../Formatting/front.rmd"}
@@ -117,3 +118,5 @@ source("./R/libraries.r")
 \endgroup
 
 \newpage
+
+
