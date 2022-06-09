@@ -32,7 +32,7 @@ wordcount         :  !expr wordcountaddin::word_count("../Chapters/Chapter2.Rmd"
 
 bibliography      : ["../References/references.bib"]
 
-floatsintext       : yes
+floatsintext       : no
 numbersections    : yes
 figurelist         : no
 tablelist         : no
@@ -67,6 +67,6 @@ source("./R/data_file_index.r")
 ```
 
 
-```{r child = "../Chapters/Chapter2.Rmd"}
+```{r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/Chapter2.Rmd"}
 
 ```
