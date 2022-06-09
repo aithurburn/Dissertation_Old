@@ -49,6 +49,7 @@ docs/
 po/*~
 
 # RStudio Connect folder
-rsconnect/
-.DS_Store
-.DS_Store
+Dissertation/.DS_Store
+Dissertation/Paper_Type/.DS_Store
+Dissertation/Overfill/.DS_Store
+Dissertation/Output_Files/.DS_Store
