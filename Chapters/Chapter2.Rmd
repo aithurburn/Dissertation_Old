@@ -272,14 +272,14 @@ apa_table(m3_int_fixef_exp_1[
 ```{r m5_int_fixef_exp_1}
 
 apa_table(m5_int_fixef_exp_1[sign_match(m5_int_fixef_exp_1[, 4]) == sign_match(m5_int_fixef_exp_1[,5]), c("Parameter", "Estimate", "CI", "CI Low", "CI High")], 
-row.names = FALSE, placement = "h", caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.")
+row.names = FALSE, placement = "p", caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.")
 
 ```
 
 ```{r m4_perceivedRisk_Gender_exp_1}
 m4_perceivedRisk_int_fixef_exp_1 <- MutateHDI::mutate_each_hdi_no_save(fixef(m4_perceivedRisk_Gender_exp_1))
 apa_table(m4_perceivedRisk_int_fixef_exp_1[sign_match(m4_perceivedRisk_int_fixef_exp_1[, 4]) == sign_match(m4_perceivedRisk_int_fixef_exp_1[,5]), c("Parameter", "Estimate", "CI", "CI Low", "CI High")], 
-row.names = FALSE, placement = "h", caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.")
+row.names = FALSE, placement = "p", caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.")
 
 ```
 
