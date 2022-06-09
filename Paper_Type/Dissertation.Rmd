@@ -34,7 +34,7 @@ abstract: |
 keywords          : "keywords"
 wordcount         :  "2004"
 
-bibliography      : ["../References/references.json"]
+bibliography      : ["/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/References/references.json"]
 
 floatsintext       : yes
 numbersections    : yes
@@ -79,10 +79,9 @@ output            : papaja::apa6_pdf
 library("papaja")
 setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
 source("./R/libraries.r")
-knitr::opts_knit$set(root.dir = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
 ```
 
-``` {r child = "../Formatting/front.rmd"}
+``` {r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Formatting/front.Rmd"}
 
 ```
 
@@ -93,15 +92,15 @@ knitr::opts_knit$set(root.dir = "/Users/andrew/Library/CloudStorage/OneDrive-Per
 \newpage
 
 
-```{r child = "../Chapters/Introduction.Rmd"}
+```{r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/Introduction.Rmd"}
 
 ```
 
-```{r child = "../Chapters/Chapter2.Rmd"}
+```{r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/Chapter2.Rmd"}
 
 ```
 
-```{r child = "../Chapters/Chapter3.Rmd"}
+```{r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/Chapter3.Rmd"}
 
 ```
 

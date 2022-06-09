@@ -175,12 +175,6 @@ Overall, Age was an effective predictor for both grandiose and vulnerable narcis
 
 \newpage
 
-# References
-\begingroup
-<div id="refs" custom-style="Bibliography"></div>
-\endgroup
-
-\newpage
 
 # Figures and Tables
 
