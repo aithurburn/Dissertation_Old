@@ -4,5 +4,16 @@
       "path": "."
     }
   ],
-  "settings": {}
+  "settings": {
+    "grammarly.selectors": [
+      {
+        "language": "rmd",
+        "scheme": "file"
+      }
+    ],
+    "workbench.colorCustomizations": {
+      "[MacOS Modern Dark - Xcode Civic]": {}
+    }
+  },
+  "editor.fontSize": 14
 }

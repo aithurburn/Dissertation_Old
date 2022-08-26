@@ -1,3 +1,6 @@
+locfunc <- function(data, to) {
+  which(colnames({{ data }}) == {{ to }})
+}
 m1_exp_1 <- readRDS("./RDS_Files/m1.rds")
 m2_exp_1 <- readRDS("./RDS_Files/m2.rds")
 m3_exp_1 <- readRDS("./RDS_Files/m3.rds")
@@ -48,13 +51,39 @@ experiment_1_Dataset <- read.csv("./CSV_Files/experiment_1_data.csv")
 experiment_dataset_analysis <- read.csv("./CSV_Files/experiment_dataset_analysis1.csv")
 Experiment_2_dataset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Experiment_2_demographics.csv")
 Experiment_2_dataset_raw <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Experiment_with_J_version_two.csv")
-Experiment_2_demographic_dataset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Experiment_2_demographic_dataset.csv")
-locfunc <- function(data, to) {
-  which(colnames({{ data }}) == {{ to }})
-}
-
-
-
+Experiment_2_demographic_dataset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Experiment_2_demographics.csv")
+d2 <- Experiment_2_demographic_dataset %>%
+  mutate_at(vars(locfunc(Experiment_2_demographic_dataset, "Gender")), ~ as.factor(recode(., "1" = "Female", "2" = "Male", "3" = "Gender Non-Binary", "6" = "Prefer not to respond"))) %>%
+  mutate_at(vars(locfunc(Experiment_2_demographic_dataset, "Ethnicity")), ~ as.factor(recode(.,
+    "1" = "White",
+    "2" = "Mixed  or  Multi-ethnic",
+    "3" = "Asian  or  Asian Scottish  or  Asian British",
+    "4" = "African",
+    "5" = "Caribbean  or  Black",
+    "6" = "Arab ",
+    "7" = "Other ethnicity",
+    "8" = "Prefer not  to respond"
+  ))) %>%
+  mutate_at(vars(locfunc(Experiment_2_demographic_dataset, "Ethnic_Origin")), ~ as.factor(recode(.,
+    "1" = "Scottish",
+    "2" = "English",
+    "3" = "European",
+    "4" = "Latin American",
+    "5" = "Asian",
+    "6" = "Arab",
+    "7" = "African",
+    "8" = "Other",
+    "9" = "Prefer not to respond"
+  ))) %>%
+  mutate_at(vars(locfunc(Experiment_2_demographic_dataset, "Education")), ~ as.factor(recode(.,
+    "1" = "Primary School ",
+    "2" = "GCSEs  or  Equivalent",
+    "3" = "A-Levels  or  Equivalent",
+    "4" = "University  Undergraduate  Program",
+    "5" = "University  Post-Graduate  Program",
+    "6" = "Doctoral  Degree",
+    "7" = "Prefer not  to respond"
+  )))
 
 dopl_PNI_1_fixef_exp_2_j <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/dopl_PNI_1_fixef.Rds")
 dopl_PNI_1_int_fixef_exp_2_j <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/dopl_PNI_1_int_fixef.Rds")
@@ -86,3 +115,22 @@ pni_multi_dospert_fixef_exp_2_j <- readRDS("/Users/andrew/Library/CloudStorage/O
 pni_multi_dospert_int_Age_fixef_exp_2_j <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/pni_multi_dospert_int_Age_fixef.Rds")
 pni_risk_dospert_fixef_exp_2_j <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/pni_risk_dospert_fixef.Rds")
 pni_multi_dospert_int_fixef_exp_2_j <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/pni_multi_dospert_int_fixef.Rds")
+correlation_Experiment_2_j <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/corr_1.rds")
+Experiment_2_timing <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Backup_analysis/timing_exp_2.csv")
+
+m1_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/m1_fixef_exp_2.rds")
+m1_interaction_gender_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/m1_interaction_gender_fixef_exp_2.rds")
+m1_interaction_no_pni_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/m1_interaction_no_pni_fixef_exp_2.rds")
+m2_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/m2_fixef_exp_2.rds")
+m2_interaction_gender_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/m2_interaction_gender_fixef_exp_2.rds")
+m3_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/m3_fixef_exp_2.rds")
+m3_interaction_gender_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/m3_interaction_gender_fixef_exp_2.rds")
+Mediation_comparison_1_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/Mediation_comparison_1_fixef_exp_2.rds")
+Mediation_comparison_2_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/Mediation_comparison_2_fixef_exp_2.rds")
+Mediation_comparison_3_fixef_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Mutation_hdi/Mediation_comparison_3_fixef_exp_2.rds")
+
+mediation_comparison_exp_2 <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/mediation_comparison.rds")
+
+Experiment_2_demographic_dataset
+Experiment_2_timing$X <- NULL
+Experiment_2_timing <- Experiment_2_timing / 1000

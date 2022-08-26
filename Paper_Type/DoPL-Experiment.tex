@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-  donotrepeattitle,doc, 12pt, a4paper]{apa7}
+  donotrepeattitle,doc, 12pt, a4paper,floatsintext]{apa7}
 
 \usepackage{graphicx}
 \makeatletter
@@ -127,7 +127,7 @@
     {}{\InnerPatchFailed}%
   }
 {}{\PatchFailed}
-\keywords{keywords\newline\indent Word count: 3755}
+\keywords{keywords\newline\indent Word count: 3874}
 \usepackage{lineno}
 
 \linenumbers
@@ -135,12 +135,26 @@
 \geometry{a4paper, left = 4cm, right = 2.5cm, top = 2cm, bottom = 4cm}
 
 
+\usepackage[titles]{tocloft}
+\cftpagenumbersoff{figure}
+\renewcommand{\cftfigpresnum}{\itshape\figurename\enspace}
+\renewcommand{\cftfigaftersnum}{.\space}
+\setlength{\cftfigindent}{0pt}
+\setlength{\cftafterloftitleskip}{0pt}
+\settowidth{\cftfignumwidth}{Figure 10.\qquad}
+\cftpagenumbersoff{table}
+\renewcommand{\cfttabpresnum}{\itshape\tablename\enspace}
+\renewcommand{\cfttabaftersnum}{.\space}
+\setlength{\cfttabindent}{0pt}
+\setlength{\cftafterloftitleskip}{0pt}
+\settowidth{\cfttabnumwidth}{Table 10.\qquad}
 \setcounter{tocdepth}{3}
 \linespread{1.2}
 \interfootnotelinepenalty=10000
 \usepackage{setspace}
 \newcommand{\HRule}{\rule{\linewidth}{0.25mm}}
 \raggedbottom
+\captionsetup[figure]{textformat=empty}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -196,7 +210,7 @@ Research in power desire motives has focused on three subdomains: dominance, lea
 
 The dominance motive is one of the more researched methods and well-depicted power motives. Individuals with a dominant orientation display the more primal of human behavior. These individuals will seek power through direct methods such as asserting dominance, control over resources, or physically assaulting someone (\protect\hyperlink{ref-johnson2012}{M. W. Johnson \& Bruner, 2012}; \protect\hyperlink{ref-winter1993}{Winter, 1993}). Early research in dominance motives has shown that acts of dominance ranging from asserting physical dominance over another to physical displays of violence have been shown in many mammalian species, including humans (\protect\hyperlink{ref-petersen2018}{Petersen et al., 2018}; \protect\hyperlink{ref-rosenthal2012}{Rosenthal et al., 2012}).
 
-Individuals high in dominance are often high in Machiavellianism, and narcissism, and often are prone to risky behavior (discussion further in the next section). Continued research has hinted at a possible tendency for males to display these dominant seeking traits more than females (\protect\hyperlink{ref-bareket2020}{Bareket \& Shnabel, 2020}; \protect\hyperlink{ref-sidanius2000}{Sidanius et al., 2000}). When high dominance individuals assert themselves they are doing so to increase their sense of power (\protect\hyperlink{ref-anderson2012}{Anderson et al., 2012}; \protect\hyperlink{ref-bierstedt1950}{Bierstedt, 1950}). Asserting one's sense of dominance over another can be a dangerous task. In the animal kingdom, it can often lead to injury. While, humans asserting dominance can take a multitude of actions such as leering behaviors, physical distance, or other non-verbal methods to display dominance (\protect\hyperlink{ref-petersen2018}{Petersen et al., 2018}; \protect\hyperlink{ref-witkower2020}{Witkower et al., 2020}). Power from a dominant perspective is not always bestowed upon someone. Often, high dominance individuals will take control and hold onto it.
+Individuals high in dominance are often high in Machiavellianism, and narcissism, and often are prone to risky behavior (discussion further in the next section). Continued research has hinted at a possible tendency for males to display these dominant seeking traits more than females (\protect\hyperlink{ref-bareket2020}{Bareket \& Shnabel, 2020}; \protect\hyperlink{ref-sidanius2000}{Sidanius et al., 2000}). When individuals high in dominance assert themselves they are doing so to increase their sense of power (\protect\hyperlink{ref-anderson2012}{Anderson et al., 2012}; \protect\hyperlink{ref-bierstedt1950}{Bierstedt, 1950}). Asserting one's sense of dominance over another can be a dangerous task. In the animal kingdom, it can often lead to injury. While, humans asserting dominance can take a multitude of actions such as leering behaviors, physical distance, or other non-verbal methods to display dominance (\protect\hyperlink{ref-petersen2018}{Petersen et al., 2018}; \protect\hyperlink{ref-witkower2020}{Witkower et al., 2020}). Power from a dominant perspective is not always bestowed upon someone. Often, high dominance individuals will take control and hold onto it.
 
 \hypertarget{prestige}{%
 \subsubsection{\texorpdfstring{\emph{Prestige}}{Prestige}}\label{prestige}}
@@ -208,7 +222,7 @@ Apart from dominance-motivated individuals that continually have to fight for th
 \hypertarget{leadership}{%
 \subsubsection{\texorpdfstring{\emph{Leadership}}{Leadership}}\label{leadership}}
 
-With a shared goal a leader is someone that takes initiative and attracts followers for that shared goal (\protect\hyperlink{ref-vanvugt2006}{Van Vugt, 2006}). Leadership is an interesting aspect of behavior in that it is almost exclusive to human interaction. Discussions by evolutionary psychologists point to the formation of early human hunter-gatherer groups where the close interconnectedness created a breeding ground for leadership roles. As early humans began to evolve it would become advantageous for individuals to work together for a common goal (\protect\hyperlink{ref-king2009}{King et al., 2009}). Often, individuals with more knowledge of a given problem would demonstrate leadership and take charge or be given power. Multiple explanations of the evolution of leadership exist such as coordination strategies, and safety, along with evidence for growth in social intelligence in humans (\protect\hyperlink{ref-king2009}{King et al., 2009}; \protect\hyperlink{ref-vanvugt2006}{Van Vugt, 2006}).\\
+With a shared goal a leader is someone that takes initiative and attracts followers for that shared goal (\protect\hyperlink{ref-vanvugt2006}{Van Vugt, 2006}). Leadership is an interesting aspect of behavior in that it is almost exclusive to human interaction. Discussions by evolutionary psychologists point to the formation of early human hunter-gatherer groups where the close interconnectedness created a breeding ground for leadership roles. As early humans began to evolve it would become advantageous for individuals to work together for a common goal (\protect\hyperlink{ref-king2009}{King et al., 2009}). Often, individuals with more knowledge of a given problem would demonstrate leadership and take charge or be given power. Multiple explanations of the evolution of leadership exist such as coordination strategies, and safety, along with evidence for growth in social intelligence in humans (\protect\hyperlink{ref-king2009}{King et al., 2009}; \protect\hyperlink{ref-vanvugt2006}{Van Vugt, 2006}).
 
 An interesting aspect of leadership motivation is the verification of the qualities of the leader by the communities. Individuals that are often put into leadership roles or take a leadership role often display the necessary goals, qualities, and knowledge to accomplish the shared/stated goal. However, this is not always the case, especially for those charismatic leaders who could stay on as a leader longer than the stated goal requires (\protect\hyperlink{ref-vugt2014}{Vugt \& Ronay, 2014}). Traditionally, leadership was thought to be fluid in that those with the necessary knowledge at the time would be judged and appointed as the leader. However, these charismatic leaders use their charisma, uniqueness, nerve, and talent to hold onto their status.
 
@@ -266,6 +280,47 @@ The use of bayesian statistics has a multitude of benefits to statistical analys
 
 All relevant analyses were conducted in a Bayesian framework using the brms package (\protect\hyperlink{ref-burkner2018}{Bürkner, 2018}) along with the cmdstanr packages notes (\protect\hyperlink{ref-gabry2021}{Gabry \& Cesnovar, 2021}). In addition to the aforementioned packages, we used bayestestR, rstan, and papaja (\protect\hyperlink{ref-aust2020}{Aust \& Barth, 2020}; \protect\hyperlink{ref-makowski2019}{Makowski et al., 2019}; \protect\hyperlink{ref-standevelopmentteam2020}{Stan Development Team, 2020}).
 
+\begin{table}[h]
+
+\begin{center}
+\begin{threeparttable}
+
+\caption{\label{tab:unnamed-chunk-3}Experiment 1: Participant Demographics}
+
+\begin{tabular}{ll}
+\toprule
+Characteristic & N=109\\
+\midrule
+Age & \\
+\ \ \ Mean (SD) & 27 (9.25)\\
+\ \ \ Median [Range] & 24 [18.00, 61]\\
+Gender & \\
+\ \ \ Female & 54 (50\%)\\
+\ \ \ Male & 55 (50\%)\\
+Ethnicity & \\
+\ \ \ African & 8 (7.3\%)\\
+\ \ \ Asian & 6 (5.5\%)\\
+\ \ \ English & 10 (9.2\%)\\
+\ \ \ European & 76 (70\%)\\
+\ \ \ Latin American & 2 (1.8\%)\\
+\ \ \ Other & 5 (4.6\%)\\
+\ \ \ Scottish & 2 (1.8\%)\\
+Education & \\
+\ \ \ A-levels or equivalent & 32 (29\%)\\
+\ \ \ Doctoral Degree & 1 (0.9\%)\\
+\ \ \ GCSEs or equivalent & 8 (7.3\%)\\
+\ \ \ Prefer not to respond & 1 (0.9\%)\\
+\ \ \ Primary School & 4 (3.7\%)\\
+\ \ \ University Postgraduate Program & 21 (19\%)\\
+\ \ \ University Undergraduate Program & 42 (39\%)\\
+\bottomrule
+\end{tabular}
+
+\end{threeparttable}
+\end{center}
+
+\end{table}
+
 \hypertarget{results}{%
 \subsection{Results}\label{results}}
 
@@ -274,36 +329,36 @@ One hundred and eleven individuals completed the main survey. Of these individua
 \hypertarget{preregistered-analyses}{%
 \subsubsection{Preregistered Analyses}\label{preregistered-analyses}}
 
-We first investigated DoPL orientation on general risk preference (Figure 1). General risk preference was anecdotally explained by dominance orientation, participant gender, and participant age (see table 2).
+We first investigated DoPL orientation on general risk preference (Figure 1). General risk preference was anecdotally explained by dominance orientation, participant gender, and participant age (see table 2). General distributions of dominance, prestige, and leadership then warrented further analysis. To investigate the interaction of power orientation and DOSPERT we followed the methods described in the DOSPERT scoring manual found on the official DOSPERT Scale website (\href{https://sites.google.com/a/decisionsciences.columbia.edu/dospert/scoring-instructions}{DOSPERT Scoring Instructions}). This involves calculating the alpha and beta coefficients and then from there calculating the overall preferences for each of the subdomains and the overall domains for general risk preference along with the perception and benefit preferences for risk.
 
 \hypertarget{demographic-and-dopl}{%
 \paragraph{\texorpdfstring{\emph{Demographic and DoPL}}{Demographic and DoPL}}\label{demographic-and-dopl}}
 
-All participants completed the dominance, leadership, and prestige scale (\protect\hyperlink{ref-suessenbach2019}{Suessenbach et al., 2019}). Empirically, men have generally been more dominance-oriented in their behavior (\protect\hyperlink{ref-rosenthal2012}{Rosenthal et al., 2012}). Following the literature, men tended to be more dominance orientated than women. The marginal posterior distribution of each parameter is summarized in Table \#. Interestingly, older individuals tended to be more dominance-oriented than younger individuals.
+All participants completed the dominance, leadership, and prestige scale (\protect\hyperlink{ref-suessenbach2019}{Suessenbach et al., 2019}). Empirically, men have generally been more dominance-oriented in their behavior (\protect\hyperlink{ref-rosenthal2012}{Rosenthal et al., 2012}).Following the literature as well, dominant men tended to prefer risk moreso than women (95\% CI b = -3.02,{[}-4.97, -1.06{]}). The marginal posterior distribution of each parameter is summarized in Table 1. Interestingly, older individuals tended to be more dominance-oriented than younger individuals.
 
 \hypertarget{general-risk-and-dopl}{%
 \paragraph{General Risk and DoPL}\label{general-risk-and-dopl}}
 
-Further investigations, as previously mentioned investigated DoPL's interactions with general risk preference. As stated, domianance appears to be the strongest predictor of general risk preference (95\% CI b = 3, {[}1.07, 4.9{]}). Overall, younger individuals tended to have a stronger preference for risk (95\% CI b = -2.85, {[}-4.76, -0.95{]}). Those that tended to be lower in leadership orientation had a tendency to be generally more risk averse than their counterparts (95\% CI b = -1.91, {[}-3.82, -0.02{]}). Following the literature as well, dominant men tended to prefer risk moreso those than women (95\% CI b = -3.02,{[}-4.97, -1.06{]}).
+Further investigations, as previously mentioned investigated DoPL's interactions with general risk preference. As stated, domianance appears to be the strongest predictor of general risk preference (95\% CI b = 3, {[}1.07, 4.9{]}). Overall, younger individuals tended to have a stronger preference for risk (95\% CI b = -2.85, {[}-4.76, -0.95{]}). Those that tended to be lower in leadership orientation had a tendency to be generally more risk averse than their counterparts (95\% CI b = -1.91, {[}-3.82, -0.02{]}).
 
 \hypertarget{domain-specific-risk-taking}{%
 \subsubsection{Domain-Specific Risk-Taking}\label{domain-specific-risk-taking}}
 
-As predicted individuals that identified as male were more likely to endorse risk-taking behaviors, namely ethical, social, financial, and recreational domains (see fig.~\#\#).
+As predicted individuals that identified as male were more likely to endorse risk-taking behaviors, namely ethical, social, financial, and recreational domains (see \ref{fig:DoPL-Experiment-1}).
 
 \hypertarget{interactions}{%
 \subsubsection{Interactions}\label{interactions}}
 
 When investigating dominance, prestige, and leadership motivations with domain-specific risk-taking findings supported the common expectations in the literature. Table 5 shows the interactions with like CI values. Dominance overall explained the relationship between DoPL orientation and preference, specifically for ethical, financial, social, health and safety, and recreational preferences (95\% CI b = 1.15, {[}0.61, 1.71{]}, b = 0.87, {[}0.13, 1.58{]}, b = 1.81, {[}0.64, 2.94{]}, b = 1.09, {[}0.41, 1.77{]}, and b = 1.22, {[}0.67,1.76{]}) respectively. Full interactions can be found in table 4. Participant age and gender also appeared to affect recreational preference (95\% CI b = -1.14, {[}-1.83, -0.47{]}, b = 0.46, {[}0.05, 0.86{]}) respectively.
 
-Following these findings, we investigated the effect of DoPL on general risk preference and found that dominance overall predicted risk preference along with gender and age of the participant (Table 5).
+Following these findings, we investigated the effect of DoPL on general risk preference and found that dominance overall predicted risk preference along with gender and age of the participant (Table @ref(tab:``m1-fixef Experiment1'')).
 
 \hypertarget{dospert-sub-categorizations}{%
 \subsubsection{DOSPERT Sub-categorizations}\label{dospert-sub-categorizations}}
 
 Risk preferences is generally made up of benefits and perceptions of risk. Outside of perceptions and benefits, dominance and males who are dominance oriented were the strongest predictors of likelihood in engaging in a risky situation (95\% CI b = 0.65, {[}0.36, 0.95{]} and b = -0.48, {[}-0.85, -0.11{]}). Dominance also appeared to be a strong predictor of perceiving more benefits of engaging in a risky situation (95\% CI b = 0.38, {[}0.07, 0.71{]}) along with gender where males are more likely to perceive benefits (95\% CI b = -0.6, {[}-0.98, -0.22{]}).
 
-Alternatiively, prestige appeared to be a stronger predictor of perceiving risks than others along with female participants and female participants that are higher in leadership orientation (95\% CI b = 0.31, {[}0.01, 0.61{]}, b = 0.43, {[}0.05, 0.8{]}, and b = 0.43, {[}0.03, 0.82{]}). Full predictors can be seen in table 5.
+Alternatiively, prestige appeared to be a stronger predictor of perceiving risks than others along with female participants and female participants that are higher in leadership orientation (95\% CI b = 0.31, {[}0.01, 0.61{]}, b = 0.43, {[}0.05, 0.8{]}, and b = 0.43, {[}0.03, 0.82{]}). Full predictors can be seen in table \ref{tab:m5-int-fixef-exp-1}.
 
 \hypertarget{discussion}{%
 \subsubsection{Discussion}\label{discussion}}
@@ -320,6 +375,53 @@ Materials remain the same in terms of the (1) Demographic Questionnaire, (2) Dom
 \subsection{Participants}\label{participants}}
 
 Following experiment 1, participants were a convenience sample of 279 individuals from Prolific Academic's crowdsourcing platform (www.prolific.io). Prolific Academic is an online crowdsourcing service that provides participants access to studies hosted on third-party websites. Participants were required to be 18 years of age or older and be able to read and understand English. In addition, similar to participant demographics in experiment 1, participants were majority white along with having a university undergraduate degree. Participants received £3.00, which is above the current minimum wage pro-rata in the United Kingdom, as compensation for completing the survey. The Psychology Research Ethics Committee at the University of Edinburgh approved all study procedures {[}ref: 212-2021/2{]}. The present study was pre-registered along with a copy of anonymized data and a copy of the R code is available at (\url{https://osf.io/s4j7y}).
+
+\begin{table}[h]
+
+\begin{center}
+\begin{threeparttable}
+
+\caption{\label{tab:Experiment 2: Participant Demographics}Experiment 2: Participant Demographics}
+
+\begin{tabular}{ll}
+\toprule
+Characteristic & N=279\\
+\midrule
+Age & \\
+\ \ \ Mean (SD) & 30 (9.92)\\
+\ \ \ Median [Range] & 26 [18.00, 78]\\
+Gender & \\
+\ \ \ Female & 124 (44\%)\\
+\ \ \ Male & 155 (56\%)\\
+Ethnicity & \\
+\ \ \ African & 49 (18\%)\\
+\ \ \ Asian  or  Asian Scottish  or  Asian British & 5 (1.8\%)\\
+\ \ \ Mixed  or  Multi-ethnic & 7 (2.5\%)\\
+\ \ \ Other ethnicity & 3 (1.1\%)\\
+\ \ \ Prefer not  to respond & 1 (0.4\%)\\
+\ \ \ White & 214 (77\%)\\
+Education & \\
+\ \ \ A-Levels  or  Equivalent & 64 (23\%)\\
+\ \ \ Doctoral  Degree & 4 (1.4\%)\\
+\ \ \ GCSEs  or  Equivalent & 17 (6.1\%)\\
+\ \ \ Prefer not  to respond & 4 (1.4\%)\\
+\ \ \ Primary School & 5 (1.8\%)\\
+\ \ \ University  Post-Graduate  Program & 62 (22\%)\\
+\ \ \ University  Undergraduate  Program & 123 (44\%)\\
+Ethnic Origin & \\
+\ \ \ African & 48 (17\%)\\
+\ \ \ Asian & 7 (2.5\%)\\
+\ \ \ English & 16 (5.7\%)\\
+\ \ \ European & 193 (69\%)\\
+\ \ \ Latin American & 6 (2.2\%)\\
+\ \ \ Other & 9 (3.2\%)\\
+\bottomrule
+\end{tabular}
+
+\end{threeparttable}
+\end{center}
+
+\end{table}
 
 \hypertarget{materials-1}{%
 \subsection{Materials}\label{materials-1}}
@@ -348,7 +450,7 @@ All relevant analyses were conducted in a Bayesian framework using the brms pack
 \hypertarget{results-and-discussion}{%
 \subsection{Results and Discussion}\label{results-and-discussion}}
 
-Two hundred and eighty-nine individuals participated in the present experiment. Of those 54\% identified as male (\emph{n} = 155). Table 3 shows the demographic information for Experiment 2. Furthering, table 4 illustrates a Bayesian correlational matrix of all the measures wherein content-based similar measures illustrated positive and negative correlations consistent with expectations.
+Two hundred eighty-nine individuals participated in the present experiment. Of those 54\% identified as male (\emph{n} = 155). Table 3 shows the demographic information for Experiment 2. Furthering, table 4 illustrates a Bayesian correlational matrix of all the measures wherein content-based similar measures illustrated positive and negative correlations consistent with expectations.
 
 In general, male participants were more likely to endorse dominance-oriented statements, (95\% CI b = 0.27, {[}0.03, 0.51{]}). Along with younger indvidiuals tending to also endorse dominant-oriented statements, (95\% CI b = -0.02, {[}-0.03, 0{]}).
 
@@ -363,7 +465,7 @@ Following the previous basic results, we began our pre-regisetered analysis foun
 \hypertarget{prestige-1}{%
 \paragraph{Prestige}\label{prestige-1}}
 
-Differentiating between DoPL domains, males with a preference for social risk-taking were more likely to endorse prestige-oriented statements along with indivdiuals with a general preference for social risk-taking, (95\% CI b = 0.31, {[}0.22, 0.4{]}) and (95\% CI b = -0.25, {[}-0.28, -0.22{]}) respectively. Additionally, younger individuals tended to endorse prestige-oriented statements, (95\% CI b = -0.02, {[}-0.03, -0.01{]}).
+Differentiating between DoPL domains, males with a preference for social risk-taking were more likely to endorse prestige-oriented statements along with indivdiuals with a general preference for social risk-taking, (95\% CI b = 0.31, {[}0.22, 0.4{]}) and (95\% CI b = -0.25, {[}-0.28, -0.22{]}) respectively. Additionally, younger indivdiuals tended to endorse prestige-oriented statements, (95\% CI b = -0.02, {[}-0.03, -0.01{]}).
 
 \hypertarget{leadership-1}{%
 \paragraph{Leadership}\label{leadership-1}}
@@ -375,7 +477,9 @@ Finally, leadership orientation follows a similar trend seen with dominance and 
 
 We furthered our analyses, as seen in the pre-registration found on OSF.io by investigating pathological narcissism and its components through the Brief-Pathological Narcissism Inventory (B-PNI). Preliminary investigations of pathological narcissism in our sample show that younger individuals on average tended to present more narcissistic opinions (95\% CI b = -0.02, {[}-0.03, -0.01{]}). The B-PNI further differentiates between grandiose and vulnerability. Interestingly, women tended to present more vulnerable narcissism traits than men (95\% CI b = -0.24, {[}-0.45, -0.03{]}). Younger individuals tended to present more grandiose narcissism traits (95\% CI b = -0.01, {[}-0.02, 0{]}). This same tendency for younger individuals was seen with vulnerable narcissism traits (95\% CI b = -0.02, {[}-0.03, -0.01{]}).
 
-Grandiose narcissism is then separated further into grandiose fantasy, exploitativeness, and self-sacrificing and self-enhancement. Selected findings are males tend to demonstrate more exploitativeness and younger individuals tended to present more exploitative and grandiose narcissism (95\% CI b = -0.01, {[}-0.03, 0{]}) and (95\% CI b = -0.02, {[}-0.03, -0.01{]}) respectively. Further analysis is shown in table 5.
+Grandiose narcissism is then separated further into grandiose fantasy, exploitativeness, and self-sacrificing and self-enhancement. Selected findings are males tend to demonstrate more exploitativeness and younger individuals tended to present more exploitative and grandiose narcissism (95\% CI b = -0.01, {[}-0.03, 0{]}) and (95\% CI b = -0.02, {[}-0.03, -0.01{]}) respectively. Further analysis is shown in table \ref{tab:vulnerabiliotyGrandiosityAndGenderExperiment2}.
+
+Vulnerable narcissism, like grandiose narcissism, is separated further into contingent self-esteem, devaluing, entitlement rage, and hiding the self. Financial preference appears to be overall the best DOSPERT predictor of vulnerable narcissism sub-domains specifically for contingent self-esteem (95\% CI b = -0.34, {[}-0.55, -0.14{]}), devaluing Men (95\% CI b = 0.05, {[}-0.21, 0.31{]}), and hiding the self (95\% CI b = -0.34, {[}-0.55, -0.13{]}).
 
 \hypertarget{risk-and-interactions}{%
 \subsubsection{Risk and interactions}\label{risk-and-interactions}}
@@ -441,7 +545,7 @@ Glamorizing dictators. (2018). In \emph{Towson University Journal of Internation
 Johnson, M. W., \& Bruner, N. R. (2012). The sexual discounting task: {HIV} risk behavior and the discounting of delayed sexual rewards in cocaine dependence. \emph{Drug and Alcohol Dependence}, \emph{123}(1-3), 15--21. \url{https://doi.org/10.1016/j.drugalcdep.2011.09.032}
 
 \leavevmode\vadjust pre{\hypertarget{ref-johnson2015a}{}}%
-Johnson, P. S., Herrmann, E. S., \& Johnson, M. W. (2015). Opportunity costs of reward delays and the discounting of hypothetical money and cigarettes: {OPPORTUNITY COSTS AND DISCOUNTING}. \emph{Journal of the Experimental Analysis of Behavior}, \emph{103}(1), 87--107. \url{https://doi.org/10.1002/jeab.110}
+Johnson, P. S., Herrmann, E. S., \& Johnson, M. W. (2015). Opportunity costs of reward delays and the discounting of hypothetical money and cigarettes: Opportunity costs and discounting. \emph{Journal of the Experimental Analysis of Behavior}, \emph{103}(1), 87--107. \url{https://doi.org/10.1002/jeab.110}
 
 \leavevmode\vadjust pre{\hypertarget{ref-king2009}{}}%
 King, A. J., Johnson, D. D. P., \& Van Vugt, M. (2009). The origins and evolution of leadership. \emph{Current Biology}, \emph{19}(19), R911--R916. \url{https://doi.org/10.1016/j.cub.2009.07.027}
@@ -510,7 +614,7 @@ Witkower, Z., Tracy, J. L., Cheng, J. T., \& Henrich, J. (2020). Two signals of 
 
 \endgroup
 
-\newpage
+
 
 \hypertarget{figures-and-tables}{%
 \section{Figures and Tables}\label{figures-and-tables}}
@@ -518,70 +622,53 @@ Witkower, Z., Tracy, J. L., Cheng, J. T., \& Henrich, J. (2020). Two signals of 
 \hypertarget{figures}{%
 \subsection{Figures}\label{figures}}
 
-\includegraphics{Output_Files/DoPL-Experiment_files/figure-latex/Dominance, Prestige, and Leadership Distribution-1.pdf}
+\begin{figure}
+\centering
+\includegraphics{DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf}
+\caption{\label{fig:DoPL-Experiment-1}Violin plot visually showing the distribution of dominance, prestige, and leadership of participants in experiment 1. As seen in the figure, of participants within each power orientation dominance oriented people are more evenly distributed while those that were more prestige and leadership oriented were tended to be more prestigous oriented than others.}
+\end{figure}
 
-\includegraphics{Output_Files/DoPL-Experiment_files/figure-latex/Dominance-1.pdf}
+\begin{figure}
+\centering
+\includegraphics{DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf}
+\caption{\label{fig:DominanceExperiment1}Depicted is the gender distribution of Men and Women with regard to level of dominance. As can be seen, men are slightly higher in dominance then women.}
+\end{figure}
 
-\includegraphics{Output_Files/DoPL-Experiment_files/figure-latex/Prestige-1.pdf}
+\begin{figure}
+\centering
+\includegraphics{DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf}
+\caption{\label{fig:PrestigeExperiment1}Depicted is the gender distribution of Men and Women with regard to level of prestige. As can be seen, men are slightly higher in prestige then women.}
+\end{figure}
 
-\includegraphics{Output_Files/DoPL-Experiment_files/figure-latex/Leadership-1.pdf}
+\begin{figure}
+\centering
+\includegraphics{DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf}
+\caption{\label{fig:LeadershipExperiment1}Depicted is the gender distribution of Men and Women with regard to level of leadership. As can be seen, men are slightly higher in dominance then women.}
+\end{figure}
 
-\includegraphics{Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT Preferences_Gender-1.pdf}
+\begin{figure}
+\centering
+\includegraphics{DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf}
+\caption{\label{fig:DOSPERT-Preferences-GenderExperiment1}Depicted is the gender distribution of Men and Women with regard to each sub-domain of the domain specific risk-taking scale.}
+\end{figure}
 
-\includegraphics{Output_Files/DoPL-Experiment_files/figure-latex/DoPL Domains Experiment 2-1.pdf}
+\begin{figure}
+\centering
+\includegraphics{DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf}
+\caption{\label{fig:DoPLDomainsExperiment2}Violin plot visually showing the distribution of dominance, prestige, and leadership of participants in experiment 1. As seen in the figure, of participants within each power orientation dominance oriented people are more evenly distributed while those that were more prestige and leadership oriented were tended to be more prestigous oriented than others.}
+\end{figure}
 
 \newpage
 
 \hypertarget{tables}{%
 \subsection{Tables}\label{tables}}
 
-\begin{table}[h]
+\begin{table}[ht]
 
 \begin{center}
 \begin{threeparttable}
 
-\caption{\label{tab:unnamed-chunk-2}Experiment 1: Participant Demographics}
-
-\begin{tabular}{ll}
-\toprule
-Characteristic & N=109\\
-\midrule
-Age & \\
-\ \ \ Mean (SD) & 27 (9.25)\\
-\ \ \ Median [Range] & 24 [18.00, 61]\\
-Gender & \\
-\ \ \ Female & 54 (50\%)\\
-\ \ \ Male & 55 (50\%)\\
-Ethnicity & \\
-\ \ \ African & 8 (7.3\%)\\
-\ \ \ Asian & 6 (5.5\%)\\
-\ \ \ English & 10 (9.2\%)\\
-\ \ \ European & 76 (70\%)\\
-\ \ \ Latin American & 2 (1.8\%)\\
-\ \ \ Other & 5 (4.6\%)\\
-\ \ \ Scottish & 2 (1.8\%)\\
-Education & \\
-\ \ \ A-levels or equivalent & 32 (29\%)\\
-\ \ \ Doctoral Degree & 1 (0.9\%)\\
-\ \ \ GCSEs or equivalent & 8 (7.3\%)\\
-\ \ \ Prefer not to respond & 1 (0.9\%)\\
-\ \ \ Primary School & 4 (3.7\%)\\
-\ \ \ University Postgraduate Program & 21 (19\%)\\
-\ \ \ University Undergraduate Program & 42 (39\%)\\
-\bottomrule
-\end{tabular}
-
-\end{threeparttable}
-\end{center}
-
-\end{table}
-
-\begin{table}[h]
-
-\begin{center}
-\begin{threeparttable}
-
-\caption{\label{tab:unnamed-chunk-3}Fixed Effects: DoPL * General Risk}
+\caption{\label{tab:m1-fixef-Experiment-1}Fixed Effects: DoPL * General Risk}
 
 \begin{tabular}{lllll}
 \toprule
@@ -604,12 +691,12 @@ Age & -2.86 & 0.95 & -4.78 & -0.93\\
 
 \end{table}
 
-\begin{table}[h]
+\begin{table}[ht]
 
 \begin{center}
 \begin{threeparttable}
 
-\caption{\label{tab:m1_int_fixef_exp_1}DOSPERT and DoPL Interaction: Experiment 1}
+\caption{\label{tab:m1-int-fixef-exp-1}DOSPERT and DoPL Interaction: Experiment 1}
 
 \begin{tabular}{lllll}
 \toprule
@@ -645,7 +732,7 @@ Recreational Preference * Age & 0.46 & 0.95 & 0.05 & 0.86\\
 \begin{center}
 \begin{threeparttable}
 
-\caption{\label{tab:m5_int_fixef_exp_1}DOSPERT Benefit and Perception: Experiment 1}
+\caption{\label{tab:m5-int-fixef-exp-1}DOSPERT Benefit and Perception: Experiment 1}
 
 \begin{tabular}{lllll}
 \toprule
@@ -672,17 +759,23 @@ Risk Benefit * Gender & -0.6 & 0.95 & -0.98 & -0.22\\
 
 \end{table}
 
-\begin{table}[p]
+\begin{lltable}
 
-\begin{center}
-\begin{threeparttable}
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.}
+\end{TableNotes}
 
-\caption{\label{tab:m4_perceivedRisk_Gender_exp_1}DOSPERT Benefit and Perception: Experiment 1}
-
-\begin{tabular}{lllll}
+\begin{longtable}{lllll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:m4-perceivedRisk-Gender-exp-1}DOSPERT Benefit and Perception: Experiment 1}\\
 \toprule
 Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{CI} & \multicolumn{1}{c}{CI Low} & \multicolumn{1}{c}{CI High}\\
 \midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:m4-perceivedRisk-Gender-exp-1} continued}}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{CI} & \multicolumn{1}{c}{CI Low} & \multicolumn{1}{c}{CI High}\\
+\midrule
+\endhead
 Ethical Perception * Prestige & 0.39 & 0.95 & 0.12 & 0.66\\
 Recreational Perception * Prestige & 0.33 & 0.95 & 0.06 & 0.6\\
 Recreational Perception * Age & -0.22 & 0.95 & -0.4 & -0.04\\
@@ -690,70 +783,17 @@ Recreational Perception * Dominance : Gender & -0.4 & 0.95 & -0.77 & -0.04\\
 Health and Safety Perception * Leadership : Gender & 0.44 & 0.95 & 0.07 & 0.8\\
 \bottomrule
 \addlinespace
-\end{tabular}
+\insertTableNotes
+\end{longtable}
 
-\begin{tablenotes}[para]
-\normalsize{\textit{Note.} Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.}
-\end{tablenotes}
+\end{lltable}
 
-\end{threeparttable}
-\end{center}
-
-\end{table}
-
-\begin{table}[h]
+\begin{table}[ht]
 
 \begin{center}
 \begin{threeparttable}
 
-\caption{\label{tab:Experiment 2: Participant Demographics}Experiment 2: Participant Demographics}
-
-\begin{tabular}{ll}
-\toprule
-Characteristic & N=279\\
-\midrule
-Age & \\
-\ \ \ Mean (SD) & 30 (9.92)\\
-\ \ \ Median [Range] & 26 [18.00, 78]\\
-Gender & \\
-\ \ \ Female & 124 (44\%)\\
-\ \ \ Male & 155 (56\%)\\
-Ethnicity & \\
-\ \ \ African & 49 (18\%)\\
-\ \ \ Asian  or  Asian Scottish  or  Asian British & 5 (1.8\%)\\
-\ \ \ Mixed  or  Multi-ethnic & 7 (2.5\%)\\
-\ \ \ Other ethnicity & 3 (1.1\%)\\
-\ \ \ Prefer not  to respond & 1 (0.4\%)\\
-\ \ \ White & 214 (77\%)\\
-Education & \\
-\ \ \ A-Levels  or  Equivalent & 64 (23\%)\\
-\ \ \ Doctoral  Degree & 4 (1.4\%)\\
-\ \ \ GCSEs  or  Equivalent & 17 (6.1\%)\\
-\ \ \ Prefer not  to respond & 4 (1.4\%)\\
-\ \ \ Primary School & 5 (1.8\%)\\
-\ \ \ University  Post-Graduate  Program & 62 (22\%)\\
-\ \ \ University  Undergraduate  Program & 123 (44\%)\\
-Ethnic Origin & \\
-\ \ \ African & 48 (17\%)\\
-\ \ \ Asian & 7 (2.5\%)\\
-\ \ \ English & 16 (5.7\%)\\
-\ \ \ European & 193 (69\%)\\
-\ \ \ Latin American & 6 (2.2\%)\\
-\ \ \ Other & 9 (3.2\%)\\
-\bottomrule
-\end{tabular}
-
-\end{threeparttable}
-\end{center}
-
-\end{table}
-
-\begin{table}[h]
-
-\begin{center}
-\begin{threeparttable}
-
-\caption{\label{tab:PNI Model DoPL Exp 2}General Risk * DoPL: Experiment 2}
+\caption{\label{tab:PNI-Model-DoPL-Exp-2}General Risk * DoPL: Experiment 2}
 
 \begin{tabular}{lllll}
 \toprule
@@ -776,12 +816,81 @@ Age & -0.02 & 0.95 & -0.03 & -0.01\\
 
 \end{table}
 
-\begin{table}[h]
+\begin{table}[ht]
 
 \begin{center}
 \begin{threeparttable}
 
-\caption{\label{tab:Vulnerability and Grandiosity_DOSPERT}B-PNI * DOSPERT : Gender: Experiment 2}
+\caption{\label{tab:pni-multi-dopl-int-exp-2}Vulnerable and Grandiose * DoPL: Experiment 2}
+
+\begin{tabular}{lllll}
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{CI} & \multicolumn{1}{c}{CI Low} & \multicolumn{1}{c}{CI High}\\
+\midrule
+Vulnerability * Intercept & 1.01 & 0.95 & 0.57 & 1.45\\
+Vulnerability * Dominance & 0.44 & 0.95 & 0.08 & 0.8\\
+Vulnerability * Gender & -0.23 & 0.95 & -0.44 & -0.02\\
+Vulnerability * Prestige & 0.4 & 0.95 & 0.02 & 0.77\\
+Vulnerability * Age & -0.02 & 0.95 & -0.03 & -0.01\\
+Grandiosity * Dominance & 0.45 & 0.95 & 0.12 & 0.78\\
+\bottomrule
+\addlinespace
+\end{tabular}
+
+\begin{tablenotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting two domains of narcissism, i.e., grandiose and vulnerable.}
+\end{tablenotes}
+
+\end{threeparttable}
+\end{center}
+
+\end{table}
+
+\begin{table}[ht]
+
+\begin{center}
+\begin{threeparttable}
+
+\caption{\label{tab:dopl-pni-i-int-exp-2}Vulnerable Narcissism Sub-domains * DoPL: Experiment 2}
+
+\begin{tabular}{lllll}
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{CI} & \multicolumn{1}{c}{CI Low} & \multicolumn{1}{c}{CI High}\\
+\midrule
+Dominance * Gender & 0.3 & 0.95 & 0.11 & 0.49\\
+Dominance * Entitlement Rage & 0.28 & 0.95 & 0.08 & 0.47\\
+Dominance * Exploitativeness & 0.37 & 0.95 & 0.22 & 0.52\\
+Dominance * Entitlement Rage : Gender & 0.28 & 0.95 & 0.01 & 0.55\\
+Prestige * Grandiose Fantasy & 0.27 & 0.95 & 0.09 & 0.44\\
+Prestige * Contingent Self-Esteem & 0.2 & 0.95 & 0.02 & 0.38\\
+Prestige * Hiding the Self & -0.23 & 0.95 & -0.43 & -0.03\\
+Prestige * Self-Sacrificing Self-Enhancement & 0.24 & 0.95 & 0.05 & 0.44\\
+Prestige * Entitlement Rage & 0.22 & 0.95 & 0.02 & 0.43\\
+Prestige * Exploitativeness & 0.2 & 0.95 & 0.05 & 0.36\\
+Leadership * Grandiose Fantasy & 0.22 & 0.95 & 0.05 & 0.39\\
+Leadership * Gender & -0.32 & 0.95 & -0.52 & -0.12\\
+Leadership * Exploitativeness & 0.54 & 0.95 & 0.38 & 0.69\\
+Leadership * Contingent Self-Esteem : Gender & -0.44 & 0.95 & -0.71 & -0.17\\
+Leadership * Entitlement Rage : Gender & 0.29 & 0.95 & 0.01 & 0.57\\
+\bottomrule
+\addlinespace
+\end{tabular}
+
+\begin{tablenotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of sub-domains of vulnerable nercissism with gender interactions predicting dominance, prestige, and leadership.}
+\end{tablenotes}
+
+\end{threeparttable}
+\end{center}
+
+\end{table}
+
+\begin{table}[ht]
+
+\begin{center}
+\begin{threeparttable}
+
+\caption{\label{tab:vulnerabiliotyGrandiosityAndGenderExperiment2}B-PNI * DOSPERT : Gender: Experiment 2}
 
 \begin{tabular}{lllll}
 \toprule
@@ -806,6 +915,52 @@ Grandiosity * Recreational Preference : Gender & -0.41 & 0.95 & -0.69 & -0.13\\
 \end{center}
 
 \end{table}
+
+\begin{lltable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting general risk preference.}
+\end{TableNotes}
+
+\begin{longtable}{lllll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:multi-2-model-dospert-int-fixef-exp-2-j}General Risk * DoPL: Experiment 2}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{CI} & \multicolumn{1}{c}{CI Low} & \multicolumn{1}{c}{CI High}\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:multi-2-model-dospert-int-fixef-exp-2-j} continued}}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{CI} & \multicolumn{1}{c}{CI Low} & \multicolumn{1}{c}{CI High}\\
+\midrule
+\endhead
+Contingent Self-Esteem * Intercept & 0.74 & 0.95 & 0.35 & 1.13\\
+Devaluing * Intercept & 0.79 & 0.95 & 0.39 & 1.18\\
+Entitlement Rage * Intercept & 0.7 & 0.95 & 0.3 & 1.09\\
+Hiding the Self * Intercept & 0.53 & 0.95 & 0.13 & 0.92\\
+Contingent Self-Esteem * Financial Preference & -0.34 & 0.95 & -0.55 & -0.14\\
+Contingent Self-Esteem * Age & -0.03 & 0.95 & -0.04 & -0.01\\
+Contingent Self-Esteem * Financial Preference : Gender & 0.27 & 0.95 & 0.01 & 0.52\\
+Devaluing * Health and Safety Preference & 0.28 & 0.95 & 0.05 & 0.52\\
+Devaluing * Age & -0.02 & 0.95 & -0.04 & -0.01\\
+Devaluing * Ethical Preference : Gender & 0.38 & 0.95 & 0.07 & 0.67\\
+Entitlement Rage * Age & -0.02 & 0.95 & -0.04 & -0.01\\
+Hiding the Self * Financial Preference & -0.34 & 0.95 & -0.55 & -0.13\\
+Hiding the Self * Recreational Preference & 0.26 & 0.95 & 0.03 & 0.49\\
+Hiding the Self * Financial Preference : Gender & 0.29 & 0.95 & 0.03 & 0.55\\
+Hiding the Self * Recreational Preference : Gender & -0.38 & 0.95 & -0.66 & -0.1\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{lltable}
+
+
+\clearpage
+\renewcommand{\listfigurename}{Figure captions}
+\listoffigures
+\clearpage
+\renewcommand{\listtablename}{Table captions}
 
 
 \end{document}

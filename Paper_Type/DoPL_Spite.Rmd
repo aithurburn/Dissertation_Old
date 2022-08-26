@@ -54,10 +54,10 @@ output            : papaja::apa6_pdf
 ```{r setup, include = FALSE}
 library("papaja")
 source("../R/indexfile.r")
-
 ```
 
 ``` {r child = "./Chapters/Experiment_1.Rmd"}
+
 ```
 
 \newpage

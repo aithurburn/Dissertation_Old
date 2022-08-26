@@ -28,14 +28,15 @@ abstract: |
   One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any  discipline.
   
 keywords          : "keywords"
-wordcount         :  !expr wordcountaddin::word_count("../Chapters/Chapter2.Rmd")
+wordcount         :  !expr wordcountaddin::word_count("./Chapters/Chapter2.Rmd") + wordcountaddin::word_count("./Chapters/DoPL-Section.Rmd")
 
 bibliography      : ["../References/references.bib"]
 
-floatsintext       : no
+floatsintext       : yes
+figsintext         : yes
 numbersections    : yes
-figurelist         : no
-tablelist         : no
+figurelist         : yes
+tablelist         : yes
 footnotelist      : no
 linenumbers       : yes
 mask              : no
@@ -51,6 +52,8 @@ header-includes:
   - \usepackage{setspace}
   - \newcommand{\HRule}{\rule{\linewidth}{0.25mm}}
   - \raggedbottom
+  - \captionsetup[figure]{textformat=empty}
+  - \usepackage{pdflscape}
   
 documentclass     : "apa7"
 csl               : "../Formatting/apa7.csl"
@@ -64,9 +67,22 @@ library("papaja")
 setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
 source("./R/libraries.R")
 source("./R/data_file_index.r")
+options(knitr.kable.NA = "")
 ```
 
+```{r child = "../Chapters/DoPL-Section.Rmd"}
 
-```{r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/Chapter2.Rmd"}
+```
 
+```{r child = "../Chapters/Chapter2.Rmd"}
+```
+
+# References
+\begingroup
+<div id="refs" custom-style="Bibliography"></div>
+\endgroup
+
+\listoffigures
+
+```{r child = "../Chapters/GraphsandTables/Chapter-2-graphs.Rmd"}
 ```
