@@ -1,0 +1,64 @@
+### Exploratory Experiment
+
+
+## Method
+
+### Participants
+
+Participants were a convenience sample of `r length(experimenttwoDS$ResponseId)` (Mage = `r mean(experimenttwoDS$Age)`, SD = `r sd(experimenttwoDS$Age)`) individuals from Prolific Academic crowdsourcing platform ("www.prolific.co"). Requirements for participation were: (1) be 18 years of age or older and (2) and as part of Prolific Academics policy, have a prolific rating of 90 or above. Participants received £4 or £8 an hour as compensation for completing the survey.  Table 1 shows the demographic information for experiment one.
+
+### Demographic Questionnaire
+
+Prior to the psychometric scales, participants are asked to share their demographic characteristics (e.g., age, gender, ethnicity, ethnic origin, and educational attainment).
+
+### Spitefulness Scale
+
+The Spitefulness scale [@marcus2014] is a measure with seventeen one-sentence vignettes to assess the spitefulness of participants. The original spitefulness scale has 31 items. In the original Marcus and colleagues' paper, fifteen were removed. For the present study, however, 4-items were removed because they did not meet the parameters for the study i.e., needed to be dyadic, more personal. Three reverse-scored items from the original thirty-one were added after meeting the requirements. Example questions included, "It might be worth risking my reputation in order to spread gossip about someone I did not like," and "Part of me enjoys seeing the people I do not like to fail even if their failure hurts me in some way". Items are scored on a 5-point scale ranging from 1 ("Strongly disagree") to 5 ("Strongly agree"). Higher spitefulness scores represent higher acceptance of spiteful attitudes. Internal consistency reliability for the current sample is $\alpha$ = `r psych::alpha(newDF[,spiteQuestions])$total$std.alpha`.
+
+### Sexuality Self-Esteem Subscale
+
+The Sexuality Self-Esteem subscale (SSES; @snell1989) is a subset of the Sexuality scale that measures the overall self-esteem of participants. Due to the nature of the study, the sexuality subscale was chosen from the overall 30-item scale. The 10 items chosen reflected questions on the sexual esteem of participants on a 5-point scale of +2 (Agree) and -2 (Disagree). For ease of online use the scale was changed to 1 ("Disagree") and 5 ("Agree"), data analysis will follow the sexuality scale scoring procedure. Example questions are, "I am a good sexual partner," and "I sometimes have doubts about my sexual competence." Higher scores indicate a higher acceptance of high self-esteem statements. Internal consistency reliability for the current sample is $\alpha$ = `r psych::alpha(newDF[,ssesQuestions])$total$std.alpha`.
+
+### Sexual Jealousy Subscale
+
+The Sexual Jealousy subscale by @worley2014 are 3-items from the 12-item Jealousy scale. The overall jealousy scale measures jealousy in friendships ranging from sexual to companionship. The 3-items are "I would worry about my partner being sexually unfaithful to me.", "I would suspect there is something going on sexually between my partner and their friend.", and "I would suspect sexual attraction between my partner and their friend." The items are scored on a 5-point scale ranging from 1 ("Strongly disagree") to 5 ("Strongly agree"). Higher scores indicate a tendency to be more sexually jealous. Internal consistency reliability for the current sample is $\alpha$ = `r psych::alpha(newDF[,sjsQuestions])$total$std.alpha`.
+
+### Sexual Relationship Power Scale
+
+The Sexual Relationship Power Scale (SRPS; @pulerwitz2000) is a 23-item scale that measures the overall power distribution in a sexually active relationship. The SRPS is split into the Relationship Control Factor/Subscale (RCF) and the Decision-Making Dominance Factor/Subscale (DMDF). The RCF measures the relationship between the partners on their agreement with statements such as, "If I asked my partner to use a condom, he[they] would get violent.", and "I feel trapped or stuck in our relationship." Items from the RCF are scored on a 4-point scale ranging from 1 ("Strongly agree") to 4 ("Strongly disagree"). Lower scores indicate an imbalance in the relationship where the participant indicates they believe they have less control in the relationship. Internal consistency reliability for the current sample is $\alpha$ = `r psych::alpha(newDF[,srps.rcQuestions])$total$std.alpha`.
+
+The DMDF measures the dominance level of sexual and social decisions in the relationship. Example questions include, "Who usually has more say about whether you have sex?", and "Who usually has more say about when you talk about serious things?" Items on the DMDF are scored on a 3-item scale of 1 ("Your Partner"), 2 ("Both of You Equally"), and 3 ("You"). Higher scores indicate more dominance by the participant in the relationship. Internal consistency reliability for the current sample is $\alpha$ = `r psych::alpha(newDF[,srps.dmQuestions])$total$std.alpha`.
+
+### Scenario Realism Question
+
+Following Worley and Samp in their 2014 paper on using vignettes/scenarios in psychological studies, a question asking the participant how realistic or how much they can visualize the scenario is. The 1-item question is "This type of situation is realistic." The item is scored on a 5-point scale with how much the participants agreed with the above statement, 1 ("Strongly agree") to 5 ("Strongly disagree"). Higher scores indicate disagreement with the statement and reflect the belief that the scenario is not realistic.
+
+### Spiteful Vignettes
+
+After participants complete the above scales, they are presented with 10 hypothetical vignettes. Each vignette was written to reflect a dyadic or triadic relationship with androgynous names to control for gender. Five vignettes have a sexual component while five are sexually neutral. An example vignette is,
+
+> "Casey and Cole have been dating for 6 years. A year ago, they both moved into a new flat together just outside of the city. Casey had an affair with Cole's best-friend. Casey had recently found out that they had an STI that they had gotten from Cole's best-friend. Casey and Cole had sex and later Cole found out they had an STI."
+
+For each vignette, the participant is asked to rate each vignette on how justified they believe the primary individual, Casey in the above, is with their spiteful reaction. Scoring ranges from 1 ("Not justified at all") to 5 ("Being very justified"). Higher scores overall indicate higher agreement with spiteful behaviors.
+
+## Procedure
+
+Participants were recruited on Prolific Academic. Participants must be 18 years of age or older, restricted by study design and Prolific Academic's user policy. The published study is titled, "Moral Choice and Behavior". The study description follows the participant information sheet including participant compensation. Participants were asked to accept their participation in the study. Participants were then automatically sent to the main survey (Qualtrics, Inc.). 
+
+Once participants accessed the main survey, they were presented with the consent form for which to accept they responded by selecting "Yes". Participants were then asked to provide demographic characteristics such as gender, ethnicity, and educational attainment. Participants would then complete in order, the spitefulness scale, the sexual relationship power scale, the sexual jealousy subscale, and the sexuality self-esteem subscale. Next, participants presented ten vignettes where they were instructed to rate on the level of justification for the action carried out in the vignette. After each vignette, participants would rate the realism of the scenario. Upon completion of the survey (median completion time 20 minutes SD = 10 Minutes 30 seconds), participants were shown a debriefing message and shown the contact information of the Primary Investigator (Andrew Ithurburn). Participants were then compensated at £8/hr. via Prolific Academic. 
+
+```{r table1, echo=FALSE, fig.pos='p', out.width='\textwidth'}
+apa_table(
+ demographictable,
+ stub_indents = list("Age" = c(1:2), "Gender" = c(3, 4), "Ethnic Origin" = c(5:12), "Education" = c(13:18), "Ethnicity" = c(19:22)), col.names = c("Demographic Characteristic", ""), cap = "Participant Demographic Information (Experiment 1)"
+)
+```
+
+## Data Analysis
+
+Demographic characteristics were analyzed using a one-way analysis for continuous variables (age) and Chi-squares tests for categorical variables (sex, ethnicity, ethnic origin, and educational attainment). Means and standard deviations were calculated for the surveys along with correlational analyses (e.g., spitefulness, SESS, SRPS, SJS).
+
+Bayesian multilevel models were used to test differences between levels of justifications of vignettes that are either sexually or non-sexually vindictive in behavior.
+
+``` {r child = "Experiment_1.Rmd"}
+```

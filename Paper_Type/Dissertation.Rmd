@@ -37,6 +37,7 @@ wordcount         :  "2004"
 bibliography      : ["/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/References/references.json"]
 
 floatsintext       : yes
+figsintext         : yes
 numbersections    : yes
 figurelist         : no
 tablelist         : no
@@ -81,7 +82,8 @@ setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Rese
 source("./R/libraries.r")
 ```
 
-``` {r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Formatting/front.Rmd"}
+
+```{r child = "../Formatting/front.Rmd"}
 
 ```
 
@@ -92,18 +94,26 @@ source("./R/libraries.r")
 \newpage
 
 
-```{r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/Introduction.Rmd"}
+```{r child = "../Chapters/Introduction.Rmd"}
 
 ```
 
-```{r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/Chapter2.Rmd"}
+```{r child = "../Chapters/Chapter1.Rmd"}
 
 ```
 
-```{r child = "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/Chapter3.Rmd"}
+```{r child = "../Chapters/Chapter2.Rmd"}
 
 ```
 
+```{r child = "../Chapters/Chapter3.Rmd"}
+
+```
+
+
+```{r child = "../Chapters/Chapter4.Rmd"}
+
+```
 
 \newpage
 
@@ -118,4 +128,6 @@ source("./R/libraries.r")
 
 \newpage
 
+```{r child = "../Chapters/Graphs_and_Tables/Chapter_2_graphs.Rmd"}
 
+```

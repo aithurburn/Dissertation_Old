@@ -1,0 +1,1 @@
+<!-- Additionally, younger indivdiuals tended to endorse prestige-oriented statements, (95% CI b = `r printnum(m3_interaction_gender_fixef_exp_2["So", "Estimate"])`, [`r paste(m3_interaction_gender_fixef_exp_2["Prestige * Age", c("CI Low", "CI High")], collapse = ", ")`]).  -->
