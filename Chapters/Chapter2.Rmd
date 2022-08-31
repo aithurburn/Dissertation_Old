@@ -7,7 +7,7 @@ The present study sought to further our understanding of dominance, prestige, an
 
 ## Methods
 
-Participants were a convenience sample of 111 individuals from Prolific Academic's crowdsourcing platform (www.prolific.io). Prolific Academic is an online crowdsourcing service that provides participants access to studies hosted on third-party websites. Participants were required to be 18 years of age or older and be able to read and understand English. Participants received £4.00, which is above the current minimum wage pro-rata in the United Kingdom, as compensation for completing the survey. The Psychology Research Ethics Committee at the University of Edinburgh approved all study procedures [ref: 212-2021/1]. The present study was pre-registered along with a copy of anonymized data along with a copy of the R code and supplemental materials are available at ([https://osf.io/s4j7y](https://osf.io/s4j7y)).
+Participants were a convenience sample of `r printnum(nrow(experiment_1_Dataset))` individuals from Prolific Academic's crowdsourcing platform (www.prolific.io). Prolific Academic is an online crowdsourcing service that provides participants access to studies hosted on third-party websites. Participants were required to be 18 years of age or older and be able to read and understand English. Participants received £4.00, which is above the current minimum wage pro-rata in the United Kingdom, as compensation for completing the survey. The Psychology Research Ethics Committee at the University of Edinburgh approved all study procedures [ref: 212-2021/1]. The present study was pre-registered along with a copy of anonymized data along with a copy of the R code and supplemental materials are available at ([https://osf.io/s4j7y](https://osf.io/s4j7y)).
 
 ```{r demographicTableExperiment1}
 demo_table <- experiment_dataset_analysis %>%
@@ -83,11 +83,15 @@ Risk preferences is generally made up of benefits and perceptions of risk. Outsi
 
 Alternatiively, prestige appeared to be a stronger predictor of perceiving risks than others along with female participants and female participants that are higher in leadership orientation (95% CI b = `r printnum(m5_int_fixef_exp_1["Risk Perception * Prestige", "Estimate"])`, [`r paste(m5_int_fixef_exp_1["Risk Perception * Prestige", c("CI Low", "CI High")], collapse = ", ")`], b = `r printnum(m5_int_fixef_exp_1["Risk Perception * Gender", "Estimate"])`, [`r paste(m5_int_fixef_exp_1["Risk Perception * Gender", c("CI Low", "CI High")], collapse = ", ")`], and b = `r printnum(m5_int_fixef_exp_1["Risk Perception * Leadership : Gender", "Estimate"])`, [`r paste(m5_int_fixef_exp_1["Risk Perception * Leadership : Gender" , c("CI Low", "CI High")], collapse = ", ")`]). Full predictors can be seen in table \@ref(tab:m5-int-fixef-exp-1). 
 
-### Discussion
+### Discussion and limitations
 
 \newpage
 
 # Experiment 2
+
+## The present experiment
+
+Experiment 1 was ran to understand how risk and decision-making interplay using the aforementioned materials. Following this we found, as predicted, individuals that are higher in dominance orientation are more likely to engage in risky behaviors. Namely financial, social, and health and safety risks (see the above for more precise findings). From here we wanted to further investigate risk behaviors and power motives to see if dominance orientation is a stronger predictor of risk-taking behaviors than say for example pathological narcissism, which is often part of the discussion of risk behaviors [@buelow2014; @foster2009; @leder2021]. In doing so we intend to see, along with a mediation analysis approach, if dominance again will not just be the strongest predictor of risk-taking behaviors, but also the strongest mediator as well compared to pathological narcissism. Through this we hope to better understand how individuals make decisions in risky situations along with creating theories surrounding risky situations before the decisions have been made.
 
 ## Methods
 
@@ -168,13 +172,15 @@ Overall, age was an effective predictor for both grandiose and vulnerable narcis
 
 Following traditional Bayesian models, we analyzed relationships through a Bayesian mediation model using the brms Bayesian structural equation modeling software along with it's software to create a multilevel model [@burkner2017; @burkner2018]. Centralized in the model is risk preference. In this exploratory model we were investigating to see what is the best predictor variable is the best mediatior in our analysis. Figure \@ref(fig:Experiment2ModelSEM) respresents our hypothetical model of dominance being the strongest mediator. 
 
-In this model, we constructed multilevel equations where we focused on different variables being the strongest mediator. Then using the brms Baysian r package, we then compared the models to see which mediator was indeed the strongest mediator. How hypothesis where dominance would be the strongest mediator was accepted, model 2 as shown in table \@ref(tab:mediationComparisonExp2). 
-
 ```{r mediationComparisonExp2}
 apa_table(mediation_comparison_exp_2, caption = "Experiment 2 | Mediation model comparison", note = "Bayesian Comparison between 4 models investigating the differences of 4 different variables as mediators.")
 ```
 
+In this model, we constructed multilevel equations where we focused on different variables being the strongest mediator. Then using the brms Baysian r package, we then compared the models to see which mediator was indeed the strongest mediator. How hypothesis where dominance would be the strongest mediator was accepted, model 2 as shown in table \@ref(tab:mediationComparisonExp2). 
+
+
+
 
 # General Discussion and Implications
 
-\newpage
+

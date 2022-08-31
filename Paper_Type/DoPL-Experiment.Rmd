@@ -25,7 +25,7 @@ affiliation:
 
 
 abstract: |
-  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any  discipline.
+  In the present research, we sought to examine through two experiments the interaction between power motives (dominance, prestige, and leadership) and risk taking behaviors. In study 1 we discovered that individuals high in dominance power motive were more likley to enage in financiall, ethical and health and safety based risk sitations.
   
 keywords          : "keywords"
 wordcount         :  !expr wordcountaddin::word_count("../Chapters/Chapter2.Rmd") + wordcountaddin::word_count("../Chapters/DoPL-Section.Rmd")
@@ -76,6 +76,8 @@ options(knitr.kable.NA = "")
 
 ```{r child = "../Chapters/Chapter2.Rmd"}
 ```
+
+\newpage
 
 # References
 \begingroup
