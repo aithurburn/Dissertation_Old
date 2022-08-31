@@ -1,0 +1,15 @@
+---
+bibliography : ["/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/References/references.json"]
+---
+```{r include = FALSE}
+source("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/R/indexfile.R")
+```
+
+# Literature Review
+
+## General Introduction
+
+In 2016, the year of most recent global data collection, there were 376 million new cases of the four curable sexually transmitted infections, chlamydia, gonorrhea trichomoniasis, and syphilis [@worldhealthorganization2018]. The World Health Organization (WHO) further estimates that there are one million new cases of a curable sexually transmitted infection each day. Due to multiple factors, certain minoritpopulations are more at risk for contracting new sexually transmitted infections, e., men who have sex with men and female sex workers [@worldhealthorganization2018].  Some factors includcertain societal beliefs men who have sex with men might engage in nonrelational sex "just trying to figure things out it's just a hook-up phase" [@elder2015a], ambiguous laws concerning the legality of sex work interfering with safe and available locations for such activity, as well. Often, societal beliefs impact discussions of sexual exploration making sexual explorations in themselves difficult and taboo [@parent2015]. There may also be some difficulties in their willingness in their activities be it forced by another or sheer necessity. For countries like Scotland while there has been a reduction in the number of new cases of STIs like HIV amongst key populations, new risks of antibiotic-resistant gonorrhea, _Neisseria gonorrhoaeae_, have become more apparent [@ison2011].
+
+Outside of the Scotland, such as England, STI rates still show relatively high numbers with new cases nymber in 317,000 cases [@ratna2021]. Optimistically, STI rates have reduced in the last year before publication of the report by nearly 34%. However, it should be noted that there was a 25% decrease in the number of sexual health screenings compared to the previous year which the authors note as contributing to the decrease in STI diagnoses [@ratna2021, pp.5]. Furthering, outside of the United Kingdom, global STI rates are still increasingly especially in areas with little to know access to appropriate sexual health education and health care to support the increasing number. According to the World Health Organization, 1 million people are infected with an STI each day [@worldhealthorganization2022]. Annually, it is estimated that 2.3 million people die from STI related complications. Along with death, STI infection can leads to financial, social, and psychological issues and trauma [@]
+
