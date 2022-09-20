@@ -38,7 +38,7 @@ numbersections    : yes
 figurelist         : yes
 tablelist         : yes
 footnotelist      : no
-linenumbers       : yes
+linenumbers       : no
 mask              : no
 draft             : no
 mainfont          : "Times New Roman"
