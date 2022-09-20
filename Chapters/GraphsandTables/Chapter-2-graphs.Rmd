@@ -1,7 +1,9 @@
 ```{r, include = FALSE, eval = TRUE}
 correlation_df <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/correlation_df.rds")
+corr_df_dopl_pni_exp_2_j <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/corr_df_dopl_pni.rds")
 library(DiagrammeRsvg)
-corr_1 <- correlation(correlation_df, bayesian = TRUE, method = "auto")
+corr_1 <- correlation(correlation_df, bayesian = TRUE, method = "auto", bayesian_test = "bf")
+corr_dopl_pni <- correlation(corr_df_dopl_pni_exp_2_j, bayesian = TRUE, method = "auto", bayesian_test = "bf")
 diagramme_graph_sem <- "
 digraph 'Mediation Model' {
 graph [layout = circo, label = 'Experiment 2 | Mediation Model', labelloc = t]
@@ -50,10 +52,9 @@ j -> n
 grViz(diagramme_graph_sem) %>%
   export_svg() %>%
   charToRaw() %>%
-  rsvg::rsvg_png("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/GraphsandTables/diagramme_graph_sem.png")
+  rsvg::rsvg_png("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/GraphsandTables/diagrammegraphsem.png")
 ```
 
-\newpage
 
 # Figures and Tables
 
@@ -69,7 +70,7 @@ dopl_domains_ggplot <- ggplot(dopl_domains_df, aes(DoPL_domain, value, fill = Do
 dopl_domains_ggplot + scale_fill_brewer(name = "DoPL Domain", palette = "Dark2", labels = c("Dominance", "Leadership", "Prestige")) + scale_shape_prism() + scale_y_continuous(limits = c(0, 40), guide = "prism_minor") + scale_x_discrete(name = "DoPL Domain", guide = "prism_bracket", labels = c("Dominance", "Leadership", "Prestige")) + labs(title = "DoPL Domain Distributions", caption = "Experiment 1")
 ```
 
-```{r DominanceExperiment1, fig.cap = "Depicted is the gender distribution of Men and Women with regard to level of dominance. As can be seen, men are slightly higher in dominance then women.", fig.topcaption = TRUE}
+```{r DominanceExperiment1, fig.align = "center", fig.cap = "Depicted is the gender distribution of Men and Women with regard to level of dominance. As can be seen, men are slightly higher in dominance then women.", fig.topcaption = TRUE}
 age_dom_df <- subset(experiment_1_Dataset, Age != "")
 gender_experiment_data <- subset(experiment_1_Dataset, Gender != "2")
 gender_and_dominance <- ggplot(gender_experiment_data, aes(x = as.factor(Gender), y = dominanceSum, group = Gender, fill = as.factor(Gender))) +
@@ -82,6 +83,7 @@ gender_and_prestige <- ggplot(gender_experiment_data, aes(x = as.factor(Gender),
   geom_boxplot()
 gender_and_prestige + scale_shape_prism() + scale_y_continuous(limits = c(0, 30), guide = "prism_offset", name = "Prestige") + scale_x_discrete(labels = c("Men", "Women"), guide = "prism_bracket", name = "Gender") + scale_fill_manual(name = "Gender", labels = c("Men", "Women"), values = c("#A6CEE3", "#FF7F00")) + labs(title = "Prestige Distribution", caption = "Experiment 1")
 ```
+
 
 ```{r LeadershipExperiment1, fig.cap = "Depicted is the gender distribution of Men and Women with regard to level of leadership. As can be seen, men are slightly higher in dominance then women.", fig.topcaption = TRUE}
 gender_and_leadership <- ggplot(gender_experiment_data, aes(x = as.factor(Gender), y = leadershipSum, group = Gender, fill = as.factor(Gender))) +
@@ -106,13 +108,14 @@ e_gg + scale_shape_prism() + scale_y_continuous(limits = c(0, 30), guide = "pris
 dopl_domains_df_2 <- Experiment_2_dataset
 dopl_domains_df_2 <- dopl_domains_df_2 %>%
   gather(key = DoPL_domain, value = value, "dominance_Sum_pre":"leadership_Sum_pre")
+
 dopl_domains_df_2 <- dopl_domains_df_2[, -1:-71]
 dopl_domains_ggplot_2 <- ggplot(dopl_domains_df_2, aes(DoPL_domain, value, fill = DoPL_domain)) +
   geom_violin()
 dopl_domains_ggplot_2 + scale_fill_brewer(name = "DoPL Domain", palette = "Dark2", labels = c("Dominance", "Leadership", "Prestige")) + scale_shape_prism() + scale_y_continuous(limits = c(0, 40), guide = "prism_minor") + scale_x_discrete(name = "DoPL Domain", guide = "prism_bracket", labels = c("Dominance", "Leadership", "Prestige")) + labs(title = "DoPL Domain Distributions", caption = "Experiment 2")
 ```
 
-```{r DOSPERT-Preferences-GenderExperiment2, fig.width = 14, fig.height=10, fig.align = "center",fig.cap = "Depicted is the gender distribution of Men and Women with regard to each sub-domain of the domain specific risk-taking scale.", fig.topcaption = TRUE}
+```{r DOSPERT-Preferences-GenderExperiment2, fig.width = 14, fig.height=10,fig.cap = "Depicted is the gender distribution of Men and Women with regard to each sub-domain of the domain specific risk-taking scale.", fig.topcaption = TRUE}
 Preferences_exp_1 <- c("ethicalPreference", "socialPreference", "financialPreference", "healthAndSafetyPreference", "recreationalPreference")
 e2 <- Experiment_2_demographic_dataset %>%
   pivot_longer(cols = Preferences_exp_1)
@@ -133,11 +136,9 @@ ggplot(Experiment_2_demographic_dataset, aes(y = PNI_Sum, x = Age)) +
   labs(title = "Brief-Pathological Narcissism as a function of Age", caption = "Experiment 2")
 ```
 
-\newpage
 
-\begin{landscape}
 
-```{r, fig.width = 14, fig.height=10, fig.align = "center", fig.cap = "Depicted here is a correlation plot of the indices of experiment 2. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
+```{r correlationExperiment2, fig.align= "center", fig.width = 14, fig.height=10, fig.cap = "Depicted here is a correlation plot of the indices of experiment 2. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
 ggcorrplot(corr_1, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, sig.level = 0.05) +
   scale_x_discrete(labels = 1:17) +
   theme(axis.text.x = element_text(angle = 0, hjust = .5)) +
@@ -145,87 +146,53 @@ ggcorrplot(corr_1, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, 
 10 = Leadership, 11 = Prestige, 12 = Dominance, 13 = Social Preference, 14 = Recreational Preference, 15 = Health and Safety Preference, 16 = Financial Preference, 17 = Ethical Preference", title = "Correlation Plot | Experiment 2")
 ```
 
-\end{landscape}
+
+
+```{r correlationPNIDoPL, fig.align= "center", fig.width = 14, fig.height=10, fig.cap = "Depicted here is a correlation plot of the indices of experiment 2. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
+
+ggcorrplot(corr_dopl_pni, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, sig.level = 0.05) +
+  scale_x_discrete(labels = 1:17) +
+  theme(axis.text.x = element_text(angle = 0, hjust = .5)) +
+  labs(caption = "1 = Dominance, 2 = Prestige, 3 = Leadership, 4 = B-PNI, 5 = Contingent Self-Esteem, 6 = Devaluing, 7 = Vulnerability, 8 = Entitlement Rage, 9 = Grandiosity, 10 = Hiding the Self, 11 = Grandiose Fantasy, 12 = Exploitativeness, 13 = Self-Sacrifing and Self-Enhancement", title = "Correlation Plot | Experiment 2")
+```
+
+
 
 \newpage
 
-\begin{landscape}
 
-```{r Experiment2ModelSEM, out.width = "100%", fig.align = "center", fig.cap = 'Figure represents a mediation model with Dominance as the central mediator in the model.The outcome variables being risk behaviors along with hypothetical consequences like STI and the like.'}
+```{r Experiment2ModelSEM, fig.align = "center", out.width = "100%", fig.cap = 'Figure represents a mediation model with Dominance as the central mediator in the model.The outcome variables being risk behaviors along with hypothetical consequences like STI and the like.'}
 
-knitr::include_graphics("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/GraphsandTables/diagramme_graph_sem.png")
+knitr::include_graphics("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/GraphsandTables/diagrammegraphsem.png")
 ```
 
-\end{landscape}
+
 
 \newpage
 
 ## Tables
 
 ```{r m1-fixef-Experiment-1}
-fixef_m1_exp1_fixef <- MutateHDI::mutate_each_hdi_no_save(brms::fixef(m1_exp_1))
-apa_table(fixef_m1_exp1_fixef[
-  sign_match(fixef_m1_exp1_fixef[, 4]) == sign_match(fixef_m1_exp1_fixef[, 5]),
-  c("Parameter", "Estimate", "CI", "CI Low", "CI High")
-], row.names = FALSE, placement = "ht", note = "Table 2 represents fixed effects, confidence interevals low and high for a basic bayesian model of Dominance, Prestige, and Leadership predicting general risk preference. Matching signs for confidence intervals is displayed in the table.", caption = "Fixed Effects: DoPL * General Risk")
+MutateHDI::apa_modified(m1_exp_1, caption = "Fixed Effects: DoPL * General Risk", note = "The above represents fixed effects, confidence interevals low and high for a basic bayesian model of Dominance, Prestige, and Leadership predicting general risk preference. Matching signs for confidence intervals is displayed in the table.", land_scape = FALSE, longtable = FALSE)
 ```
 
-```{r m1-int-fixef-exp-1}
-
-apa_table(m3_int_fixef_exp_1[
-  sign_match(m3_int_fixef_exp_1[, 4]) == sign_match(m3_int_fixef_exp_1[, 5]),
-  c("Parameter", "Estimate", "CI", "CI Low", "CI High")
-], row.names = FALSE, placement = "ht", caption = "DOSPERT and DoPL Interaction: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting each of the individual Domain Specific Risk Taking (DOSPERT) domains.")
+```{r m3_exp_1}
+MutateHDI::apa_modified(m3_exp_1, caption = "DOSPERT and DoPL Interaction: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting each of the individual Domain Specific Risk Taking (DOSPERT) domains.", land_scape = TRUE, longtable = TRUE)
 ```
 
 ```{r m5-int-fixef-exp-1}
-
-apa_table(m5_int_fixef_exp_1[sign_match(m5_int_fixef_exp_1[, 4]) == sign_match(m5_int_fixef_exp_1[, 5]), c("Parameter", "Estimate", "CI", "CI Low", "CI High")],
-  row.names = FALSE, placement = "p", caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk."
-)
+MutateHDI::apa_modified(m5_exp_1, caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.", land_scape = TRUE, longtable = TRUE)
 ```
 
 ```{r m4-perceivedRisk-Gender-exp-1}
-m4_perceivedRisk_int_fixef_exp_1 <- MutateHDI::mutate_each_hdi_no_save(fixef(m4_perceivedRisk_Gender_exp_1))
-apa_table(m4_perceivedRisk_int_fixef_exp_1[sign_match(m4_perceivedRisk_int_fixef_exp_1[, 4]) == sign_match(m4_perceivedRisk_int_fixef_exp_1[, 5]), c("Parameter", "Estimate", "CI", "CI Low", "CI High")],
-  row.names = FALSE, placement = "p", landscape = TRUE, caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk."
-)
+MutateHDI::apa_modified(m3_perception_interaction_exp_1, caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.", land_scape = TRUE, longtable = TRUE)
 ```
 
 ```{r PNI-Model-DoPL-Exp-2}
-apa_table(m1_interaction_gender_fixef_exp_2[
-  sign_match(m1_interaction_gender_fixef_exp_2[, 4]) == sign_match(m1_interaction_gender_fixef_exp_2[, 5]),
-  c("Parameter", "Estimate", "CI", "CI Low", "CI High")
-], row.names = FALSE, placement = "ht", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting general risk preference.", caption = "General Risk * DoPL: Experiment 2")
+MutateHDI::apa_modified(m1_interaction_gender_exp_2, caption = "General Risk * DoPL: Experiment 2", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting general risk preference.", land_scape = FALSE, longtable = FALSE)
 ```
 
-```{r pni-multi-dopl-int-exp-2}
-apa_table(pni_multi_dopl_int_fixef_exp_2_j[
-  sign_match(pni_multi_dopl_int_fixef_exp_2_j[, 4]) == sign_match(pni_multi_dopl_int_fixef_exp_2_j[, 5]),
-  c("Parameter", "Estimate", "CI", "CI Low", "CI High")
-], row.names = FALSE, placement = "ht", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting two domains of narcissism, i.e., grandiose and vulnerable.", caption = "Vulnerable and Grandiose * DoPL: Experiment 2")
-```
 
-```{r dopl-pni-i-int-exp-2}
-apa_table(dopl_PNI_1_int_fixef_exp_2_j[
-  sign_match(dopl_PNI_1_int_fixef_exp_2_j[, 4]) == sign_match(dopl_PNI_1_int_fixef_exp_2_j[, 5]),
-  c("Parameter", "Estimate", "CI", "CI Low", "CI High")
-], row.names = FALSE, placement = "ht", note = "Fixed effect results of sub-domains of vulnerable nercissism with gender interactions predicting dominance, prestige, and leadership.", caption = "Vulnerable Narcissism Sub-domains * DoPL: Experiment 2")
-```
-
-```{r vulnerabiliotyGrandiosityAndGenderExperiment2}
-apa_table(pni_multi_dospert_int_fixef_exp_2_j[
-  sign_match(pni_multi_dospert_int_fixef_exp_2_j[, 4]) == sign_match(pni_multi_dospert_int_fixef_exp_2_j[, 5]),
-  c("Parameter", "Estimate", "CI", "CI Low", "CI High")
-], row.names = FALSE, placement = "ht", note = "Fixed effect results of individual DOSPERT domains with gender interactions predicting vulnerable and grandiose narcissism respectivley.", caption = "B-PNI * DOSPERT : Gender: Experiment 2")
-```
-
-```{r multi-2-model-dospert-int-fixef-exp-2-j}
-apa_table(multi_2_model_dospert_int_fixef_exp_2_j[
-  sign_match(multi_2_model_dospert_int_fixef_exp_2_j[, 4]) == sign_match(multi_2_model_dospert_int_fixef_exp_2_j[, 5]),
-  c("Parameter", "Estimate", "CI", "CI Low", "CI High")
-], landscape = TRUE, row.names = FALSE, placement = "ht", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting general risk preference.", caption = "General Risk * DoPL: Experiment 2")
-```
 
 ```{r experiment-2-correlation-table}
 correlation_table_1 <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/correlation_table_1.csv")
@@ -233,14 +200,21 @@ correlation_table_1[is.na(correlation_table_1)] <- ""
 correlation_table_1 <- correlation_table_1[-c(18:21), ]
 kable(correlation_table_1, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:17), escape = FALSE, format = "latex", booktabs = T, align = "l") %>%
   kable_paper(full_width = FALSE, latex_options = "scale_down") %>%
-  footnote(general = "* denotes significance level") %>%
+  footnote(general = "* denotes significance level. 1 = General Risk Preference, 2 = General Expected Benefits, 3 = Risk Sum, 4 = Risk Benefit, 5 = Risk Perception, 6 = B-PNI, 7 = UMS Sum, 8 = UMS Intimacy, 9 = UMS Affiliation, 10 = Leadership, 11 = Prestige, 12 = Dominance, 13 = Social Preference, 14 = Recreational Preference, 15 = Health and Safety Preference, 16 = Financial Preference, 17 = Ethical Preference", threeparttable = TRUE) %>%
   landscape()
 ```
 
 
+```{r}
+correlation_dopl_pni_2 <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/corr_dopl_pni_table.csv")
 
-
-
+correlation_dopl_pni_2[is.na(correlation_dopl_pni_2)] <- ""
+correlation_dopl_pni_2 <- correlation_dopl_pni_2[, -1]
+kable(correlation_dopl_pni_2, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:13), escape = FALSE, format = "latex", booktabs = T, align = "l") %>%
+  kable_paper(full_width = FALSE, latex_options = "scale_down") %>%
+  footnote(general = "* denotes signficance level. 1 = Self-Sacrifing and Self-Enhancement, 2 = Grandiose Fantasy, 3 = Exploitativeness, 4 = Hiding the Self, 5 = Entitlement Rage, 6 = Devaluing, 7 = Contingent Self-Esteem, 8 = Vulnerability, 9 = Grandiosity , 10 = B-PNI , 11 = Prestige , 12 = Leadership, 13 = Dominance", threeparttable = TRUE) %>%
+  landscape()
+```
 
 
 

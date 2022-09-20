@@ -1,0 +1,102 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Literature Review}{8}{section.1}%
+\contentsline {subsection}{\numberline {1.1}General Introduction}{8}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Moral Decision Problems}{9}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Current Methods and Problems in Research}{10}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Power}{10}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Chapter 1:}{14}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Introduction}{14}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Dominance, Prestige, and Leadership orientation}{14}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}\emph {Dominance}}{15}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}\emph {Prestige}}{16}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}\emph {Leadership}}{17}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Risk}{17}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Experiment One}{18}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Method}{18}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Participants}{18}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Demographic Questionnaire}{20}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Dominance, Prestige, and Leadership Orientation}{20}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Spitefulness Scale}{20}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.5}Sexuality Self-Esteem Subscale}{21}{subsubsection.2.5.5}%
+\contentsline {subsubsection}{\numberline {2.5.6}Sexual Jealousy Subscale}{21}{subsubsection.2.5.6}%
+\contentsline {subsubsection}{\numberline {2.5.7}Sexual Relationship Power Scale}{22}{subsubsection.2.5.7}%
+\contentsline {subsubsection}{\numberline {2.5.8}Scenario Realism Question}{22}{subsubsection.2.5.8}%
+\contentsline {subsubsection}{\numberline {2.5.9}Spiteful Vignettes}{23}{subsubsection.2.5.9}%
+\contentsline {subsection}{\numberline {2.6}Procedure}{23}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Data Analysis}{24}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Results and Discussion}{25}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {2.8.1}Spitefulness}{25}{subsubsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.9}Limitations and Future Directions}{26}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Experiment 2}{26}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Methods}{26}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}Materials}{26}{subsection.2.12}%
+\contentsline {subsubsection}{\numberline {2.12.1}\emph {Brief-Pathological Narcissism Inventory}}{26}{subsubsection.2.12.1}%
+\contentsline {subsection}{\numberline {2.13}Procedure}{27}{subsection.2.13}%
+\contentsline {subsection}{\numberline {2.14}Data analysis}{28}{subsection.2.14}%
+\contentsline {subsection}{\numberline {2.15}Results}{29}{subsection.2.15}%
+\contentsline {subsection}{\numberline {2.16}Preregistered Analyses}{29}{subsection.2.16}%
+\contentsline {subsubsection}{\numberline {2.16.1}\emph {Demographic and DoPL}}{29}{subsubsection.2.16.1}%
+\contentsline {subsection}{\numberline {2.17}Domain-Specific Risk-Taking}{29}{subsection.2.17}%
+\contentsline {subsection}{\numberline {2.18}Interactions}{29}{subsection.2.18}%
+\contentsline {subsection}{\numberline {2.19}Discussion}{29}{subsection.2.19}%
+\contentsline {subsection}{\numberline {2.20}Limitations}{29}{subsection.2.20}%
+\contentsline {subsection}{\numberline {2.21}Future Implications}{29}{subsection.2.21}%
+\contentsline {subsection}{\numberline {2.22}The present study}{29}{subsection.2.22}%
+\contentsline {subsection}{\numberline {2.23}Experiment 1}{30}{subsection.2.23}%
+\contentsline {subsection}{\numberline {2.24}Methods}{30}{subsection.2.24}%
+\contentsline {subsection}{\numberline {2.25}Materials}{30}{subsection.2.25}%
+\contentsline {subsubsection}{\numberline {2.25.1}\emph {Demographic Questionnaire}}{31}{subsubsection.2.25.1}%
+\contentsline {subsubsection}{\numberline {2.25.2}\emph {Dominance, Prestige, and Leadership Orientation}}{32}{subsubsection.2.25.2}%
+\contentsline {subsubsection}{\numberline {2.25.3}\emph {Domain Specific Risk-taking Scale}}{32}{subsubsection.2.25.3}%
+\contentsline {subsection}{\numberline {2.26}Procedure}{33}{subsection.2.26}%
+\contentsline {subsection}{\numberline {2.27}Data analysis}{33}{subsection.2.27}%
+\contentsline {subsection}{\numberline {2.28}Results}{34}{subsection.2.28}%
+\contentsline {subsubsection}{\numberline {2.28.1}Preregistered Analyses}{34}{subsubsection.2.28.1}%
+\contentsline {paragraph}{\numberline {2.28.1.1}\emph {Demographic and DoPL}}{35}{paragraph.2.28.1.1}%
+\contentsline {paragraph}{\numberline {2.28.1.2}General Risk and DoPL}{35}{paragraph.2.28.1.2}%
+\contentsline {subsubsection}{\numberline {2.28.2}Domain-Specific Risk-Taking}{35}{subsubsection.2.28.2}%
+\contentsline {subsubsection}{\numberline {2.28.3}Interactions}{35}{subsubsection.2.28.3}%
+\contentsline {subsubsection}{\numberline {2.28.4}DOSPERT Sub-categorizations}{36}{subsubsection.2.28.4}%
+\contentsline {subsubsection}{\numberline {2.28.5}Discussion and limitations}{36}{subsubsection.2.28.5}%
+\contentsline {section}{\numberline {3}Experiment 2}{37}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The present experiment}{37}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Methods}{37}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Participants}{38}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Materials}{38}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}\emph {Brief-Pathological Narcissism Inventory}}{38}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.5}Procedure}{40}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Data analysis}{41}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Results and Discussion}{41}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}Preregistered Analyses}{42}{subsubsection.3.7.1}%
+\contentsline {paragraph}{\numberline {3.7.1.1}Dominance}{42}{paragraph.3.7.1.1}%
+\contentsline {paragraph}{\numberline {3.7.1.2}Prestige}{42}{paragraph.3.7.1.2}%
+\contentsline {paragraph}{\numberline {3.7.1.3}Leadership}{42}{paragraph.3.7.1.3}%
+\contentsline {subsubsection}{\numberline {3.7.2}Brief-Pathological Narcissism Inventory}{43}{subsubsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.3}Risk and interactions}{44}{subsubsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.4}Domain-Specific Risk-Taking}{44}{subsubsection.3.7.4}%
+\contentsline {subsubsection}{\numberline {3.7.5}Interactions}{44}{subsubsection.3.7.5}%
+\contentsline {section}{\numberline {4}General Discussion and Implications}{46}{section.4}%
+\contentsline {section}{\numberline {5}Chapter 3:}{46}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Experiment 1:}{46}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Experiment 1 Review}{46}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Narcissism}{46}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}The present Experiments}{47}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Methods}{48}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Materials}{48}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {5.6.1}\emph {Demographic Questionnaire}}{48}{subsubsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.2}\emph {Sexual Risk-taking Behavior Scale}}{48}{subsubsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.3}\emph {Sociosexual Orientation Inventory}}{49}{subsubsection.5.6.3}%
+\contentsline {subsubsection}{\numberline {5.6.4}\emph {Dominance, Prestige, and Leadership}}{49}{subsubsection.5.6.4}%
+\contentsline {subsubsection}{\numberline {5.6.5}\emph {Pathological Narcissism}}{49}{subsubsection.5.6.5}%
+\contentsline {subsection}{\numberline {5.7}Procedure}{50}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Data analysis}{50}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Results}{51}{subsection.5.9}%
+\contentsline {subsubsection}{\numberline {5.9.1}Preregistered Analyses}{51}{subsubsection.5.9.1}%
+\contentsline {subsubsection}{\numberline {5.9.2}\emph {Demographic and DoPL}}{51}{subsubsection.5.9.2}%
+\contentsline {subsection}{\numberline {5.10}Domain-Specific Risk-Taking}{51}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Interactions}{51}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Discussion}{51}{subsection.5.12}%
+\contentsline {section}{\numberline {6}References}{52}{section.6}%
+\contentsline {section}{\numberline {7}Figures and Tables}{64}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Figures}{64}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Tables}{66}{subsection.7.2}%

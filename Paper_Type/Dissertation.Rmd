@@ -39,18 +39,18 @@ bibliography      : ["/Users/andrew/Library/CloudStorage/OneDrive-Personal/Docum
 floatsintext       : yes
 figsintext         : yes
 numbersections    : yes
-figurelist         : no
-tablelist         : no
+figurelist         : yes
+tablelist         : yes
 footnotelist      : no
-linenumbers       : yes
+linenumbers       : no
 mask              : no
 draft             : no
 mainfont          : "Times New Roman"
-geometry          :  a4paper, left = 4cm, right = 2.5cm, top = 2cm, bottom = 4cm
 always_allow_html : true
 link-citations    : true
 header-includes:
   - \pagestyle{plain}
+  - \usepackage{adjustbox}
   - \setcounter{tocdepth}{5}
   - \linespread{1.2} 
   - \usepackage{setspace} 
@@ -65,10 +65,7 @@ header-includes:
   - \interfootnotelinepenalty=10000
   - \newcommand{\HRule}{\rule{\linewidth}{0.25mm}}
   - \let\cleardoublepage=\clearpage
-  - \usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
-  - \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
   - \doublespacing
- 
 documentclass     : "apa7"
 csl               : "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Formatting/apa7.csl"
 class             : doc, 12pt, a4paper
@@ -80,6 +77,7 @@ output            : papaja::apa6_pdf
 library("papaja")
 setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
 source("./R/libraries.r")
+library(huxtable)
 ```
 
 
@@ -94,7 +92,11 @@ source("./R/libraries.r")
 \newpage
 
 
-```{r child = "../Chapters/Introduction.Rmd"}
+```{r, include=FALSE}
+options(tinytex.verbose = TRUE)
+```
+
+```{r child = "../Chapters/Introduction1.Rmd"}
 
 ```
 
@@ -107,11 +109,6 @@ source("./R/libraries.r")
 ```
 
 ```{r child = "../Chapters/Chapter3.Rmd"}
-
-```
-
-
-```{r child = "../Chapters/Chapter4.Rmd"}
 
 ```
 
@@ -128,6 +125,10 @@ source("./R/libraries.r")
 
 \newpage
 
-```{r child = "../Chapters/Graphs_and_Tables/Chapter_2_graphs.Rmd"}
+```{r child = "../Chapters/GraphsandTables/ExploratoryExperimenttablesandfigures.Rmd"}
+
+```
+
+```{r child = "../Chapters/GraphsandTables/Chapter-2-graphs.Rmd"}
 
 ```

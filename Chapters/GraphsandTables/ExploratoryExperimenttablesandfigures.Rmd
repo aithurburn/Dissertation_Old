@@ -1,0 +1,10 @@
+```{r exploratoryExperimentCorrelation}
+setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation")
+corr_expl_1_table <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Experiments/Experiment 1/Experiment_2/corr_expl_1.csv")
+corr_expl_1_table[is.na(corr_expl_1_table)] <- ""
+corr_expl_1_table <- corr_expl_1_table[, -1]
+kable(corr_expl_1_table, caption = "General Correlation Matrix | Experiment 1", col.names = c("Parameter", 1:13), escape = FALSE, format = "latex", booktabs = T, align = "l") %>%
+ kable_paper(full_width = FALSE, latex_options = "scale_down") %>%
+ footnote(general = "* denotes signficance level. 1 = UMS Affiliation,	2 = UMS Intimacy,	3 = UMS,	4 = Prestige,	5 = Leadership,	6 = Dominance,	7 = DoPL,	8 = Realism,	9 = Justification,	10 = SJS,	11 = SRPS,	12 = SSES,	13 = Spite") %>%
+ landscape()
+```

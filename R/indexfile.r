@@ -50,7 +50,7 @@ theme_set(theme_apa(base_size = 12))
 experimenttwoDStime_exploratory_experiment <- read.csv("Experiment2Datasetclean.csv")
 experimenttwoDS_exploratory_experiment <- read.csv("Experiment2DatasetcleannoTime.csv")
 df1_exploratory_experiment <- read.csv("df1.csv")
-corrtable_exploratory_experiment <- readRDS("corrtable.rds")
+corrtable_exploratory_experiment <- read.csv("corr_expl_1.csv")
 m4_exploratory_experiment <- readRDS("m4.rds")
 m5_exploratory_experiment <- readRDS("m5.rds")
 m5gen_exploratory_experiment <- readRDS("m5gen.rds")
@@ -65,7 +65,7 @@ dm3_exploratory_experiment <- readRDS("dm3.rds")
 dm4_exploratory_experiment <- readRDS("dm4.rds")
 dm5_exploratory_experiment <- readRDS("dm5.rds")
 bayes.dm5_exploratory_experiment <- readRDS("bayes.dm5.rds")
-corr.mod_exploratory_experiment <- readRDS("corrmod.rds")
+corr.mod_exploratory_experiment <- readRDS("Exploratory_corr_table.rds")
 demographictable_exploratory_experiment <- readRDS("demographictable.rds")
 m2prior_exploratory_experiment <- readRDS("m2prior.rds")
 dopl1prior_exploratory_experiment <- readRDS("m4prior.rds")
@@ -262,3 +262,5 @@ agreement_timing_non_sexual <- c(
 ## kable_styling(full_width = F)
 
 exploratory_experiment_dataset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/CSV_Files/Exploratory_Experiment/df.csv")
+
+Remove <- "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/"

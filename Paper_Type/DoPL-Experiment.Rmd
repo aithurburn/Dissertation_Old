@@ -48,13 +48,14 @@ link-citations    : true
 header-includes:
   - \setcounter{tocdepth}{3}
   - \linespread{1.2}
+  - \usepackage{fancyhdr}
   - \interfootnotelinepenalty=10000
   - \usepackage{setspace}
   - \newcommand{\HRule}{\rule{\linewidth}{0.25mm}}
   - \raggedbottom
   - \captionsetup[figure]{textformat=empty}
   - \usepackage{pdflscape}
-  
+  - \usepackage{threeparttablex}
 documentclass     : "apa7"
 csl               : "../Formatting/apa7.csl"
 class             : doc, 12pt, a4paper
@@ -86,5 +87,8 @@ options(knitr.kable.NA = "")
 
 \listoffigures
 
+\newpage
+
 ```{r child = "../Chapters/GraphsandTables/Chapter-2-graphs.Rmd"}
+
 ```
