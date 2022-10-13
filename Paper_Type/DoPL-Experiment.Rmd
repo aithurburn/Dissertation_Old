@@ -43,7 +43,7 @@ mask              : no
 draft             : no
 mainfont          : "Times New Roman"
 geometry          :  a4paper, left = 4cm, right = 2.5cm, top = 2cm, bottom = 4cm
-always_allow_html : true
+always_allow_html : true 
 link-citations    : true
 header-includes:
   - \setcounter{tocdepth}{3}
@@ -67,7 +67,7 @@ output            : papaja::apa6_pdf
 library("papaja")
 setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/")
 source("./R/libraries.R")
-source("./R/data_file_index.r")
+source("./R/data_indexes.r")
 options(knitr.kable.NA = "")
 ```
 
