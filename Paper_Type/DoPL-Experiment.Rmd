@@ -79,6 +79,7 @@ options(knitr.kable.NA = "")
 ```
 
 \newpage
+\newpage
 
 # References
 \begingroup
@@ -89,6 +90,16 @@ options(knitr.kable.NA = "")
 
 \newpage
 
+# Figures and Tables
+
+## Figures
+
 ```{r child = "../Chapters/GraphsandTables/Chapter-2-graphs.Rmd"}
+
+```
+
+## Tables
+
+```{r child = "../Chapters/GraphsandTables/Chapter-2-tables.Rmd"}
 
 ```

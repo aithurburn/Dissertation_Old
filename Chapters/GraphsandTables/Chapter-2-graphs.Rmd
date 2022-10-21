@@ -1,9 +1,5 @@
 ```{r, include = FALSE, eval = TRUE}
-correlation_df <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/correlation_df.rds")
-corr_df_dopl_pni_exp_2_j <- readRDS("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/corr_df_dopl_pni.rds")
 library(DiagrammeRsvg)
-corr_1 <- correlation(correlation_df, bayesian = TRUE, method = "auto", bayesian_test = "bf")
-corr_dopl_pni <- correlation(corr_df_dopl_pni_exp_2_j, bayesian = TRUE, method = "auto", bayesian_test = "bf")
 diagramme_graph_sem <- "
 digraph 'Mediation Model' {
 graph [layout = circo, label = 'Experiment 2 | Mediation Model', labelloc = t]
@@ -32,8 +28,6 @@ a -> {f, g}
 m -> b
 j -> n
 }
-
-
 [1]: 'Narcissism'
 [2]: 'Dominance'
 [3]: 'Prestige'
@@ -57,11 +51,7 @@ grViz(diagramme_graph_sem) %>%
 ```
 
 
-# Figures and Tables
-
-## Figures
-
-```{r DoPL-Experiment-1,  fig.cap = "Violin plot visually showing the distribution of dominance, prestige, and leadership of participants in experiment 1. As seen in the figure, of participants within each power orientation dominance oriented people are more evenly distributed while those that were more prestige and leadership oriented were tended to be more prestigous oriented than others.", fig.topcaption = TRUE}
+```{r DoPL-Experiment-1,  fig.position = "H", fig.width = 14, fig.height=10, fig.cap = "Violin plot visually showing the distribution of dominance, prestige, and leadership of participants in experiment 1. As seen in the figure, of participants within each power orientation dominance oriented people are more evenly distributed while those that were more prestige and leadership oriented were tended to be more prestigous oriented than others.", fig.topcaption = TRUE}
 dopl_domains_df <- experiment_1_Dataset
 dopl_domains_df <- dopl_domains_df %>%
  gather(key = DoPL_domain, value = value, "dominanceSum":"leadershipSum")
@@ -70,30 +60,24 @@ dopl_domains_ggplot <- ggplot(dopl_domains_df, aes(DoPL_domain, value, fill = Do
  geom_violin()
 dopl_domains_ggplot + scale_fill_brewer(name = "DoPL Domain", palette = "Dark2", labels = c("Dominance", "Leadership", "Prestige")) + scale_shape_prism() + scale_y_continuous(limits = c(0, 40), guide = "prism_minor") + scale_x_discrete(name = "DoPL Domain", guide = "prism_bracket", labels = c("Dominance", "Leadership", "Prestige")) + labs(title = "DoPL Domain Distributions", caption = "Experiment 1")
 ```
-
-```{r DominanceExperiment1, fig.align = "center", fig.cap = "Depicted is the gender distribution of Men and Women with regard to level of dominance. As can be seen, men are slightly higher in dominance then women.", fig.topcaption = TRUE}
+```{r DominanceExperiment1, fig.position = "H", fig.width = 14, fig.height=10, fig.align = "center", fig.cap = "Depicted is the gender distribution of Men and Women with regard to level of dominance. As can be seen, men are slightly higher in dominance then women.", fig.topcaption = TRUE}
 age_dom_df <- subset(experiment_1_Dataset, Age != "")
 gender_experiment_data <- subset(experiment_1_Dataset, Gender != "2")
 gender_and_dominance <- ggplot(gender_experiment_data, aes(x = as.factor(Gender), y = dominanceSum, group = Gender, fill = as.factor(Gender))) +
  geom_boxplot()
 gender_and_dominance + scale_shape_prism() + scale_y_continuous(limits = c(0, 30), guide = "prism_offset", name = "Dominance") + scale_x_discrete(labels = c("Men", "Women"), guide = "prism_bracket", name = "Gender") + labs(fill = "Gender") + scale_fill_manual(name = "Gender", labels = c("Men", "Women"), values = c("#A6CEE3", "#FF7F00")) + labs(title = "Dominance Distribution", caption = "Experiment 1")
 ```
-
-```{r PrestigeExperiment1, fig.cap = "Depicted is the gender distribution of Men and Women with regard to level of prestige. As can be seen, men are slightly higher in prestige then women.", fig.topcaption = TRUE}
+```{r PrestigeExperiment1, fig.position = "H", fig.width = 14, fig.height=10, fig.cap = "Depicted is the gender distribution of Men and Women with regard to level of prestige. As can be seen, men are slightly higher in prestige then women.", fig.topcaption = TRUE}
 gender_and_prestige <- ggplot(gender_experiment_data, aes(x = as.factor(Gender), y = prestigeSum, group = Gender, fill = as.factor(Gender))) +
  geom_boxplot()
 gender_and_prestige + scale_shape_prism() + scale_y_continuous(limits = c(0, 30), guide = "prism_offset", name = "Prestige") + scale_x_discrete(labels = c("Men", "Women"), guide = "prism_bracket", name = "Gender") + scale_fill_manual(name = "Gender", labels = c("Men", "Women"), values = c("#A6CEE3", "#FF7F00")) + labs(title = "Prestige Distribution", caption = "Experiment 1")
 ```
-
-
-```{r LeadershipExperiment1, fig.cap = "Depicted is the gender distribution of Men and Women with regard to level of leadership. As can be seen, men are slightly higher in dominance then women.", fig.topcaption = TRUE}
+```{r LeadershipExperiment1, fig.position = "H", fig.width = 14, fig.height=10, fig.cap = "Depicted is the gender distribution of Men and Women with regard to level of leadership. As can be seen, men are slightly higher in dominance then women.", fig.topcaption = TRUE}
 gender_and_leadership <- ggplot(gender_experiment_data, aes(x = as.factor(Gender), y = leadershipSum, group = Gender, fill = as.factor(Gender))) +
  geom_boxplot()
 gender_and_leadership + scale_shape_prism() + scale_y_continuous(limits = c(0, 30), guide = "prism_offset", name = "Leadership") + scale_x_discrete(labels = c("Men", "Women"), guide = "prism_bracket", name = "Gender") + scale_fill_manual(name = "Gender", labels = c("Men", "Women"), values = c("#A6CEE3", "#FF7F00")) + labs(title = "DoPL Domains Distributions", caption = "Experiment 1")
 ```
-
-
-```{r DOSPERT-Preferences-GenderExperiment1, fig.cap = "Depicted is the gender distribution of Men and Women with regard to each sub-domain of the domain specific risk-taking scale.", fig.topcaption = TRUE}
+```{r DOSPERT-Preferences-GenderExperiment1, fig.position = "H", fig.width = 14, fig.height=10, fig.cap = "Depicted is the gender distribution of Men and Women with regard to each sub-domain of the domain specific risk-taking scale.", fig.topcaption = TRUE}
 Preferences_exp_1 <- c("DOSPERT_Ethical_Preference_z", "DOSPERT_Social_Preference_z", "DOSPERT_Financial_Preference_z", "DOSPERT_HS_Preference_z", "DOSPERT_Recreation_Preference_z")
 e <- Experiment_1_analysis_dataset %>%
  pivot_longer(cols = Preferences_exp_1)
@@ -103,9 +87,7 @@ e_gg <- ggplot(e, aes(x = name, y = value)) +
 
 e_gg + scale_shape_prism() + scale_y_continuous(limits = c(0, 4), guide = "prism_offset", name = "DOSPERT Preference Value (scaled)") + scale_x_discrete(labels = c("Ethical \nPreference", "Social \nPreference", "Financial \nPreference", "Health\nand\nSafety \nPreference", "Recreational \nPreference"), guide = "prism_bracket", name = "Risk Taking Preference (DOSPERT)") + scale_color_discrete(name = "Gender", labels = c("Men", "Women")) + labs(title = "DOSPERT Preferences Distribution", caption = "Experiment 1")
 ```
-
-
-```{r DoPLDomainsExperiment2, fig.cap = "Violin plot visually showing the distribution of dominance, prestige, and leadership of participants in experiment 1. As seen in the figure, of participants within each power orientation dominance oriented people are more evenly distributed while those that were more prestige and leadership oriented were tended to be more prestigous oriented than others.", fig.topcaption = TRUE}
+```{r DoPLDomainsExperiment2, fig.position = "H", fig.cap = "Violin plot visually showing the distribution of dominance, prestige, and leadership of participants in experiment 1. As seen in the figure, of participants within each power orientation dominance oriented people are more evenly distributed while those that were more prestige and leadership oriented were tended to be more prestigous oriented than others.", fig.topcaption = TRUE}
 dopl_domains_df_2 <- Experiment_2_dataset_raw
 dopl_domains_df_2 <- dopl_domains_df_2 %>%
  gather(key = DoPL_domain, value = value, "dominance_Sum_pre":"leadership_Sum_pre")
@@ -115,8 +97,7 @@ dopl_domains_ggplot_2 <- ggplot(dopl_domains_df_2, aes(DoPL_domain, value, fill 
  geom_violin()
 dopl_domains_ggplot_2 + scale_fill_brewer(name = "DoPL Domain", palette = "Dark2", labels = c("Dominance", "Leadership", "Prestige")) + scale_shape_prism() + scale_y_continuous(limits = c(0, 40), guide = "prism_minor") + scale_x_discrete(name = "DoPL Domain", guide = "prism_bracket", labels = c("Dominance", "Leadership", "Prestige")) + labs(title = "DoPL Domain Distributions", caption = "Experiment 2")
 ```
-
-```{r DOSPERT-Preferences-GenderExperiment2, fig.width = 14, fig.height=10,fig.cap = "Depicted is the gender distribution of Men and Women with regard to each sub-domain of the domain specific risk-taking scale.", fig.topcaption = TRUE}
+```{r DOSPERT-Preferences-GenderExperiment2, fig.position = "H", fig.width = 14, fig.height=10,fig.cap = "Depicted is the gender distribution of Men and Women with regard to each sub-domain of the domain specific risk-taking scale.", fig.topcaption = TRUE}
 Preferences_exp_1 <- c("DOSPERT_Ethical_Preference_z", "DOSPERT_Social_Preference_z", "DOSPERT_Financial_Preference_z", "DOSPERT_HS_Preference_z", "DOSPERT_Recreation_Preference_z")
 e <- Experiment_2_Analysis_DF %>%
  pivot_longer(cols = Preferences_exp_1)
@@ -126,9 +107,7 @@ e_gg2 <- ggplot(e, aes(x = name, y = value)) +
 
 e_gg2 + scale_shape_prism() + scale_y_continuous(limits = c(0, 4), guide = "prism_offset", name = "DOSPERT Preference Value (scaled)") + scale_x_discrete(labels = c("Ethical \nPreference", "Social \nPreference", "Financial \nPreference", "Health\nand\nSafety \nPreference", "Recreational \nPreference"), guide = "prism_bracket", name = "Risk Taking Preference (DOSPERT)") + scale_color_discrete(name = "Gender", labels = c("Men", "Women")) + labs(title = "DOSPERT Preferences Distribution", caption = "Experiment 2")
 ```
-
-
-```{r Experiment-2-PNI-distribution, fig.cap = "Scatterplot depicting pathological narcissism, using the B-PNI, as a function of age."}
+```{r Experiment-2-PNI-distribution, fig.position = "H", fig.cap = "Scatterplot depicting pathological narcissism, using the B-PNI, as a function of age."}
 ggplot(Experiment_2_dataset_raw, aes(y = PNI_Sum, x = Age)) +
  geom_point(size = 0.7, alpha = 0.8, position = "jitter") +
  geom_smooth(method = "lm", se = FALSE, size = 2, alpha = 0.8) +
@@ -136,102 +115,57 @@ ggplot(Experiment_2_dataset_raw, aes(y = PNI_Sum, x = Age)) +
  scale_y_continuous(breaks = seq(0, 150, 10), guide = "prism_offset", name = "Brief-Pathological Narcissism") +
  labs(title = "Brief-Pathological Narcissism as a function of Age", caption = "Experiment 2")
 ```
-
-
-
-```{r correlationExperiment2, fig.align= "center", fig.width = 14, fig.height=10, fig.cap = "Depicted here is a correlation plot of the indices of experiment 2. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
-ggcorrplot(corr_1, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, sig.level = 0.05) +
+\newpage
+\begin{landscape}
+```{r correlationExperiment1, fig.position = "H", fig.align= "center", fig.width = 14, fig.height=10, fig.cap = "Depicted here is a correlation plot of the indices of experiment 1. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
+corr_Experiment_1 <- readRDS("./Chapters/GraphsandTables/Chapter2/RDS_Files/Experiment_1_corr_subset.rds")
+ggcorrplot(corr_Experiment_1, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, sig.level = 0.05) +
+ scale_x_discrete(labels = 1:17) +
+ theme(axis.text.x = element_text(angle = 0, hjust = .5)) +
+ labs(caption = "1 = DoPL, 2 = Dominance, 3 = Prestige, 4 = Leadership, 5 = UMS Sum, 6 = UMS Intimacy, 7 = UMS Affiliation, 8 = DOSPERT Risk Likelihood, 9 = DOSPERT Risk Perception, 10 = DOSPERT Risk Benefit, 11 = DOSPERT Ethical Preference, 12 = DOSPERT Financial Preference, 13 = DOSPERT Social Preference, 14 = DOSPERT Health/Safety Preference, 15 = DOSPERT Recreation Preference, 16 = DOSPERT General Risk Preference", title = "Correlation Plot | Experiment 1")
+```
+\newpage
+```{r correlationExperiment1, fig.position = "H", fig.align= "center", fig.width = 14, fig.height=10, fig.cap = "Depicted here is a correlation plot of the indices of experiment 2. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
+corr_1_exp_1 <- readRDS("./Chapters/GraphsandTables/Chapter2/RDS_Files/corr_Experiment_2.rds")
+ggcorrplot(corr_1_exp_1, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, sig.level = 0.05) +
  scale_x_discrete(labels = 1:17) +
  theme(axis.text.x = element_text(angle = 0, hjust = .5)) +
  labs(caption = "1 = General Risk Preference, 2 = General Expected Benefits, 3 = Risk Sum, 4 = Risk Benefit, 5 = Risk Perception, 6 = B-PNI, 7 = UMS Sum, 8 = UMS Intimacy, 9 = UMS Affiliation,
 10 = Leadership, 11 = Prestige, 12 = Dominance, 13 = Social Preference, 14 = Recreational Preference, 15 = Health and Safety Preference, 16 = Financial Preference, 17 = Ethical Preference", title = "Correlation Plot | Experiment 2")
 ```
-
-
-
-```{r correlationPNIDoPL, fig.align= "center", fig.width = 14, fig.height=10, fig.cap = "Depicted here is a correlation plot of the indices of experiment 2. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
-
-ggcorrplot(corr_dopl_pni, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, sig.level = 0.05) +
- scale_x_discrete(labels = 1:17) +
- theme(axis.text.x = element_text(angle = 0, hjust = .5)) +
- labs(caption = "1 = Dominance, 2 = Prestige, 3 = Leadership, 4 = B-PNI, 5 = Contingent Self-Esteem, 6 = Devaluing, 7 = Vulnerability, 8 = Entitlement Rage, 9 = Grandiosity, 10 = Hiding the Self, 11 = Grandiose Fantasy, 12 = Exploitativeness, 13 = Self-Sacrifing and Self-Enhancement", title = "Correlation Plot | Experiment 2")
-```
-
-
-
 \newpage
-
-
-```{r Experiment2ModelSEM, fig.align = "center", out.width = "100%", fig.cap = 'Figure represents a mediation model with Dominance as the central mediator in the model.The outcome variables being risk behaviors along with hypothetical consequences like STI and the like.'}
-
-knitr::include_graphics("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/GraphsandTables/diagrammegraphsem.png")
-```
-
-
-```{r MediationFit1, fig.align = "center", out.width = "100%", fig.cap = 'Figure represents a mediation model with Narcissism as the central mediator in the model.The outcome variables being risk likelihood.'}
-
-graph_sem(fit1_exp_2)
-```
-
-
-```{r MediationFit2, fig.align = "center", out.width = "100%", fig.cap = 'Figure represents a mediation model with Narcissism and Dominance as the central mediators in a parallel model.The outcome variables being risk likelihood.'}
-
-graph_sem(fit2_exp_2)
-```
-
-
-```{r MediationFit3, fig.align = "center", out.width = "100%", fig.cap = 'Figure represents a mediation model with Narcissism and Dominance as the moderator in a serial model.The outcome variables being risk likelihood.'}
-
-graph_sem(fit3_exp_2)
-```
-
-\newpage
-
-## Tables
-
-```{r m1-fixef-Experiment-1}
-MutateHDI::apa_modified(m1_exp_1, caption = "Fixed Effects: DoPL * General Risk", note = "The above represents fixed effects, confidence interevals low and high for a basic bayesian model of Dominance, Prestige, and Leadership predicting general risk preference. Matching signs for confidence intervals is displayed in the table.", land_scape = FALSE, longtable = FALSE)
-```
-
-```{r m3_exp_1}
-MutateHDI::apa_modified(m3_exp_1, caption = "DOSPERT and DoPL Interaction: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting each of the individual Domain Specific Risk Taking (DOSPERT) domains.", land_scape = TRUE, longtable = TRUE)
-```
-
-```{r m5-int-fixef-exp-1}
-MutateHDI::apa_modified(m4_exp_1, caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.", land_scape = TRUE, longtable = TRUE)
-```
-
-```{r m4-perceivedRisk-Gender-exp-1}
-MutateHDI::apa_modified(m4_int_exp_1, caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.", land_scape = TRUE, longtable = TRUE)
-```
-
-```{r PNI-Model-DoPL-Exp-2}
-MutateHDI::apa_modified(m1_interaction_exp_2, caption = "General Risk * DoPL: Experiment 2", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting general risk preference.", land_scape = FALSE, longtable = FALSE)
-```
-
-
-
-```{r experiment-2-correlation-table}
-correlation_table_1 <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/correlation_table_1.csv")
-correlation_table_1[is.na(correlation_table_1)] <- ""
-correlation_table_1 <- correlation_table_1[-c(18:21), ]
-kable(correlation_table_1, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:17), escape = FALSE, format = "latex", booktabs = T, align = "l") %>%
- kable_paper(full_width = FALSE, latex_options = "scale_down") %>%
- footnote(general = "* denotes significance level. 1 = General Risk Preference, 2 = General Expected Benefits, 3 = Risk Sum, 4 = Risk Benefit, 5 = Risk Perception, 6 = B-PNI, 7 = UMS Sum, 8 = UMS Intimacy, 9 = UMS Affiliation, 10 = Leadership, 11 = Prestige, 12 = Dominance, 13 = Social Preference, 14 = Recreational Preference, 15 = Health and Safety Preference, 16 = Financial Preference, 17 = Ethical Preference", threeparttable = TRUE) %>%
- landscape()
-```
-
-
 ```{r}
-correlation_dopl_pni_2 <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/corr_dopl_pni_table.csv")
+correlation_Experiment_1_subset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/CSV_Files/Experiment_1_corr_subset.csv")
+correlation_Experiment_1_subset[is.na(correlation_Experiment_1_subset)] <- ""
+apa_table(correlation_Experiment_1_subset, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:16), note = " * denotes significance level. 1 = DOSPERT General Preference, 2 = DOSPERT Recreation Preference, 3 = DOSPERT Health/Safety Preference, 4 = DOSPERT Social Preference, 5 = DOSPERT Financial Preference, 6 = DOSPERT Ethical Preference, 7 = DOSPERT Risk Benefit, 8 = DOSPERT Risk Perception, 9 = DOSPERT Risk Likelihood, 10 = UMS Affiliation, 11 = UMS Intimacy, 12 = UMS, 13 = Leadership, 14 = Prestige, 15 = Dominance, 16 = DoPL", longtable = TRUE, landscape = TRUE, font_size = "tiny", placement = "t")
+```
+\newpage
+```{r}
+correlation_Experiment_1_full <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/CSV_Files/Experiment_1_correlation_full.csv")
+correlation_Experiment_1_full[is.na(correlation_Experiment_1_full)] <- ""
+apa_table(correlation_Experiment_1_full, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:31), note = " * denotes significance level. 1 = DOSPERT General Risk Preference, 2 = DOSPERT Recreation Preference, 3 = DOSPERT HS Preference, 4 = DOSPERT Social Preference, 5 = DOSPERT Financial Preference, 6 = DOSPERT Ethical Preference, 7 = DOSPERT Social Perception, 8 = DOSPERT Recreation Perception, 9 = DOSPERT HS Perception, 10 = DOSPERT Financial Perception, 11 = DOSPERT Ethical Perception, 12 = DOSPERT Social Benefit, 13 = DOSPERT Recreation Benefit, 14 = DOSPERT HS Benefit, 15 = DOSPERT Financial Benefit, 16 = DOSPERT Ethical Benefit, 17 = DOSPERT Social Likelihood, 18 = DOSPERT Recreation Likelihood, 19 = DOSPERT HS Likelihood, 20 = DOSPERT Financial Likelihood, 21 = DOSPERT Ethical Likelihood, 22 = DOSPERT Risk Benefit, 23 = DOSPERT Risk Perception, 24 = DOSPERT Risk Likelihood, 25 = UMS Affiliation, 26 = UMS Intimacy, 27 = UMS, 28 = Leadership, 29 = Prestige, 30 = Dominance, 31 = DoPL", longtable = TRUE, landscape = TRUE, font_size = "tiny", placement = "t")
+```
+\end{landscape}
+\newpage
+```{r MediationFit1, fig.position = "H", fig.align = "center", out.width = "100%", fig.cap = 'Figure represents a mediation model with Narcissism as the central mediator in the model.The outcome variables being risk likelihood.'}
 
-correlation_dopl_pni_2[is.na(correlation_dopl_pni_2)] <- ""
-correlation_dopl_pni_2 <- correlation_dopl_pni_2[, -1]
-kable(correlation_dopl_pni_2, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:13), escape = FALSE, format = "latex", booktabs = T, align = "l") %>%
- kable_paper(full_width = FALSE, latex_options = "scale_down") %>%
- footnote(general = "* denotes signficance level. 1 = Self-Sacrifing and Self-Enhancement, 2 = Grandiose Fantasy, 3 = Exploitativeness, 4 = Hiding the Self, 5 = Entitlement Rage, 6 = Devaluing, 7 = Contingent Self-Esteem, 8 = Vulnerability, 9 = Grandiosity , 10 = B-PNI , 11 = Prestige , 12 = Leadership, 13 = Dominance", threeparttable = TRUE) %>%
- landscape()
+layout_fit_1_exp_2 <- get_layout("PNI_z", "",
+ "DOSPERT_Likelihood_z", "DOSPERT_Benefit_z",
+ rows = 2
+)
+graph_sem(fit1_exp_2, layout = layout_fit_1_exp_2)
+```
+```{r MediationFit2, fig.position = "H", fig.align = "center", out.width = "100%", fig.cap = 'Figure represents a mediation model with Narcissism and Dominance as the central mediators in a parallel model.The outcome variables being risk likelihood.'}
+layout_fit_2_exp_2 <- get_layout("PNI_z", "",
+ "DOSPERT_Benefit_z", "DOSPERT_Likelihood_z",
+ "dominance_z", "",
+ rows = 3
+)
+graph_sem(fit2_exp_2, layout = layout_fit_2_exp_2, layout_algorithm = "layout_in_circle", curvature = 180)
+```
+```{r MediationFit3, fig.position = "H", fig.align = "center", out.width = "100%", fig.cap = 'Figure represents a mediation model with Narcissism and Dominance as the moderator in a serial model.The outcome variables being risk likelihood.'}
+
+graph_sem(fit3_exp_2, layout_algorithm = "tree", angle = 90, curvature = 180)
 ```
 
-
-
+\newpage

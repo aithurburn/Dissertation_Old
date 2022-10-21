@@ -1,0 +1,621 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  donotrepeattitle,doc, 12pt, a4paper,floatsintext]{apa7}
+
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{english}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\centering\begin{threeparttable}}
+%   {\end{threeparttable}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\centering\begin{ThreePartTable}}{\end{ThreePartTable}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% Overwrite redefinition of paragraph and subparagraph by the default LaTeX template
+% See https://github.com/crsh/papaja/issues/292
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\itshape\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+% \usepackage{etoolbox}
+\makeatletter
+\patchcmd{\HyOrg@maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\HyOrg@maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+
+\usepackage{xpatch}
+\makeatletter
+\xapptocmd\appendix
+  {\xapptocmd\section
+    {\addcontentsline{toc}{section}{\appendixname\ifoneappendix\else~\theappendix\fi\\: #1}}
+    {}{\InnerPatchFailed}%
+  }
+{}{\PatchFailed}
+\keywords{keywords}
+\usepackage{csquotes}
+\geometry{a4paper, left = 4cm, right = 2.5cm, top = 2cm, bottom = 4cm}
+
+
+\usepackage[titles]{tocloft}
+\cftpagenumbersoff{figure}
+\renewcommand{\cftfigpresnum}{\itshape\figurename\enspace}
+\renewcommand{\cftfigaftersnum}{.\space}
+\setlength{\cftfigindent}{0pt}
+\setlength{\cftafterloftitleskip}{0pt}
+\settowidth{\cftfignumwidth}{Figure 10.\qquad}
+\cftpagenumbersoff{table}
+\renewcommand{\cfttabpresnum}{\itshape\tablename\enspace}
+\renewcommand{\cfttabaftersnum}{.\space}
+\setlength{\cfttabindent}{0pt}
+\setlength{\cftafterloftitleskip}{0pt}
+\settowidth{\cfttabnumwidth}{Table 10.\qquad}
+\setcounter{tocdepth}{3}
+\linespread{1.2}
+\usepackage{fancyhdr}
+\interfootnotelinepenalty=10000
+\usepackage{setspace}
+\newcommand{\HRule}{\rule{\linewidth}{0.25mm}}
+\raggedbottom
+\captionsetup[figure]{textformat=empty}
+\usepackage{pdflscape}
+\usepackage{threeparttablex}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Power motivations and risk sensitivity and tolerance.},
+  pdfauthor={Ithurburn, Andrew1, Pedersen M.E., Julie1, \& Moore, Adam1},
+  pdflang={en-EN},
+  pdfkeywords={keywords},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Power motivations and risk sensitivity and tolerance.}
+\author{Ithurburn, Andrew\textsuperscript{1}, Pedersen M.E., Julie\textsuperscript{1}, \& Moore, Adam\textsuperscript{1}}
+\date{}
+
+
+\shorttitle{DoPL and DOSPERT}
+
+\authornote{
+
+The authors made the following contributions. Ithurburn, Andrew: ; Moore, Adam: Writing - Review \& Editing, Supervision.
+
+Correspondence concerning this article should be addressed to Ithurburn, Andrew, 7 George Square, Edinburgh, EH8 9JZ. E-mail: \href{mailto:a.ithurburn@sms.ed.ac.uk}{\nolinkurl{a.ithurburn@sms.ed.ac.uk}}
+
+}
+
+\affiliation{\vspace{0.5cm}\textsuperscript{1} The University of Edinburgh}
+
+\abstract{%
+In the present research, we sought to examine through two experiments the interaction between power motives (dominance, prestige, and leadership) and risk taking behaviors. In study 1 we discovered that individuals high in dominance power motive were more likley to enage in financiall, ethical and health and safety based risk sitations.
+}
+
+
+
+\begin{document}
+\maketitle
+
+\begin{table}[ht]
+
+\begin{center}
+\begin{threeparttable}
+
+\caption{\label{tab:m1-fixef-Experiment-1}Fixed Effects: DoPL * General Risk}
+
+\begin{tabular}{llll}
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+Intercept & 0.26 & 0.12 & 0.02 - 0.5\\
+Dominance & 0.26 & 0.10 & 0.07 - 0.46\\
+Gender & -0.55 & 0.16 & -0.87 - -0.23\\
+\bottomrule
+\addlinespace
+\end{tabular}
+
+\begin{tablenotes}[para]
+\normalsize{\textit{Note.} The above represents fixed effects, confidence interevals low and high for a basic bayesian model of Dominance, Prestige, and Leadership predicting general risk preference. Matching signs for confidence intervals is displayed in the table.}
+\end{tablenotes}
+
+\end{threeparttable}
+\end{center}
+
+\end{table}
+
+\begin{center}
+\begin{ThreePartTable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting each of the individual Domain Specific Risk Taking (DOSPERT) domains.}
+\end{TableNotes}
+
+\begin{longtable}{llll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:m3_exp_1}DOSPERT and DoPL Interaction: Experiment 1}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:m3_exp_1} continued}}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endhead
+DOSPERT Recreation Preference * Intercept & 0.33 & 0.12 & 0.11 - 0.56\\
+DOSPERT Ethical Preference * Dominance & 0.42 & 0.08 & 0.26 - 0.58\\
+DOSPERT Financial Preference * Dominance & 0.22 & 0.08 & 0.06 - 0.38\\
+DOSPERT Social Preference * Dominance & 0.24 & 0.08 & 0.07 - 0.4\\
+DOSPERT Social Preference * Gender & -0.39 & 0.18 & -0.75 - -0.03\\
+DOSPERT Health And Safety Preference * Dominance & 0.37 & 0.08 & 0.21 - 0.53\\
+DOSPERT Recreation Preference * Dominance & 0.47 & 0.08 & 0.32 - 0.62\\
+DOSPERT Recreation Preference * Gender & -0.70 & 0.17 & -1.03 - -0.38\\
+DOSPERT Recreation Preference * Age & 0.22 & 0.09 & 0.06 - 0.39\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{ThreePartTable}
+\end{center}
+
+\begin{center}
+\begin{ThreePartTable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.}
+\end{TableNotes}
+
+\begin{longtable}{llll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:m5-int-fixef-exp-1}DOSPERT Benefit and Perception: Experiment 1}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:m5-int-fixef-exp-1} continued}}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endhead
+DOSPERT Risk Likelihood * Intercept & 0.25 & 0.11 & 0.03 - 0.47\\
+DOSPERT Risk Perception * Intercept & -0.25 & 0.13 & -0.5 - -0.01\\
+DOSPERT Risk Benefit * Intercept & 0.26 & 0.12 & 0.01 - 0.5\\
+DOSPERT Risk Likelihood * Dominance & 0.41 & 0.09 & 0.23 - 0.59\\
+DOSPERT Risk Likelihood * Gender & -0.50 & 0.15 & -0.8 - -0.21\\
+DOSPERT Risk Perception * Dominance & -0.28 & 0.10 & -0.49 - -0.08\\
+DOSPERT Risk Perception * Gender & 0.45 & 0.17 & 0.12 - 0.77\\
+DOSPERT Risk Benefit * Dominance & 0.26 & 0.10 & 0.08 - 0.46\\
+DOSPERT Risk Benefit * Gender & -0.57 & 0.16 & -0.88 - -0.27\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{ThreePartTable}
+\end{center}
+
+\begin{center}
+\begin{ThreePartTable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.}
+\end{TableNotes}
+
+\begin{longtable}{llll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:m4-perceivedRisk-Gender-exp-1}DOSPERT Benefit and Perception: Experiment 1}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:m4-perceivedRisk-Gender-exp-1} continued}}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endhead
+DOSPERT Risk Likelihood * Dominance & 0.65 & 0.13 & 0.39 - 0.91\\
+DOSPERT Risk Likelihood * Gender & -0.48 & 0.15 & -0.77 - -0.19\\
+DOSPERT Risk Likelihood * Dominance : Gender & -0.49 & 0.18 & -0.84 - -0.14\\
+DOSPERT Risk Perception * Dominance & -0.30 & 0.15 & -0.6 - -0.02\\
+DOSPERT Risk Perception * Gender & 0.44 & 0.16 & 0.12 - 0.77\\
+DOSPERT Risk Benefit * Dominance & 0.40 & 0.14 & 0.13 - 0.68\\
+DOSPERT Risk Benefit * Gender & -0.56 & 0.16 & -0.88 - -0.25\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{ThreePartTable}
+\end{center}
+
+\begin{table}[ht]
+
+\begin{center}
+\begin{threeparttable}
+
+\caption{\label{tab:PNI-Model-DoPL-Exp-2}General Risk * DoPL: Experiment 2}
+
+\begin{tabular}{llll}
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+Intercept & 0.75 & 0.19 & 0.38 - 1.11\\
+Dominance & 0.33 & 0.08 & 0.17 - 0.49\\
+Age & -0.02 & 0.01 & -0.04 - -0.01\\
+\bottomrule
+\addlinespace
+\end{tabular}
+
+\begin{tablenotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting general risk preference.}
+\end{tablenotes}
+
+\end{threeparttable}
+\end{center}
+
+\end{table}
+
+\begin{center}
+\begin{ThreePartTable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Narcisism as a mediation in a model predicting risk likelihood through risk benefit.}
+\end{TableNotes}
+
+\begin{longtable}{llll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:MediationBRMS1Exp2}DOSPERT Risk Likelihood and Benefit Mediation: Experiment 2}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:MediationBRMS1Exp2} continued}}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endhead
+DOSPERT Risk Likelihood * DOSPERT Risk Benefit & 0.54 & 0.05 & 0.44 - 0.63\\
+DOSPERT Risk Likelihood * PNI & 0.16 & 0.04 & 0.07 - 0.24\\
+DOSPERT Risk Benefit * PNI & 0.21 & 0.05 & 0.11 - 0.31\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{ThreePartTable}
+\end{center}
+
+\begin{center}
+\begin{ThreePartTable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Narcisism and Dominance as a mediation in a model predicting risk likelihood through risk benefit.}
+\end{TableNotes}
+
+\begin{longtable}{llll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:MediationBRMS2Exp2}DOSPERT Risk Likelihood and Benefit Mediation: Experiment 2}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:MediationBRMS2Exp2} continued}}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endhead
+DOSPERT Risk Likelihood * DOSPERT Risk Benefit & 0.50 & 0.05 & 0.4 - 0.6\\
+DOSPERT Risk Likelihood * PNI & 0.11 & 0.05 & 0.02 - 0.2\\
+DOSPERT Risk Likelihood * Dominance & 0.16 & 0.05 & 0.05 - 0.26\\
+DOSPERT Risk Benefit * PNI & 0.12 & 0.05 & 0.02 - 0.23\\
+DOSPERT Risk Benefit * Dominance & 0.24 & 0.06 & 0.12 - 0.36\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{ThreePartTable}
+\end{center}
+
+\begin{center}
+\begin{ThreePartTable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} Fixed effect results of Narcisism and Dominance as a mediation in a model predicting risk likelihood through risk benefit.}
+\end{TableNotes}
+
+\begin{longtable}{llll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:MediationBRMS3Exp2}DOSPERT Risk Likelihood and Benefit Mediation: Experiment 2}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:MediationBRMS3Exp2} continued}}\\
+\toprule
+Parameter & \multicolumn{1}{c}{Estimate} & \multicolumn{1}{c}{Est.Error} & \multicolumn{1}{c}{CI (95\%)}\\
+\midrule
+\endhead
+DOSPERT Risk Likelihood * DOSPERT Risk Benefit & 0.50 & 0.05 & 0.41 - 0.6\\
+DOSPERT Risk Likelihood * Dominance & 0.16 & 0.05 & 0.06 - 0.27\\
+DOSPERT Risk Likelihood * PNI & 0.10 & 0.05 & 0.02 - 0.19\\
+DOSPERT Risk Benefit * PNI & 0.12 & 0.05 & 0.02 - 0.23\\
+DOSPERT Risk Benefit * Dominance & 0.24 & 0.05 & 0.13 - 0.35\\
+Dominance * PNI & 0.48 & 0.05 & 0.37 - 0.58\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{ThreePartTable}
+\end{center}
+
+\begin{lltable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.}  * denotes significance level. 1 = DOSPERT General Preference, 2 = DOSPERT Recreation Preference, 3 = DOSPERT Health/Safety Preference, 4 = DOSPERT Social Preference, 5 = DOSPERT Financial Preference, 6 = DOSPERT Ethical Preference, 7 = DOSPERT Risk Benefit, 8 = DOSPERT Risk Perception, 9 = DOSPERT Risk Likelihood, 10 = UMS Affiliation, 11 = UMS Intimacy, 12 = UMS, 13 = Leadership, 14 = Prestige, 15 = Dominance, 16 = DoPL}
+\end{TableNotes}
+
+\tiny{
+
+\begin{longtable}{lllllllllllllllll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:unnamed-chunk-1}General Correlation Matrix | Experiment 2}\\
+\toprule
+Parameter & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:unnamed-chunk-1} continued}}\\
+\toprule
+Parameter & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16\\
+\midrule
+\endhead
+DoPL & 0.26** & 0.20* & 0.21* & 0.27** & 0.19* & 0.27** & 0.27** & 2.51E-03 & 0.41*** & 0.38*** & 0.24** & 0.38*** & 0.73*** & 0.73*** & 0.73*** & 1\\
+Dominance & 0.26** & 0.31*** & 0.23** & 0.20* & 0.14 & 0.29*** & 0.25** & -0.12 & 0.42*** & 0.18 & 5.10E-03 & 0.13 & 0.27** & 0.37*** & 1 & \\
+Prestige & 0.22** & 0.07 & 0.16 & 0.26** & 0.20* & 0.18* & 0.22** & 0.13 & 0.31*** & 0.38*** & 0.43*** & 0.45*** & 0.36*** & 1 &  & \\
+Leadership & 0.13 & 0.05 & 0.08 & 0.17 & 0.09 & 0.14 & 0.12 & 0.02 & 0.19* & 0.31** & 0.16 & 0.29** & 1 &  &  & \\
+UMS & 0.15 & -3.31E-03 & 0.14 & 0.17 & 0.22** & 0.05 & 0.16 & 0.23** & 0.23** & 0.95*** & 0.76*** & 1 &  &  &  & \\
+UMS Intimacy & 0.06 & -0.07 & 0.06 & 0.1 & 0.11 & -0.04 & 0.07 & 0.26** & 0.06 & 0.53*** & 1 &  &  &  &  & \\
+UMS Affiliation & 0.17 & 0.03 & 0.15 & 0.18* & 0.24** & 0.09 & 0.18* & 0.19* & 0.28** & 1 &  &  &  &  &  & \\
+DOSPERT Risk Likelihood & 0.59*** & 0.49*** & 0.55*** & 0.55*** & 0.46*** & 0.55*** & 0.58*** & -0.17 & 1 &  &  &  &  &  &  & \\
+DOSPERT Risk Perception & -0.09 & -0.34*** & -0.19* & -0.01 & 8.61E-04 & -0.16 & -0.05 & 1 &  &  &  &  &  &  &  & \\
+DOSPERT Risk Benefit & 1.00*** & 0.82*** & 0.86*** & 0.84*** & 0.88*** & 0.87*** & 1 &  &  &  &  &  &  &  &  & \\
+DOSPERT Ethical Preference & 0.88*** & 0.75*** & 0.77*** & 0.65*** & 0.69*** & 1 &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Financial Preference & 0.87*** & 0.67*** & 0.68*** & 0.67*** & 1 &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Social Preference & 0.84*** & 0.59*** & 0.69*** & 1 &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Health/Safety Preference & 0.87*** & 0.69*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Recreation Preference & 0.83*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT General Preference & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+}
+
+\end{lltable}
+
+\begin{lltable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.}  * denotes significance level. 1 = DOSPERT General Risk Preference, 2 = DOSPERT Recreation Preference, 3 = DOSPERT HS Preference, 4 = DOSPERT Social Preference, 5 = DOSPERT Financial Preference, 6 = DOSPERT Ethical Preference, 7 = DOSPERT Social Perception, 8 = DOSPERT Recreation Perception, 9 = DOSPERT HS Perception, 10 = DOSPERT Financial Perception, 11 = DOSPERT Ethical Perception, 12 = DOSPERT Social Benefit, 13 = DOSPERT Recreation Benefit, 14 = DOSPERT HS Benefit, 15 = DOSPERT Financial Benefit, 16 = DOSPERT Ethical Benefit, 17 = DOSPERT Social Likelihood, 18 = DOSPERT Recreation Likelihood, 19 = DOSPERT HS Likelihood, 20 = DOSPERT Financial Likelihood, 21 = DOSPERT Ethical Likelihood, 22 = DOSPERT Risk Benefit, 23 = DOSPERT Risk Perception, 24 = DOSPERT Risk Likelihood, 25 = UMS Affiliation, 26 = UMS Intimacy, 27 = UMS, 28 = Leadership, 29 = Prestige, 30 = Dominance, 31 = DoPL}
+\end{TableNotes}
+
+\tiny{
+
+\begin{longtable}{llllllllllllllllllllllllllllllll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:unnamed-chunk-2}General Correlation Matrix | Experiment 2}\\
+\toprule
+Parameter & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 & 31\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:unnamed-chunk-2} continued}}\\
+\toprule
+Parameter & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 & 31\\
+\midrule
+\endhead
+DoPL & 0.27** & 0.20* & 0.21* & 0.27*** & 0.19* & 0.27** & -2.47E-03 & -9.78E-03 & 0.03 & 0.03 & -0.04 & 0.27** & 0.22* & 0.22** & 0.19* & 0.28** & 0.28** & 0.30*** & 0.30*** & 0.34*** & 0.34*** & 0.26** & 3.53E-03 & 0.40*** & 0.38*** & 0.24** & 0.37*** & 0.74*** & 0.73*** & 0.73*** & 1\\
+Dominance & 0.26** & 0.31*** & 0.23** & 0.20* & 0.14 & 0.29** & -0.02 & -0.13 & -0.08 & -0.1 & -0.20* & 0.20* & 0.30*** & 0.22** & 0.15 & 0.27** & 0.20* & 0.38*** & 0.34*** & 0.33*** & 0.38*** & 0.25** & -0.12 & 0.42*** & 0.18* & 8.23E-03 & 0.14 & 0.28** & 0.37*** & 1 & \\
+Prestige & 0.21* & 0.07 & 0.16 & 0.26** & 0.21* & 0.17* & 0.05 & 0.14 & 0.11 & 0.11 & 0.12 & 0.27** & 0.13 & 0.18* & 0.19* & 0.20* & 0.27** & 0.17 & 0.28** & 0.25** & 0.28** & 0.22* & 0.13 & 0.31*** & 0.38*** & 0.43*** & 0.44*** & 0.36*** & 1 &  & \\
+Leadership & 0.12 & 0.05 & 0.08 & 0.17 & 0.1 & 0.14 & -0.03 & -6.41E-03 & 0.06 & 0.08 & 8.96E-03 & 0.16 & 0.06 & 0.09 & 0.09 & 0.15 & 0.17 & 0.13 & 0.07 & 0.18 & 0.1 & 0.12 & 0.02 & 0.20* & 0.30** & 0.16 & 0.29*** & 1 &  &  & \\
+UMS & 0.16 & -2.16E-03 & 0.14 & 0.17 & 0.22* & 0.06 & 0.11 & 0.23* & 0.18* & 0.22** & 0.28** & 0.17* & 0.07 & 0.17 & 0.20* & 0.1 & 0.18* & 0.12 & 0.17 & 0.22* & 0.24** & 0.16 & 0.23** & 0.23** & 0.95*** & 0.76*** & 1 &  &  &  & \\
+UMS Intimacy & 0.06 & -0.07 & 0.07 & 0.09 & 0.11 & -0.04 & 0.13 & 0.28** & 0.17 & 0.22* & 0.32*** & 0.11 & 0.02 & 0.09 & 0.09 & 8.10E-03 & 0.1 & -0.08 & 0.06 & 0.07 & 0.06 & 0.07 & 0.26** & 0.06 & 0.53*** & 1 &  &  &  &  & \\
+UMS Affiliation & 0.17* & 0.03 & 0.15 & 0.17 & 0.24** & 0.09 & 0.08 & 0.16 & 0.16 & 0.19* & 0.21* & 0.18* & 0.08 & 0.18* & 0.22* & 0.13 & 0.19* & 0.19* & 0.19* & 0.26** & 0.29** & 0.18* & 0.18* & 0.28** & 1 &  &  &  &  &  & \\
+DOSPERT Risk Likelihood & 0.59*** & 0.48*** & 0.55*** & 0.55*** & 0.46*** & 0.54*** & -0.22* & -0.17 & -0.13 & -0.06 & -0.14 & 0.54*** & 0.48*** & 0.55*** & 0.47*** & 0.54*** & 0.54*** & 0.80*** & 0.79*** & 0.80*** & 0.83*** & 0.58*** & -0.16 & 1 &  &  &  &  &  &  & \\
+DOSPERT Risk Perception & -0.1 & -0.34*** & -0.19* & -8.90E-03 & -1.32E-03 & -0.16 & 0.81*** & 0.85*** & 0.88*** & 0.83*** & 0.88*** & 0.06 & -0.1 & -0.07 & -0.07 & -0.04 & 0.06 & -0.17 & -0.21* & -0.06 & -0.07 & -0.05 & 1 &  &  &  &  &  &  &  & \\
+DOSPERT Risk Benefit & 1.00*** & 0.82*** & 0.86*** & 0.84*** & 0.88*** & 0.87*** & -0.12 & -0.09 & -0.07 & 0.09 & -0.02 & 0.84*** & 0.88*** & 0.87*** & 0.88*** & 0.89*** & 0.84*** & 0.45*** & 0.51*** & 0.59*** & 0.47*** & 1 &  &  &  &  &  &  &  &  & \\
+DOSPERT Ethical Likelihood & 0.47*** & 0.40*** & 0.42*** & 0.39*** & 0.40*** & 0.47*** & -0.06 & -0.1 & -0.05 & 0.02 & -0.12 & 0.39*** & 0.40*** & 0.42*** & 0.40*** & 0.47*** & 0.39*** & 0.60*** & 0.64*** & 0.60*** & 1 &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Financial Likelihood & 0.59*** & 0.44*** & 0.48*** & 0.54*** & 0.49*** & 0.56*** & -0.09 & -0.06 & -3.35E-03 & -0.08 & -0.03 & 0.54*** & 0.47*** & 0.49*** & 0.50*** & 0.58*** & 0.54*** & 0.55*** & 0.54*** & 1 &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT HS Likelihood & 0.51*** & 0.40*** & 0.59*** & 0.42*** & 0.43*** & 0.46*** & -0.26** & -0.15 & -0.24** & -0.08 & -0.20* & 0.40*** & 0.40*** & 0.56*** & 0.44*** & 0.44*** & 0.40*** & 0.57*** & 1 &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Recreation Likelihood & 0.45*** & 0.49*** & 0.43*** & 0.37*** & 0.30** & 0.43*** & -0.1 & -0.24** & -0.1 & -0.13 & -0.14 & 0.37*** & 0.46*** & 0.43*** & 0.31*** & 0.42*** & 0.37*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Social Likelihood & 0.84*** & 0.58*** & 0.68*** & 1.00*** & 0.67*** & 0.65*** & -0.11 & 0.05 & 0.04 & 0.18 & 0.1 & 1.00*** & 0.66*** & 0.70*** & 0.66*** & 0.68*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Ethical Benefit & 0.89*** & 0.72*** & 0.76*** & 0.67*** & 0.72*** & 0.99*** & -0.03 & -0.09 & -0.03 & 0.09 & -0.09 & 0.68*** & 0.77*** & 0.78*** & 0.71*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Financial Benefit & 0.88*** & 0.70*** & 0.69*** & 0.66*** & 1.00*** & 0.69*** & -0.15 & -0.08 & -0.11 & 0.04 & 0.01 & 0.66*** & 0.75*** & 0.69*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT HS Benefit & 0.88*** & 0.66*** & 0.99*** & 0.70*** & 0.70*** & 0.76*** & -0.13 & -0.11 & -0.09 & 0.06 & -0.04 & 0.70*** & 0.70*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Recreation Benefit & 0.88*** & 0.95*** & 0.69*** & 0.66*** & 0.75*** & 0.76*** & -0.1 & -0.16 & -0.09 & 1.22E-04 & -0.08 & 0.66*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Social Benefit & 0.84*** & 0.58*** & 0.68*** & 1.00*** & 0.67*** & 0.65*** & -0.11 & 0.05 & 0.04 & 0.18* & 0.1 & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Ethical Perception & -0.06 & -0.29** & -0.14 & 0.05 & 0.07 & -0.23** & 0.62*** & 0.73*** & 0.73*** & 0.67*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Financial Perception & 0.05 & -0.19* & -0.03 & 0.12 & 0.12 & -0.01 & 0.57*** & 0.66*** & 0.69*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT HS Perception & -0.1 & -0.28*** & -0.23** & -0.02 & -0.05 & -0.14 & 0.70*** & 0.67*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Recreation Perception & -0.12 & -0.44*** & -0.20* & -7.75E-04 & -0.03 & -0.19* & 0.60*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Social Perception & -0.16 & -0.27** & -0.22** & -0.20* & -0.1 & -0.12 & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Ethical Preference & 0.88*** & 0.75*** & 0.77*** & 0.65*** & 0.69*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Financial Preference & 0.88*** & 0.68*** & 0.69*** & 0.67*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Social Preference & 0.84*** & 0.59*** & 0.69*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT HS Preference & 0.87*** & 0.69*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT Recreation Preference & 0.83*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+DOSPERT General Risk Preference & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+}
+
+\end{lltable}
+
+\begin{lltable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.}  * denotes significance level. 1 = General Risk Preference, 2 = General Expected Benefits, 3 = Risk Sum, 4 = Risk Benefit, 5 = Risk Perception, 6 = B-PNI, 7 = UMS Sum, 8 = UMS Intimacy, 9 = UMS Affiliation, 10 = Leadership, 11 = Prestige, 12 = Dominance, 13 = Social Preference, 14 = Recreational Preference, 15 = Health and Safety Preference, 16 = Financial Preference, 17 = Ethical Preference}
+\end{TableNotes}
+
+\tiny{
+
+\begin{longtable}{p{3cm}rrrrrrrrrrrrrrrrr}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:experiment2Correlation_BPNI}General Correlation Matrix | Experiment 2}\\
+\toprule
+Parameter & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:experiment2Correlation_BPNI} continued}}\\
+\toprule
+Parameter & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17\\
+\midrule
+\endhead
+Ethical Preference & 0.68*** & 0.67*** & 0.42*** & 0.68*** & -0.30*** & 0.18** & -0.05 & -0.02 & -0.14* & -0.1 & 0.02 & 0.33*** & 0.08 & 0.28*** & 0.56*** & 0.38*** & 1\\
+Financial Preference & 0.60*** & 0.68*** & 0.37*** & 0.68*** & -0.09 & 0.05 & 0.02 & 0.06 & -0.08 & 0.1 & 0.06 & 0.14* & 0.23*** & 0.27*** & 0.25*** & 1 & \\
+Health and Safety Preference & 0.71*** & 0.74*** & 0.44*** & 0.74*** & -0.24*** & 0.15** & -0.02 & 0.02 & -0.12* & 0.01 & -0.07 & 0.27*** & 0.28*** & 0.50*** & 1 &  & \\
+Recreational Preference & 0.68*** & 0.70*** & 0.43*** & 0.70*** & -0.23*** & 0.13* & 0.05 & 0.09 & -0.07 & 0.12* & -0.01 & 0.21*** & 0.38*** & 1 &  &  & \\
+Social Preference & 0.43*** & 0.56*** & 0.22*** & 0.56*** & 0.08 & 0.27*** & 0.28*** & 0.27*** & 0.24*** & 0.32*** & 0.22*** & 0.09 & 1 &  &  &  & \\
+Dominance & 0.33*** & 0.30*** & 0.35*** & 0.30*** & -0.19*** & 0.47*** & 0.11* & 0.13* & 0.01 & 0.29*** & 0.30*** & 1 &  &  &  &  & \\
+Prestige & 0.03 & 0.06 & 0.17** & 0.06 & 0.05 & 0.45*** & 0.66*** & 0.62*** & 0.55*** & 0.46*** & 1 &  &  &  &  &  & \\
+Leadership & 0.08 & 0.13* & 0.14* & 0.13* & 0.07 & 0.29*** & 0.42*** & 0.40*** & 0.35*** & 1 &  &  &  &  &  &  & \\
+UMS Affiliation & -0.12* & -0.06 & -0.09 & -0.06 & 0.19*** & 0.34*** & 0.74*** & 0.56*** & 1 &  &  &  &  &  &  &  & \\
+UMS Intimacy & 0.09 & 0.12* & 0.21*** & 0.12* & 0.03 & 0.27*** & 0.97*** & 1 &  &  &  &  &  &  &  &  & \\
+UMS Sum & 0.04 & 0.08 & 0.14** & 0.08 & 0.07 & 0.31*** & 1 &  &  &  &  &  &  &  &  &  & \\
+B-PNI & 0.17** & 0.22*** & 0.26*** & 0.22*** & 0.04 & 1 &  &  &  &  &  &  &  &  &  &  & \\
+Risk Perception & -0.58 & -0.23*** & -0.39*** & -0.23*** & 1 &  &  &  &  &  &  &  &  &  &  &  & \\
+Risk Benefit & 0.92*** & 1.00*** & 0.56*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  & \\
+Risk Sum & 0.62*** & 0.56*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+General Expected Benefits & 0.92*** & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+General Risk Preference & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+}
+
+\end{lltable}
+
+\begin{lltable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} * denotes signficance level. 1 = Self-Sacrifing and Self-Enhancement, 2 = Grandiose Fantasy, 3 = Exploitativeness, 4 = Hiding the Self, 5 = Entitlement Rage, 6 = Devaluing, 7 = Contingent Self-Esteem, 8 = Vulnerability, 9 = Grandiosity , 10 = B-PNI , 11 = Prestige , 12 = Leadership, 13 = Dominance}
+\end{TableNotes}
+
+\scriptsize{
+
+\begin{longtable}{llllllllllllll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:experiment2Correlation_MPNI}General Correlation Matrix | Experiment 2}\\
+\toprule
+Parameter & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:experiment2Correlation_MPNI} continued}}\\
+\toprule
+Parameter & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\
+\midrule
+\endhead
+Dominance\ \ \ \ \ \ \ \ \ \ \ \ \ \ & 0.18** & 0.15* & 0.49*** & 0.30*** & 0.52*** & 0.30*** & 0.34*** & 0.44*** & 0.36*** & 0.46*** & 0.29*** & 0.30*** & 1\\
+Leadership\ \ \ \ \ \ \ \ \ \ \ \ & 0.30*** & 0.26*** & 0.51*** & 0.07 & 0.22*** & 0.04 & 0.05 & 0.12 & 0.48*** & 0.29*** & 0.46*** & 1 & \\
+Prestige\ \ \ \ \ \ \ \ \ \ \ \ \ \ & 0.46*** & 0.38*** & 0.34*** & 0.16* & 0.40*** & 0.19** & 0.32*** & 0.32*** & 0.53*** & 0.45*** & 1 &  & \\
+B-PNI\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ & 0.65*** & 0.63*** & 0.48*** & 0.76*** & 0.79*** & 0.73*** & 0.74*** & 0.92*** & 0.80*** & 1 &  &  & \\
+Grandiosity\ \ \ \ \ \ \ \ \ \ \ \ & 0.75*** & 0.79*** & 0.66*** & 0.42*** & 0.50*** & 0.34*** & 0.43*** & 0.51*** & 1 &  &  &  & \\
+Vulnerability\ \ \ \ \ \ \ \ \ \ & 0.45*** & 0.41*** & 0.28*** & 0.82*** & 0.82*** & 0.84*** & 0.79*** & 1 &  &  &  &  & \\
+Contingent Self-Esteem & 0.42*** & 0.33*** & 0.19** & 0.56*** & 0.57*** & 0.55*** & 1 &  &  &  &  &  & \\
+Devaluing\ \ \ \ \ \ \ \ \ \ \ \ \ \ & 0.35*** & 0.28*** & 0.14 & 0.58*** & 0.63*** & 1 &  &  &  &  &  &  & \\
+Entitlement Rage\ \ \ \ \ \ & 0.42*** & 0.35*** & 0.35*** & 0.50*** & 1 &  &  &  &  &  &  &  & \\
+Hiding the Self\ \ \ \ \ \ \ \ & 0.33*** & 0.37*** & 0.23*** & 1 &  &  &  &  &  &  &  &  & \\
+Exploitativeness\ \ \ \ \ \ & 0.26*** & 0.24*** & 1 &  &  &  &  &  &  &  &  &  & \\
+Grandiose Fantasy\ \ \ \ \ \ & 0.45*** & 1 &  &  &  &  &  &  &  &  &  &  & \\
+Self-Sacrificing and Self-Enhancement & 1 &  &  &  &  &  &  &  &  &  &  &  & \\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+}
+
+\end{lltable}
+
+
+\clearpage
+\renewcommand{\listfigurename}{Figure captions}
+
+\clearpage
+\renewcommand{\listtablename}{Table captions}
+
+
+\end{document}

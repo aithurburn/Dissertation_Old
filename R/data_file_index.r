@@ -55,39 +55,7 @@ Experiment_2_dataset_raw <- read.csv("/Users/andrew/Library/CloudStorage/OneDriv
 Experiment_2_demographic_dataset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Experiment_2_demographics.csv")
 
 
-experiment_dataset_analysis$Gender <- replace_na(experiment_dataset_analysis$Gender, "Gender Non-Binary")
-d1 <- experiment_dataset_analysis %>%
-  mutate_at(vars(locfunc(experiment_dataset_analysis, "Gender")), ~ as.factor(recode(., "1" = "Female", "2" = "Male", "NA" = "Gender Non-Binary", "6" = "Prefer not to respond"))) %>%
-  mutate_at(vars(locfunc(experiment_dataset_analysis, "Ethnicity")), ~ as.factor(recode(.,
-    "1" = "White",
-    "2" = "Mixed  or  Multi-ethnic",
-    "3" = "Asian  or  Asian Scottish  or  Asian British",
-    "4" = "African",
-    "5" = "Caribbean  or  Black",
-    "6" = "Arab ",
-    "7" = "Other ethnicity",
-    "8" = "Prefer not  to respond"
-  ))) %>%
-  mutate_at(vars(locfunc(experiment_dataset_analysis, "Ethnic_Origin")), ~ as.factor(recode(.,
-    "1" = "Scottish",
-    "2" = "English",
-    "3" = "European",
-    "4" = "Latin American",
-    "5" = "Asian",
-    "6" = "Arab",
-    "7" = "African",
-    "8" = "Other",
-    "9" = "Prefer not to respond"
-  ))) %>%
-  mutate_at(vars(locfunc(experiment_dataset_analysis, "Education")), ~ as.factor(recode(.,
-    "1" = "Primary School ",
-    "2" = "GCSEs  or  Equivalent",
-    "3" = "A-Levels  or  Equivalent",
-    "4" = "University  Undergraduate  Program",
-    "5" = "University  Post-Graduate  Program",
-    "6" = "Doctoral  Degree",
-    "7" = "Prefer not  to respond"
-  )))
+
 
 
 d2 <- Experiment_2_demographic_dataset %>%
