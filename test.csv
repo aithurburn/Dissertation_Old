@@ -1,6 +1,0 @@
-"","Parameter","Estimate","Est.Error","CI (95%)"
-"DOSPERT Risk Likelihood * Intercept","DOSPERT Risk Likelihood * Intercept",0,0.05,"-0.09 - 0.1"
-"DOSPERT Risk Benefit * Intercept","DOSPERT Risk Benefit * Intercept",-0.03,0.06,"-0.14 - 0.09"
-"DOSPERT Risk Likelihood * DOSPERT Benefit * ","DOSPERT Risk Likelihood * DOSPERT Benefit * ",0.54,0.05,"0.44 - 0.63"
-"DOSPERT Risk Likelihood * PNI","DOSPERT Risk Likelihood * PNI",0.16,0.04,"0.07 - 0.24"
-"DOSPERT Risk Benefit * PNI","DOSPERT Risk Benefit * PNI",0.21,0.05,"0.11 - 0.31"

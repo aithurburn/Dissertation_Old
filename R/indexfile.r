@@ -1,15 +1,13 @@
-setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Experiments/Experiment 1/Experiment_2/")
-
 library("papaja")
 r_refs("r-references.bib")
-analysisDF <- read.csv("analysisDF.csv")
-dftime <- read.csv("Experiment2Datasetclean.csv")
-experimenttwoDS <- read.csv("Experiment2Dataset.csv")
+analysisDF <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/analysisDF.csv")
+dftime <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/Experiment2Datasetclean.csv")
+experimenttwoDS <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/Experiment2Dataset.csv")
 dftime <- dftime[-1:-2, ]
 library(lubridate)
 averagecompletion <- mean(as.numeric(dftime$Duration..in.seconds.))
 stdvDF <- sd(as.numeric(dftime$Duration..in.seconds.))
-newDF <- read.csv("newDF2.csv")
+newDF <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/newDF2.csv")
 options(digits = 2)
 
 
@@ -47,31 +45,32 @@ lfunc <- function(dataset, to, from) {
   length({{ dataset }}[loc1:loc2])
 }
 theme_set(theme_apa(base_size = 12))
-experimenttwoDStime_exploratory_experiment <- read.csv("Experiment2Datasetclean.csv")
-experimenttwoDS_exploratory_experiment <- read.csv("Experiment2DatasetcleannoTime.csv")
-df1_exploratory_experiment <- read.csv("df1.csv")
-corrtable_exploratory_experiment <- read.csv("corr_expl_1.csv")
-m4_exploratory_experiment <- readRDS("m4.rds")
-m5_exploratory_experiment <- readRDS("m5.rds")
-m5gen_exploratory_experiment <- readRDS("m5gen.rds")
-m7_exploratory_experiment <- readRDS("m7.rds")
-m8_exploratory_experiment <- readRDS("m8.rds")
-m8gen_exploratory_experiment <- readRDS("m8gen.rds")
-m8Age_exploratory_experiment <- readRDS("m8Age.rds")
-dm0_exploratory_experiment <- readRDS("dm0.rds")
-dm1_exploratory_experiment <- readRDS("dm1.rds")
-dm2_exploratory_experiment <- readRDS("dm2.rds")
-dm3_exploratory_experiment <- readRDS("dm3.rds")
-dm4_exploratory_experiment <- readRDS("dm4.rds")
-dm5_exploratory_experiment <- readRDS("dm5.rds")
-bayes.dm5_exploratory_experiment <- readRDS("bayes.dm5.rds")
-corr.mod_exploratory_experiment <- readRDS("Exploratory_corr_table.rds")
-demographictable_exploratory_experiment <- readRDS("demographictable.rds")
-m2prior_exploratory_experiment <- readRDS("m2prior.rds")
-dopl1prior_exploratory_experiment <- readRDS("m4prior.rds")
-m7prior_exploratory_experiment <- readRDS("m7prior.rds")
-m1intPrior_exploratory_experiment <- readRDS("m1intPrior.rds")
-analysisDF_exploratory_experiment <- read.csv("analysisDF.csv")
+corr_expl_1_table <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/corr_expl_1.csv")
+experimenttwoDStime_exploratory_experiment <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/Experiment2Datasetclean.csv")
+experimenttwoDS_exploratory_experiment <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/Experiment2DatasetcleannoTime.csv")
+df1_exploratory_experiment <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/df1.csv")
+corrtable_exploratory_experiment <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/corr_expl_1.csv")
+m4_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m4.rds")
+m5_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m5.rds")
+m5gen_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m5gen.rds")
+m7_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m7.rds")
+m8_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m8.rds")
+m8gen_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m8gen.rds")
+m8Age_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m8Age.rds")
+dm0_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/dm0.rds")
+dm1_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/dm1.rds")
+dm2_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/dm2.rds")
+dm3_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/dm3.rds")
+dm4_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/dm4.rds")
+dm5_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/dm5.rds")
+bayes.dm5_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/bayes.dm5.rds")
+corr.mod_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/Exploratory_corr_table.rds")
+demographictable_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/demographictable.rds")
+m2prior_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m2prior.rds")
+dopl1prior_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m4prior.rds")
+m7prior_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m7prior.rds")
+m1intPrior_exploratory_experiment <- readRDS("./R/RDS_Files/Chapter_1/Exploratory_Experiment/m1intPrior.rds")
+analysisDF_exploratory_experiment <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/analysisDF.csv")
 
 
 
@@ -167,13 +166,13 @@ genderresults$freq[2]
 
 
 
-## experiment_1_dataset_select <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Experiments/Experiment 1/Experiment_2/Experiment_1_dataset_dropped_row.csv")
+## experiment_1_dataset_select <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment//Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Experiments/Experiment 1/Experiment_2/Experiment_1_dataset_dropped_row.csv")
 ## experiment_1_dataset_select <- experiment_1_dataset_select[, grepl("Timing...First.Click", names(experiment_1_dataset_select))]
 ## write.csv(experiment_1_dataset_select, "experiment_1_dataset_select.csv")
 
 
 ## experiment_1_dataset_select_2 <- experiment_1_dataset_select[, -c(1:55)]
-## experiment_1_dataset_select_2 <- read.csv("experiment_1_dataset_select_2.csv")
+## experiment_1_dataset_select_2 <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/experiment_1_dataset_select_2.csv")
 
 justification_timing_overall <- c(
   "Timing...First.Click.56",
@@ -242,7 +241,7 @@ agreement_timing_non_sexual <- c(
 
 ## write.csv(experiment_1_dataset_select_2, "experiment_1_mean_timings.csv")
 
-## timing_means<- read.csv("./CSV_Files/Timings_means.csv")
+## timing_means<- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/./CSV_Files/Timings_means.csv")
 ## experiment_1_long <- experiment_1_Dataset_analysis %>%
 ##   select("dominanceSum", "Gender", "ethicalQuestionsRiskSum", "financialQuestionsRiskSum", "healthAndSafetyQuestionsRiskSum", "recreationalQuestionsRiskSum", "socialQuestionsRiskSum") %>%
 ##   pivot_longer(-c("dominanceSum", "Gender"), names_to = "variable", values_to = "value")
@@ -252,7 +251,7 @@ agreement_timing_non_sexual <- c(
 
 ## write.csv(timing_means, "testing_means.csv")
 
-## experiment_1_mean_timings <- read.csv("./experiment_1_mean_timings.csv")
+## experiment_1_mean_timings <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/./experiment_1_mean_timings.csv")
 ## experiment_1_mean_timings <- experiment_1_mean_timings[rep(seq_len(nrow(experiment_1_mean_timings)), each = 10),]
 ## write.csv(experiment_1_mean_timings, "experiment_1_mean_long.csv")
 
@@ -261,6 +260,6 @@ agreement_timing_non_sexual <- c(
 ## kable(Experiment_1_mean) %>%
 ## kable_styling(full_width = F)
 
-exploratory_experiment_dataset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/CSV_Files/Exploratory_Experiment/df.csv")
+exploratory_experiment_dataset <- read.csv("./CSV_Files/Chapter_1/Exploratory_Experiment/df.csv")
 
-Remove <- "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/"
+Remove <- "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/"

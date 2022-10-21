@@ -1,6 +1,5 @@
 ```{r exploratoryExperimentCorrelation}
-setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation")
-corr_expl_1_table <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Experiments/Experiment 1/Experiment_2/corr_expl_1.csv")
+
 corr_expl_1_table[is.na(corr_expl_1_table)] <- ""
 corr_expl_1_table <- corr_expl_1_table[, -1]
 kable(corr_expl_1_table, caption = "General Correlation Matrix | Experiment 1", col.names = c("Parameter", 1:13), escape = FALSE, format = "latex", booktabs = T, align = "l") %>%

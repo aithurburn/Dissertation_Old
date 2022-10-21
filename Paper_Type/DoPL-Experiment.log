@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.19)  20 OCT 2022 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.19)  21 OCT 2022 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment.tex
-(/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment.tex
+**/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment.tex
+(/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28> (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/apa7/apa7.cls
 Document Class: apa7 2022/07/25 v2.16 APA formatting (7th edition)
@@ -801,7 +801,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
+[3] [4] [5] [6] [7] [8]
+
+LaTeX Warning: Reference `tab:experiment2Correlation' on page 9 undefined on input line 353.
+
+[9] [10] [11] [12] [13]
+
+LaTeX Warning: Reference `tab:experiment2Correlation' on page 14 undefined on input line 466.
+
+
 Underfull \hbox (badness 1448) in paragraph at lines 481--482
  \T1/lmr/bx/it/12 2.7.1.2 Pres-tige.[] \T1/lmr/m/n/12 Dif-fer-en-ti-at-ing be-tween DoPL do-mains, males
  []
@@ -831,108 +839,110 @@ Underfull \hbox (badness 2941) in paragraph at lines 611--613
  []
 
 [20] [21]
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf, id=519, 1011.78pt x 722.7pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf  used on input line 676.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf, id=516, 1011.78pt x 722.7pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf  used on input line 678.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf, id=520, 1011.78pt x 722.7pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf  used on input line 682.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf, id=517, 1011.78pt x 722.7pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf  used on input line 684.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf, id=521, 1011.78pt x 722.7pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf  used on input line 689.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf, id=518, 1011.78pt x 722.7pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf  used on input line 691.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf, id=522, 1011.78pt x 722.7pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf  used on input line 690.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf, id=519, 1011.78pt x 722.7pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf  used on input line 692.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf, id=523, 1011.78pt x 722.7pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf  used on input line 691.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf, id=520, 1011.78pt x 722.7pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf  used on input line 693.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf, id=524, 469.755pt x 325.215pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf  used on input line 692.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf, id=521, 469.755pt x 325.215pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf  used on input line 694.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf, id=525, 1011.78pt x 722.7pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf  used on input line 693.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf, id=522, 1011.78pt x 722.7pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf  used on input line 695.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf, id=526, 469.755pt x 325.215pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf  used on input line 694.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf, id=523, 469.755pt x 325.215pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf  used on input line 696.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
 
-Overfull \hbox (36.13304pt too wide) in paragraph at lines 689--695
+Overfull \hbox (36.13304pt too wide) in paragraph at lines 691--697
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--695
+Underfull \hbox (badness 10000) in paragraph at lines 691--697
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--695
+Underfull \hbox (badness 10000) in paragraph at lines 691--697
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--695
+Underfull \hbox (badness 10000) in paragraph at lines 691--697
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--695
+Underfull \hbox (badness 10000) in paragraph at lines 691--697
 []
  []
 
-[22 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf>] [23 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf>] [24 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf>] [25 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf>] [26 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf>]
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf, id=595, 1011.78pt x 722.7pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf  used on input line 700.
+[22 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf>] [23 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf>] [24 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf>] [25 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf>] [26 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf>]
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf, id=592, 1011.78pt x 722.7pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf  used on input line 704.
 (pdftex.def)             Requested size: 577.58514pt x 412.56082pt.
 
-LaTeX Warning: Float too large for page by 42.55038pt on input line 705.
+LaTeX Warning: Float too large for page by 42.55038pt on input line 709.
 
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf, id=596, 1011.78pt x 722.7pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf  used on input line 709.
-(pdftex.def)             Requested size: 577.58514pt x 412.56082pt.
-
-LaTeX Warning: Float too large for page by 42.55038pt on input line 714.
-
-[27 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf>] [28 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf>]
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf, id=619, 469.755pt x 325.215pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf  used on input line 719.
+[27 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf>]
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf, id=604, 469.755pt x 325.215pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf  used on input line 714.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf, id=620, 469.755pt x 325.215pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf  used on input line 727.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf, id=605, 469.755pt x 325.215pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf  used on input line 722.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
-</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf, id=621, 469.755pt x 325.215pt>
-File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf Graphic file (type pdf)
-<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf>
-Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf  used on input line 735.
+</Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf, id=606, 469.755pt x 325.215pt>
+File: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf Graphic file (type pdf)
+<use /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf>
+Package pdftex.def Info: /Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf  used on input line 730.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
-[29
+[28
 
 
- </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf>] [30 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf>]
+ </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf>] [29 </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf> </Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf>]
+Overfull \hbox (37.67332pt too wide) in paragraph at lines 777--777
+[] [] 
+ []
+
+
+Overfull \hbox (75.34665pt too wide) in alignment at lines 776--781
+ [] [] [] [] 
+ []
+
+
 Overfull \hbox (37.67332pt too wide) in paragraph at lines 782--782
 [] [] 
  []
@@ -943,17 +953,17 @@ Overfull \hbox (75.34665pt too wide) in alignment at lines 781--786
  []
 
 
-Overfull \hbox (37.67332pt too wide) in paragraph at lines 787--787
-[] [] 
- []
-
-
-Overfull \hbox (75.34665pt too wide) in alignment at lines 786--791
+Overfull \hbox (75.34665pt too wide) in alignment at lines 786--799
  [] [] [] [] 
  []
 
 
-Overfull \hbox (75.34665pt too wide) in alignment at lines 791--804
+Overfull \hbox (1.88853pt too wide) in paragraph at lines 812--812
+[] [] 
+ []
+
+
+Overfull \hbox (3.77707pt too wide) in alignment at lines 811--816
  [] [] [] [] 
  []
 
@@ -968,21 +978,21 @@ Overfull \hbox (3.77707pt too wide) in alignment at lines 816--821
  []
 
 
-Overfull \hbox (1.88853pt too wide) in paragraph at lines 822--822
+Overfull \hbox (3.77707pt too wide) in alignment at lines 821--834
+ [] [] [] [] 
+ []
+
+[30]
+Overfull \hbox (26.24486pt too wide) in paragraph at lines 847--847
 [] [] 
  []
 
 
-Overfull \hbox (3.77707pt too wide) in alignment at lines 821--826
+Overfull \hbox (52.4897pt too wide) in alignment at lines 846--851
  [] [] [] [] 
  []
 
 
-Overfull \hbox (3.77707pt too wide) in alignment at lines 826--839
- [] [] [] [] 
- []
-
-[31]
 Overfull \hbox (26.24486pt too wide) in paragraph at lines 852--852
 [] [] 
  []
@@ -993,17 +1003,17 @@ Overfull \hbox (52.4897pt too wide) in alignment at lines 851--856
  []
 
 
-Overfull \hbox (26.24486pt too wide) in paragraph at lines 857--857
-[] [] 
- []
-
-
-Overfull \hbox (52.4897pt too wide) in alignment at lines 856--861
+Overfull \hbox (52.4897pt too wide) in alignment at lines 856--867
  [] [] [] [] 
  []
 
 
-Overfull \hbox (52.4897pt too wide) in alignment at lines 861--872
+Overfull \hbox (30.71997pt too wide) in paragraph at lines 907--907
+[] [] 
+ []
+
+
+Overfull \hbox (61.43993pt too wide) in alignment at lines 906--911
  [] [] [] [] 
  []
 
@@ -1018,21 +1028,21 @@ Overfull \hbox (61.43993pt too wide) in alignment at lines 911--916
  []
 
 
-Overfull \hbox (30.71997pt too wide) in paragraph at lines 917--917
+Overfull \hbox (61.43993pt too wide) in alignment at lines 916--923
+ [] [] [] [] 
+ []
+
+[31]
+Overfull \hbox (30.71997pt too wide) in paragraph at lines 936--936
 [] [] 
  []
 
 
-Overfull \hbox (61.43993pt too wide) in alignment at lines 916--921
+Overfull \hbox (61.43993pt too wide) in alignment at lines 935--940
  [] [] [] [] 
  []
 
 
-Overfull \hbox (61.43993pt too wide) in alignment at lines 921--928
- [] [] [] [] 
- []
-
-[32]
 Overfull \hbox (30.71997pt too wide) in paragraph at lines 941--941
 [] [] 
  []
@@ -1043,17 +1053,17 @@ Overfull \hbox (61.43993pt too wide) in alignment at lines 940--945
  []
 
 
-Overfull \hbox (30.71997pt too wide) in paragraph at lines 946--946
-[] [] 
- []
-
-
-Overfull \hbox (61.43993pt too wide) in alignment at lines 945--950
+Overfull \hbox (61.43993pt too wide) in alignment at lines 945--954
  [] [] [] [] 
  []
 
 
-Overfull \hbox (61.43993pt too wide) in alignment at lines 950--959
+Overfull \hbox (30.71997pt too wide) in paragraph at lines 967--967
+[] [] 
+ []
+
+
+Overfull \hbox (61.43993pt too wide) in alignment at lines 966--971
  [] [] [] [] 
  []
 
@@ -1068,48 +1078,101 @@ Overfull \hbox (61.43993pt too wide) in alignment at lines 971--976
  []
 
 
-Overfull \hbox (30.71997pt too wide) in paragraph at lines 977--977
-[] [] 
- []
-
-
-Overfull \hbox (61.43993pt too wide) in alignment at lines 976--981
+Overfull \hbox (61.43993pt too wide) in alignment at lines 976--986
  [] [] [] [] 
  []
 
-
-Overfull \hbox (61.43993pt too wide) in alignment at lines 981--991
- [] [] [] [] 
- []
-
-[33] [34]
-Overfull \hbox (15.0682pt too wide) in paragraph at lines 1005--1005
+[32] [33]
+Overfull \hbox (17.20497pt too wide) in paragraph at lines 1000--1000
 [] [] 
  []
 
 
-Overfull \hbox (30.13641pt too wide) in alignment at lines 1004--1009
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (34.40994pt too wide) in alignment at lines 999--1004
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (15.0682pt too wide) in paragraph at lines 1010--1010
+Overfull \hbox (17.20497pt too wide) in paragraph at lines 1005--1005
 [] [] 
  []
 
 
-Overfull \hbox (30.13641pt too wide) in alignment at lines 1009--1014
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (34.40994pt too wide) in alignment at lines 1004--1009
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (30.13641pt too wide) in alignment at lines 1014--1035
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (34.40994pt too wide) in alignment at lines 1009--1029
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[34
+
+]
+Overfull \hbox (305.75336pt too wide) in paragraph at lines 1044--1044
+[] [] 
+ []
+
+
+Overfull \hbox (611.50671pt too wide) in alignment at lines 1043--1048
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (305.75336pt too wide) in paragraph at lines 1049--1049
+[] [] 
+ []
+
+
+Overfull \hbox (611.50671pt too wide) in alignment at lines 1048--1053
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (611.50671pt too wide) in alignment at lines 1053--1088
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 [35
 
-] [36
+
+]
+Overfull \hbox (15.0682pt too wide) in paragraph at lines 1103--1103
+[] [] 
+ []
+
+
+Overfull \hbox (30.13641pt too wide) in alignment at lines 1102--1107
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (15.0682pt too wide) in paragraph at lines 1108--1108
+[] [] 
+ []
+
+
+Overfull \hbox (30.13641pt too wide) in alignment at lines 1107--1112
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (30.13641pt too wide) in alignment at lines 1112--1133
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[36
+
+
+] [37
+
+
+] (./DoPL-Experiment.lof)
+\tf@lof=\write5
+\openout5 = `DoPL-Experiment.lof'.
+
+[38
 
 
 ] (./DoPL-Experiment.aux)
@@ -1120,18 +1183,18 @@ Package rerunfilecheck Info: File `DoPL-Experiment.out' has not changed.
 (rerunfilecheck)             Checksum: 924F0C52D9BE9AB2D14E692EF8A5B31B;6249.
  ) 
 Here is how much of TeX's memory you used:
- 25391 strings out of 477031
- 497177 string characters out of 5827370
- 836305 words of memory out of 5000000
- 45850 multiletter control sequences out of 15000+600000
+ 25396 strings out of 477031
+ 496595 string characters out of 5827370
+ 886912 words of memory out of 5000000
+ 45849 multiletter control sequences out of 15000+600000
  551699 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,12n,103p,1671b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,103p,1679b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on DoPL-Experiment.pdf (36 pages, 596074 bytes).
+Output written on DoPL-Experiment.pdf (38 pages, 596501 bytes).
 PDF statistics:
- 774 PDF objects out of 1000 (max. 8388607)
- 675 compressed objects within 7 object streams
- 195 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 804 PDF objects out of 1000 (max. 8388607)
+ 703 compressed objects within 8 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 393 words of extra memory for PDF output out of 10000 (max. 10000000)
 

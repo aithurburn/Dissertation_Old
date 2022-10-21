@@ -1,3 +1,4 @@
+
 ```{r, include = FALSE, eval = TRUE}
 library(DiagrammeRsvg)
 diagramme_graph_sem <- "
@@ -47,7 +48,7 @@ j -> n
 grViz(diagramme_graph_sem) %>%
  export_svg() %>%
  charToRaw() %>%
- rsvg::rsvg_png("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/Chapters/GraphsandTables/diagrammegraphsem.png")
+ rsvg::rsvg_png("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation/Chapters/GraphsandTables/diagrammegraphsem.png")
 ```
 
 
@@ -118,32 +119,20 @@ ggplot(Experiment_2_dataset_raw, aes(y = PNI_Sum, x = Age)) +
 \newpage
 \begin{landscape}
 ```{r correlationExperiment1, fig.position = "H", fig.align= "center", fig.width = 14, fig.height=10, fig.cap = "Depicted here is a correlation plot of the indices of experiment 1. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
-corr_Experiment_1 <- readRDS("./Chapters/GraphsandTables/Chapter2/RDS_Files/Experiment_1_corr_subset.rds")
+
 ggcorrplot(corr_Experiment_1, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, sig.level = 0.05) +
  scale_x_discrete(labels = 1:17) +
  theme(axis.text.x = element_text(angle = 0, hjust = .5)) +
  labs(caption = "1 = DoPL, 2 = Dominance, 3 = Prestige, 4 = Leadership, 5 = UMS Sum, 6 = UMS Intimacy, 7 = UMS Affiliation, 8 = DOSPERT Risk Likelihood, 9 = DOSPERT Risk Perception, 10 = DOSPERT Risk Benefit, 11 = DOSPERT Ethical Preference, 12 = DOSPERT Financial Preference, 13 = DOSPERT Social Preference, 14 = DOSPERT Health/Safety Preference, 15 = DOSPERT Recreation Preference, 16 = DOSPERT General Risk Preference", title = "Correlation Plot | Experiment 1")
 ```
 \newpage
-```{r correlationExperiment1, fig.position = "H", fig.align= "center", fig.width = 14, fig.height=10, fig.cap = "Depicted here is a correlation plot of the indices of experiment 2. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
-corr_1_exp_1 <- readRDS("./Chapters/GraphsandTables/Chapter2/RDS_Files/corr_Experiment_2.rds")
-ggcorrplot(corr_1_exp_1, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, sig.level = 0.05) +
+```{r correlationExperiment2, fig.position = "H", fig.align= "center", fig.width = 14, fig.height=10, fig.cap = "Depicted here is a correlation plot of the indices of experiment 2. The legend denotes stronger positive correlation (closer to 1 and darker red) or stronger negative correlation (closer to -1 and darker blue)."}
+
+ggcorrplot(corr_1_exp_2, type = "lower", lab = TRUE, insig = "pch", show.diag = TRUE, sig.level = 0.05) +
  scale_x_discrete(labels = 1:17) +
  theme(axis.text.x = element_text(angle = 0, hjust = .5)) +
  labs(caption = "1 = General Risk Preference, 2 = General Expected Benefits, 3 = Risk Sum, 4 = Risk Benefit, 5 = Risk Perception, 6 = B-PNI, 7 = UMS Sum, 8 = UMS Intimacy, 9 = UMS Affiliation,
 10 = Leadership, 11 = Prestige, 12 = Dominance, 13 = Social Preference, 14 = Recreational Preference, 15 = Health and Safety Preference, 16 = Financial Preference, 17 = Ethical Preference", title = "Correlation Plot | Experiment 2")
-```
-\newpage
-```{r}
-correlation_Experiment_1_subset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/CSV_Files/Experiment_1_corr_subset.csv")
-correlation_Experiment_1_subset[is.na(correlation_Experiment_1_subset)] <- ""
-apa_table(correlation_Experiment_1_subset, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:16), note = " * denotes significance level. 1 = DOSPERT General Preference, 2 = DOSPERT Recreation Preference, 3 = DOSPERT Health/Safety Preference, 4 = DOSPERT Social Preference, 5 = DOSPERT Financial Preference, 6 = DOSPERT Ethical Preference, 7 = DOSPERT Risk Benefit, 8 = DOSPERT Risk Perception, 9 = DOSPERT Risk Likelihood, 10 = UMS Affiliation, 11 = UMS Intimacy, 12 = UMS, 13 = Leadership, 14 = Prestige, 15 = Dominance, 16 = DoPL", longtable = TRUE, landscape = TRUE, font_size = "tiny", placement = "t")
-```
-\newpage
-```{r}
-correlation_Experiment_1_full <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/CSV_Files/Experiment_1_correlation_full.csv")
-correlation_Experiment_1_full[is.na(correlation_Experiment_1_full)] <- ""
-apa_table(correlation_Experiment_1_full, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:31), note = " * denotes significance level. 1 = DOSPERT General Risk Preference, 2 = DOSPERT Recreation Preference, 3 = DOSPERT HS Preference, 4 = DOSPERT Social Preference, 5 = DOSPERT Financial Preference, 6 = DOSPERT Ethical Preference, 7 = DOSPERT Social Perception, 8 = DOSPERT Recreation Perception, 9 = DOSPERT HS Perception, 10 = DOSPERT Financial Perception, 11 = DOSPERT Ethical Perception, 12 = DOSPERT Social Benefit, 13 = DOSPERT Recreation Benefit, 14 = DOSPERT HS Benefit, 15 = DOSPERT Financial Benefit, 16 = DOSPERT Ethical Benefit, 17 = DOSPERT Social Likelihood, 18 = DOSPERT Recreation Likelihood, 19 = DOSPERT HS Likelihood, 20 = DOSPERT Financial Likelihood, 21 = DOSPERT Ethical Likelihood, 22 = DOSPERT Risk Benefit, 23 = DOSPERT Risk Perception, 24 = DOSPERT Risk Likelihood, 25 = UMS Affiliation, 26 = UMS Intimacy, 27 = UMS, 28 = Leadership, 29 = Prestige, 30 = Dominance, 31 = DoPL", longtable = TRUE, landscape = TRUE, font_size = "tiny", placement = "t")
 ```
 \end{landscape}
 \newpage
