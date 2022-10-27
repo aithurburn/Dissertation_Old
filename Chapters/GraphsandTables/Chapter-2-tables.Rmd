@@ -1,48 +1,38 @@
-
 ```{r m1-fixef-Experiment-1}
 MutateHDI::apa_modified(m1_exp_1, caption = "Fixed Effects: DoPL * General Risk", note = "The above represents fixed effects, confidence interevals low and high for a basic bayesian model of Dominance, Prestige, and Leadership predicting general risk preference. Matching signs for confidence intervals is displayed in the table.", land_scape = FALSE, longtable = FALSE)
 ```
 ```{r m3_exp_1}
-MutateHDI::apa_modified(m3_exp_1, caption = "DOSPERT and DoPL Interaction: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting each of the individual Domain Specific Risk Taking (DOSPERT) domains.", land_scape = FALSE, longtable = TRUE)
+MutateHDI::apa_modified(m3_exp_1, caption = "DOSPERT and DoPL Interaction: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting each of the individual Domain Specific Risk Taking (DOSPERT) domains.", land_scape = FALSE, longtable = FALSE)
 ```
 ```{r m5-int-fixef-exp-1}
-MutateHDI::apa_modified(m4_exp_1, caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.", land_scape = FALSE, longtable = TRUE)
+MutateHDI::apa_modified(m4_exp_1, caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.", land_scape = FALSE, longtable = FALSE)
 ```
 ```{r m4-perceivedRisk-Gender-exp-1}
-MutateHDI::apa_modified(m4_int_exp_1, caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.", land_scape = FALSE, longtable = TRUE)
+MutateHDI::apa_modified(m4_int_exp_1, caption = "DOSPERT Benefit and Perception: Experiment 1", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting the perceptions and benefits of risk.", land_scape = FALSE, longtable = FALSE)
 ```
 ```{r PNI-Model-DoPL-Exp-2}
 MutateHDI::apa_modified(m1_interaction_exp_2, caption = "General Risk * DoPL: Experiment 2", note = "Fixed effect results of Dominance, Prestige, and Leadership with gender interactions predicting general risk preference.", land_scape = FALSE, longtable = FALSE)
 ```
 ```{r MediationBRMS1Exp2}
-MutateHDI::apa_modified(mediation_brms_1_exp_2, caption = "DOSPERT Risk Likelihood and Benefit Mediation: Experiment 2", note = "Fixed effect results of Narcisism as a mediation in a model predicting risk likelihood through risk benefit.", land_scape = FALSE, longtable = TRUE)
+MutateHDI::apa_modified(mediation_brms_1_exp_2, caption = "DOSPERT Risk Likelihood and Benefit Mediation: Experiment 2", note = "Fixed effect results of Narcisism as a mediation in a model predicting risk likelihood through risk benefit.", land_scape = FALSE, longtable = FALSE)
 ```
 ```{r MediationBRMS2Exp2}
-MutateHDI::apa_modified(mediation_brms_2_exp_2, caption = "DOSPERT Risk Likelihood and Benefit Mediation: Experiment 2", note = "Fixed effect results of Narcisism and Dominance as a mediation in a model predicting risk likelihood through risk benefit.", land_scape = FALSE, longtable = TRUE)
+MutateHDI::apa_modified(mediation_brms_2_exp_2, caption = "DOSPERT Risk Likelihood and Benefit Mediation: Experiment 2", note = "Fixed effect results of Narcisism and Dominance as a mediation in a model predicting risk likelihood through risk benefit.", land_scape = FALSE, longtable = FALSE)
 ```
 ```{r MediationBRMS3Exp2}
-MutateHDI::apa_modified(mediation_brms_3_exp_2, caption = "DOSPERT Risk Likelihood and Benefit Mediation: Experiment 2", note = "Fixed effect results of Narcisism and Dominance as a mediation in a model predicting risk likelihood through risk benefit.", land_scape = FALSE, longtable = TRUE)
+MutateHDI::apa_modified(mediation_brms_3_exp_2, caption = "DOSPERT Risk Likelihood and Benefit Mediation: Experiment 2", note = "Fixed effect results of Narcisism and Dominance as a mediation in a model predicting risk likelihood through risk benefit.", land_scape = FALSE, longtable = FALSE)
 ```
+\clearpage\pagestyle{empty}
 ```{r}
-
 correlation_Experiment_1_subset[is.na(correlation_Experiment_1_subset)] <- ""
-apa_table(correlation_Experiment_1_subset, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:16), note = " * denotes significance level. 1 = DOSPERT General Preference, 2 = DOSPERT Recreation Preference, 3 = DOSPERT Health/Safety Preference, 4 = DOSPERT Social Preference, 5 = DOSPERT Financial Preference, 6 = DOSPERT Ethical Preference, 7 = DOSPERT Risk Benefit, 8 = DOSPERT Risk Perception, 9 = DOSPERT Risk Likelihood, 10 = UMS Affiliation, 11 = UMS Intimacy, 12 = UMS, 13 = Leadership, 14 = Prestige, 15 = Dominance, 16 = DoPL", longtable = TRUE, landscape = TRUE, font_size = "tiny", placement = "t")
-```
-```{r}
-
-correlation_Experiment_1_full[is.na(correlation_Experiment_1_full)] <- ""
-apa_table(correlation_Experiment_1_full, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:31), note = " * denotes significance level. 1 = DOSPERT General Risk Preference, 2 = DOSPERT Recreation Preference, 3 = DOSPERT HS Preference, 4 = DOSPERT Social Preference, 5 = DOSPERT Financial Preference, 6 = DOSPERT Ethical Preference, 7 = DOSPERT Social Perception, 8 = DOSPERT Recreation Perception, 9 = DOSPERT HS Perception, 10 = DOSPERT Financial Perception, 11 = DOSPERT Ethical Perception, 12 = DOSPERT Social Benefit, 13 = DOSPERT Recreation Benefit, 14 = DOSPERT HS Benefit, 15 = DOSPERT Financial Benefit, 16 = DOSPERT Ethical Benefit, 17 = DOSPERT Social Likelihood, 18 = DOSPERT Recreation Likelihood, 19 = DOSPERT HS Likelihood, 20 = DOSPERT Financial Likelihood, 21 = DOSPERT Ethical Likelihood, 22 = DOSPERT Risk Benefit, 23 = DOSPERT Risk Perception, 24 = DOSPERT Risk Likelihood, 25 = UMS Affiliation, 26 = UMS Intimacy, 27 = UMS, 28 = Leadership, 29 = Prestige, 30 = Dominance, 31 = DoPL", longtable = TRUE, landscape = TRUE, font_size = "tiny", placement = "t")
+apa_table(correlation_Experiment_1_subset, caption = "General Correlation Matrix | Experiment 1", col.names = c("Parameter", 1:16), note = " * denotes significance level.", longtable = FALSE, landscape = TRUE, font_size = "tiny", placement = "t", digits = 2)
 ```
 ```{r experiment2Correlation_BPNI, ft.align = "left"}
-
 correlation_table_1[is.na(correlation_table_1)] <- ""
-correlation_table_1 <- correlation_table_1[, -1]
-apa_table(correlation_table_1, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:17), note = " * denotes significance level. 1 = General Risk Preference, 2 = General Expected Benefits, 3 = Risk Sum, 4 = Risk Benefit, 5 = Risk Perception, 6 = B-PNI, 7 = UMS Sum, 8 = UMS Intimacy, 9 = UMS Affiliation, 10 = Leadership, 11 = Prestige, 12 = Dominance, 13 = Social Preference, 14 = Recreational Preference, 15 = Health and Safety Preference, 16 = Financial Preference, 17 = Ethical Preference", longtable = TRUE, landscape = TRUE, font_size = "tiny", placement = "t", align = c("p{3cm}", c(rep("r", 17))))
+apa_table(correlation_table_1, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:17), note = " * denotes significance level.", longtable = FALSE, landscape = TRUE, font_size = "tiny", placement = "t", digits = 2)
 ```
 ```{r experiment2Correlation_MPNI}
-
-
 correlation_dopl_pni_2[is.na(correlation_dopl_pni_2)] <- ""
-correlation_dopl_pni_2 <- correlation_dopl_pni_2[, -c(1, 2)]
-apa_table(correlation_dopl_pni_2, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:13), landscape = TRUE, longtable = FALSE, note = "* denotes signficance level. 1 = Self-Sacrifing and Self-Enhancement, 2 = Grandiose Fantasy, 3 = Exploitativeness, 4 = Hiding the Self, 5 = Entitlement Rage, 6 = Devaluing, 7 = Contingent Self-Esteem, 8 = Vulnerability, 9 = Grandiosity , 10 = B-PNI , 11 = Prestige , 12 = Leadership, 13 = Dominance", escape = TRUE, font_size = "scriptsize")
+apa_table(correlation_dopl_pni_2, caption = "General Correlation Matrix | Experiment 2", col.names = c("Parameter", 1:13), landscape = TRUE, longtable = FALSE, note = "* denotes signficance level", escape = TRUE, font_size = "tiny", row.names = FALSE, digits = 2)
 ```
+\clearpage\pagestyle{plain}

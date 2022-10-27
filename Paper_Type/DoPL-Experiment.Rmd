@@ -25,7 +25,7 @@ affiliation:
 
 
 abstract: |
-  In the present research, we sought to examine through two experiments the interaction between power motives (dominance, prestige, and leadership) and risk taking behaviors. In study 1 we discovered that individuals high in dominance power motive were more likley to enage in financiall, ethical and health and safety based risk sitations.
+  In the present research, we sought to examine through two experiments the interaction between power motives (dominance, prestige, and leadership) and risk taking behaviors. In study 1 we found that individuals high in dominance power motive were more likley to enage in financial, ethical and health and safety based risk sitations. We then sought to examine the interaction between power motives and risk sensitivity and tolerance. In study 2 we found that individuals high in dominance power motive were more likely to engage in risky behaviors when they were high in risk sensitivity and tolerance. We also found that individuals high in prestige power motive were more likely to engage in risky behaviors when they were high in risk tolerance. We discuss the implications of these findings for the study of power and risk taking behaviors.
   
 keywords          : "keywords"
 wordcount         :  !expr wordcountaddin::word_count("../Chapters/Chapter2.Rmd") + wordcountaddin::word_count("../Chapters/DoPL-Section.Rmd")
@@ -65,9 +65,9 @@ output            : papaja::apa6_pdf
 
 ```{r setup, include = FALSE}
 library("papaja")
-setwd("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Writing/Dissertation")
+setwd("/Users/andrew/Documents/Research/PhD/Writing/Dissertation")
 source("./R/libraries.R")
-source("./R/data_indexes.r")
+source("./R/Chapter_2_index.r")
 options(knitr.kable.NA = "")
 ```
 
