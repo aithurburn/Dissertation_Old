@@ -1,3 +1,4 @@
+setwd("/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/")
 locfunc <- function(data, to) {
  which(colnames({{ data }}) == {{ to }})
 }
@@ -11,7 +12,7 @@ Experiment_2_dataset_raw <- read.csv("./CSV_Files/Chapter_2/Study_2/Experiment_2
 Experiment_2_Analysis_DF <- read.csv("./CSV_Files/Chapter_2/Study_2/Experiment_2_Analysis_DF.csv")
 Experiment_2_Demographics_DF <- read.csv("./CSV_Files/Chapter_2/Study_2/Experiment_2_Demographics_DF.csv")
 
-corr_Experiment_1 <- readRDS("./R/RDS_Files/Chapter_2/Study_1/Experiment_1_corr_subset.rds")
+corr_Experiment_1 <- readRDS("./R/RDS_Files/Chapter_2/Study_1/Experiment_1_corr.rds")
 correlation_Experiment_1_subset <- read.csv("./CSV_Files/Chapter_2/Study_1/Experiment_1_corr_subset.csv")
 correlation_Experiment_1_full <- read.csv("./CSV_Files/Chapter_2/Study_1/Experiment_1_Correlation_full.csv")
 m1_exp_1 <- readRDS("./R/RDS_Files/Chapter_2/Study_1/m1_general_dopl.rds")
@@ -47,15 +48,15 @@ m2_interaction_gender_exp_2_fixef <- MutateHDI::mutate_each_hdi_no_save(m2_inter
 m3_exp_2_fixef <- MutateHDI::mutate_each_hdi_no_save(m3_exp_2)
 m3_interaction_gender_exp_2_fixef <- MutateHDI::mutate_each_hdi_no_save(m3_interaction_gender_exp_2)
 
-pni_multi_dospert_int_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/pni_multi_dopl_int_fixef.Rds")
+pni_multi_dospert_int_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/1_UoE/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/pni_multi_dopl_int_fixef.Rds")
 
-multi_2_model_dospert_int_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/multi_2_model_dospert_int_fixef.Rds")
+multi_2_model_dospert_int_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/1_UoE/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/multi_2_model_dospert_int_fixef.Rds")
 
-multi_model_dospert_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/multi_model_dospert_fixef.Rds")
+multi_model_dospert_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/1_UoE/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/multi_model_dospert_fixef.Rds")
 
-pni_multi_dopl_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/pni_multi_dopl_fixef.Rds")
+pni_multi_dopl_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/1_UoE/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/pni_multi_dopl_fixef.Rds")
 
-pni_model_dopl_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/pni_model_dopl_fixef.Rds")
+pni_model_dopl_fixef_exp_2_j <- readRDS("/Users/andrew/Documents/1_UoE/Research/PhD/Experiments/DoPL/Experiments/Experiment_2_Study_2/Analysis/Mutation_hdi/pni_model_dopl_fixef.Rds")
 
 
 

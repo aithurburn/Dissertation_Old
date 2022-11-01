@@ -65,7 +65,7 @@ output            : papaja::apa6_pdf
 
 ```{r setup, include = FALSE}
 library("papaja")
-setwd("/Users/andrew/Documents/Research/PhD/Writing/Dissertation")
+setwd("/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation")
 source("./R/libraries.R")
 source("./R/Chapter_2_index.r")
 options(knitr.kable.NA = "")

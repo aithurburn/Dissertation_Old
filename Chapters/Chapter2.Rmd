@@ -1,7 +1,6 @@
+## The present studies
 
-## The present study 
-
-The present study sought to further our understanding of dominance, prestige, and leadership motivations in human decision-making. Furthering this, we seek to bridge the connection between risk-taking behaviors, from diverse domains, and dominance, prestige, and leadership orientations. Following the literature, we predicted that participants that were high in dominance orientation would be more likely to not only engage in risky behaviors but praise the benefits of participating in those behaviors. For individuals with prestige or leadership orientation, we predicted either a similar patter as dominance or more likely a risk aversion in later discussed risk domains. 
+The present studies seek to further our understanding of dominance, prestige, and leadership motivations in human decision-making. Furthering this, we seek to bridge the connection between risk-taking behaviors, from diverse domains, along with dominance, prestige, and leadership orientations. Following the literature, we predicted that participants that were high in dominance orientation would be more likely to not only engage in risky behaviors but praise the benefits of participating in those behaviors. For individuals with prestige or leadership orientation, we predicted either a similar patter as dominance or more likely a risk aversion in later discussed risk domains. In a later study we investigate the relationship that pathological narcissism might have on risk-taking behaviors. Predictions and hypotheses are discussed in more detail in the following section.
 
 ## Experiment 1
 
@@ -174,11 +173,7 @@ Vulnerable narcissism, like grandiose narcissism, is separated further into cont
 
 Overall, anecdotally dominance appears to explain the overall individual perceptions, benefits, and likelihood of risk judgments (95% CI $\beta$ = `r printnum(m2_interaction_gender_exp_2_fixef["DOSPERT Risk Perception * Dominance", "Estimate"])`, [`r printnum(m2_interaction_gender_exp_2_fixef["DOSPERT Risk Perception * Dominance", c("CI (95%)")])`]), (95% CI $\beta$ = `r printnum(m2_interaction_gender_exp_2_fixef["DOSPERT Risk Benefit * Dominance", "Estimate"])`, [`r printnum(m2_interaction_gender_exp_2_fixef["DOSPERT Risk Benefit * Dominance", c("CI (95%)")])`]), and (95% CI $\beta$ = `r printnum(m2_interaction_gender_exp_2_fixef["DOSPERT Risk Likelihood * Dominance", "Estimate"])`, [`r printnum(m2_interaction_gender_exp_2_fixef["DOSPERT Risk Likelihood * Dominance", c("CI (95%)")])`]) respectively. Similarly, when looking at further sub-categorizations of general risk preferences there does appear to be mainly a bias with regards to age, where younger individuals overall have a higher risk preference than their older counterparts.
 
-### Domain-Specific Risk-Taking
-
-Looking at Domain Specific Risk-taking, we analyzed DOSPERT similarly to previous analyses. Overall, domain-specific risk-taking was explained by dominance orientation along with prestige and leadership. Interesting interactions were present with individual domains for narcissism as well.
-
-
+Additional interactions with individual sub-domains of pathological narcissism are available in aforementioned OSF.io pre-registation. 
 
 ### Interactions
 
@@ -186,7 +181,6 @@ Looking at Domain Specific Risk-taking, we analyzed DOSPERT similarly to previou
 Following the pre-registration on OSF.io, we sought to replicate the findings of foster and colleagues which is demonstrated in \@ref(fig:MediationSEM1) [-@foster2009]. We then constructed a model of narcissism predicting risk benefits and risk likelihood. We then tested the mediation model of narcissism predicting risk likelihood through risk benefits. We found that what was observed in the Foster and colleagues 2009 model demonstrates that narcissism is a good predictor for risk likelihood. Observed beta coefficients can be seen in fig \@ref(fig:MediationFit1).
 
 Following the replication of the primary model above, we sought to investigate a parallel mediation model where narcissism and dominance predict risk likelihood through risk benefits. The constructed model can be seen in figure \@ref(fig:MediationSEM2). We found that narcissism and dominance were both good predictors of risk likelihood. Observed beta coefficients can be seen in figure \@ref(fig:MediationFit2) (suggesting a medium partial mediation $\beta$ = `r  printnum(mediation_brms_1_exp_2_fixef["DOSPERT Risk Likelihood * DOSPERT Risk Benefit", "Estimate"])` CI = `r  printnum(mediation_brms_1_exp_2_fixef["DOSPERT Risk Likelihood * DOSPERT Risk Benefit", "CI (95%)"])`.
-
 
 Next, we constructed a model where dominance acts as the moderator between narcissism and viewing the benefits of engaging in risky behaviors. The constructed model can be seen in supplementary materials. We found that dominance acts as a positive moderator of the relationship between narcissism and benefits of risk-taking and the likelihood to engage in risky behaviors. Overseved beta coefficients can be seen in figure \@ref(fig:MediationFit3). 
 
