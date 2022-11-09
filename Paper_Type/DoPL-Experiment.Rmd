@@ -72,7 +72,6 @@ options(knitr.kable.NA = "")
 ```
 
 ```{r child = "../Chapters/DoPL-Section.Rmd"}
-
 ```
 
 ```{r child = "../Chapters/Chapter2.Rmd"}
@@ -95,11 +94,9 @@ options(knitr.kable.NA = "")
 ## Figures
 
 ```{r child = "../Chapters/GraphsandTables/Chapter-2-graphs.Rmd"}
-
 ```
 
 ## Tables
 
 ```{r child = "../Chapters/GraphsandTables/Chapter-2-tables.Rmd"}
-
 ```

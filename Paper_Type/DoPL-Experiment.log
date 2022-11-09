@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.25)  28 OCT 2022 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.1)  2 NOV 2022 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment.tex
 (/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-09-28> (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/apa7/apa7.cls
+L3 programming layer <2022-10-26> (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/apa7/apa7.cls
 Document Class: apa7 2022/07/25 v2.16 APA formatting (7th edition)
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -611,9 +611,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 Failed to patch abstract.
 Failed to patch title.
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/xpatch/xpatch.sty (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-09-28 L3 programming layer (loader) 
+Package: expl3 2022-10-26 L3 programming layer (loader) 
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count318
 \l__pdf_internal_box=\box71
 ))
@@ -675,9 +675,11 @@ Package tocloft Info: The document has section divisions on input line 51.
 ) (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
+))
 \c@NumberOfAuthors=\count327
 \c@NumberOfSuperscripts=\count328
 
@@ -745,7 +747,13 @@ LaTeX Font Info:    ... okay on input line 195.
 
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+(/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 (/Users/andrew/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
@@ -820,176 +828,176 @@ LaTeX Warning: Reference `tab:vulnerabiliotyGrandiosityAndGenderExperiment2' on 
 
 [15]
 
-LaTeX Warning: Reference `fig:MediationSEM1' on page 16 undefined on input line 514.
+LaTeX Warning: Reference `fig:MediationSEM1' on page 16 undefined on input line 511.
 
 
-LaTeX Warning: Reference `fig:MediationSEM2' on page 16 undefined on input line 516.
+LaTeX Warning: Reference `fig:MediationSEM2' on page 16 undefined on input line 513.
 
 
-LaTeX Warning: Reference `tab:mediationComparisonExp2' on page 16 undefined on input line 520.
+LaTeX Warning: Reference `tab:mediationComparisonExp2' on page 16 undefined on input line 517.
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 550--552
+Underfull \hbox (badness 10000) in paragraph at lines 547--549
 \T1/lmr/m/n/12 /core/books/psychology-of-risk/3AA5E35577684DF437A1F3084CD2FA8B.
  []
 
 [17] [18]
-Underfull \hbox (badness 2941) in paragraph at lines 613--615
+Underfull \hbox (badness 2941) in paragraph at lines 610--612
 []\T1/lmr/m/n/12 Prolific Aca-demic. (2018). \T1/lmr/m/it/12 How do par-tic-i-pants find out about my
  []
 
 [19] [20]
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf, id=515, 1011.78pt x 722.7pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf, id=509, 1011.78pt x 722.7pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf  used on input line 680.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf  used on input line 677.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf, id=516, 1011.78pt x 722.7pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf, id=510, 1011.78pt x 722.7pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf  used on input line 686.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf  used on input line 683.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf, id=517, 1011.78pt x 722.7pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf, id=511, 1011.78pt x 722.7pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf  used on input line 693.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf  used on input line 690.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf, id=518, 1011.78pt x 722.7pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf, id=512, 1011.78pt x 722.7pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf  used on input line 694.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf  used on input line 691.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf, id=519, 1011.78pt x 722.7pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf, id=513, 1011.78pt x 722.7pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf  used on input line 695.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf  used on input line 692.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf, id=520, 469.755pt x 325.215pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf, id=514, 469.755pt x 325.215pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf  used on input line 696.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf  used on input line 693.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf, id=521, 1011.78pt x 722.7pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf, id=515, 1011.78pt x 722.7pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf  used on input line 697.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf  used on input line 694.
 (pdftex.def)             Requested size: 412.56302pt x 294.68787pt.
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf, id=522, 469.755pt x 325.215pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf, id=516, 469.755pt x 325.215pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf  used on input line 698.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf  used on input line 695.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
 
-Overfull \hbox (36.13304pt too wide) in paragraph at lines 693--699
+Overfull \hbox (36.13304pt too wide) in paragraph at lines 690--696
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--699
+Underfull \hbox (badness 10000) in paragraph at lines 690--696
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--699
+Underfull \hbox (badness 10000) in paragraph at lines 690--696
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--699
+Underfull \hbox (badness 10000) in paragraph at lines 690--696
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--699
+Underfull \hbox (badness 10000) in paragraph at lines 690--696
 []
  []
 
 [21 </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPL-Experiment-1-1.pdf>] [22 </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DominanceExperiment1-1.pdf> </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/PrestigeExperiment1-1.pdf>] [23 </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/LeadershipExperiment1-1.pdf> </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment1-1.pdf>] [24 </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DoPLDomainsExperiment2-1.pdf> </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/DOSPERT-Preferences-GenderExperiment2-1.pdf>] [25 </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/Experiment-2-PNI-distribution-1.pdf>]
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf, id=591, 1011.78pt x 722.7pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf, id=585, 1011.78pt x 722.7pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf  used on input line 704.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf  used on input line 701.
 (pdftex.def)             Requested size: 577.58514pt x 412.56082pt.
 
-LaTeX Warning: Float too large for page by 42.55038pt on input line 709.
+LaTeX Warning: Float too large for page by 42.55038pt on input line 706.
 
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf, id=592, 1011.78pt x 722.7pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf, id=586, 1011.78pt x 722.7pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf  used on input line 713.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf  used on input line 710.
 (pdftex.def)             Requested size: 577.58514pt x 412.56082pt.
 
-LaTeX Warning: Float too large for page by 42.55038pt on input line 718.
+LaTeX Warning: Float too large for page by 42.55038pt on input line 715.
 
 [26 </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment1-1.pdf>] [27 </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/correlationExperiment2-1.pdf>]
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf, id=615, 469.755pt x 325.215pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf, id=609, 469.755pt x 325.215pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf  used on input line 723.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf  used on input line 720.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf, id=616, 469.755pt x 325.215pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf, id=610, 469.755pt x 325.215pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf  used on input line 731.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf  used on input line 728.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
-</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf, id=617, 469.755pt x 325.215pt>
+</Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf, id=611, 469.755pt x 325.215pt>
 File: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf Graphic file (type pdf)
 <use /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf>
-Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf  used on input line 739.
+Package pdftex.def Info: /Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf  used on input line 736.
 (pdftex.def)             Requested size: 412.56137pt x 285.6194pt.
 [28
 
 
  </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit1-1.pdf>] [29 </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit2-1.pdf> </Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/Output_Files/DoPL-Experiment_files/figure-latex/MediationFit3-1.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 760.
+(Font)              <10.95> on input line 757.
 
-Overfull \hbox (45.57265pt too wide) in paragraph at lines 786--815
+Overfull \hbox (45.57265pt too wide) in paragraph at lines 783--812
  [] 
  []
 
 
-Overfull \hbox (24.23494pt too wide) in paragraph at lines 860--887
+Overfull \hbox (24.23494pt too wide) in paragraph at lines 857--884
  [] 
  []
 
 
-Overfull \hbox (32.55412pt too wide) in paragraph at lines 926--949
+Overfull \hbox (32.55412pt too wide) in paragraph at lines 923--946
  [] 
  []
 
 
-Overfull \hbox (32.55412pt too wide) in paragraph at lines 957--982
+Overfull \hbox (32.55412pt too wide) in paragraph at lines 954--979
  [] 
  []
 
 
-Overfull \hbox (32.55412pt too wide) in paragraph at lines 990--1016
+Overfull \hbox (32.55412pt too wide) in paragraph at lines 987--1013
  [] 
  []
 
 [30] [31] [32]
-Overfull \hbox (21.73268pt too wide) in paragraph at lines 1030--1030
+Overfull \hbox (21.73268pt too wide) in paragraph at lines 1027--1027
 [] [] 
  []
 
 
-Overfull \hbox (43.46535pt too wide) in alignment at lines 1029--1034
+Overfull \hbox (43.46535pt too wide) in alignment at lines 1026--1031
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (21.73268pt too wide) in paragraph at lines 1035--1035
+Overfull \hbox (21.73268pt too wide) in paragraph at lines 1032--1032
 [] [] 
  []
 
 
-Overfull \hbox (43.46535pt too wide) in alignment at lines 1034--1039
+Overfull \hbox (43.46535pt too wide) in alignment at lines 1031--1036
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (43.46535pt too wide) in alignment at lines 1039--1059
+Overfull \hbox (43.46535pt too wide) in alignment at lines 1036--1056
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -997,27 +1005,27 @@ Overfull \hbox (43.46535pt too wide) in alignment at lines 1039--1059
 
 
 ]
-Overfull \hbox (19.65794pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (19.65794pt too wide) in paragraph at lines 1071--1071
 [] [] 
  []
 
 
-Overfull \hbox (39.31589pt too wide) in alignment at lines 1073--1078
+Overfull \hbox (39.31589pt too wide) in alignment at lines 1070--1075
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (19.65794pt too wide) in paragraph at lines 1079--1079
+Overfull \hbox (19.65794pt too wide) in paragraph at lines 1076--1076
 [] [] 
  []
 
 
-Overfull \hbox (39.31589pt too wide) in alignment at lines 1078--1083
+Overfull \hbox (39.31589pt too wide) in alignment at lines 1075--1080
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (39.31589pt too wide) in alignment at lines 1083--1105
+Overfull \hbox (39.31589pt too wide) in alignment at lines 1080--1102
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -1040,21 +1048,21 @@ Overfull \hbox (39.31589pt too wide) in alignment at lines 1083--1105
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `DoPL-Experiment.out' has not changed.
-(rerunfilecheck)             Checksum: 756533CF2A6533A2B4341DD025035903;6123.
+(rerunfilecheck)             Checksum: 273102CAE183166823D46799B8A52BB1;5917.
  ) 
 Here is how much of TeX's memory you used:
- 25414 strings out of 477031
- 494687 string characters out of 5827370
- 834321 words of memory out of 5000000
- 45862 multiletter control sequences out of 15000+600000
+ 25477 strings out of 477026
+ 496843 string characters out of 5827236
+ 835068 words of memory out of 5000000
+ 45921 multiletter control sequences out of 15000+600000
  562182 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,12n,103p,1640b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/andrew/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/andrew/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on DoPL-Experiment.pdf (36 pages, 589651 bytes).
+Output written on DoPL-Experiment.pdf (36 pages, 590707 bytes).
 PDF statistics:
- 806 PDF objects out of 1000 (max. 8388607)
- 711 compressed objects within 8 object streams
- 203 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 201 named destinations out of 1000 (max. 500000)
+ 390 words of extra memory for PDF output out of 10000 (max. 10000000)
 
