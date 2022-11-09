@@ -1,89 +1,131 @@
-library(BayesFactor)
-library(bayesplot)
-library(bayestestR)
-library(blavaan)
+library(papaja)
+library(ggplot2)
+library(sjPlot)
+library(readr)
+library(RColorBrewer)
+library(tidyr)
+library(grid)
+library(gtable)
+library(DiagrammeR)
+library(lubridate)
+library(DT)
+library(kableExtra)
+library(svgPanZoom)
+library(knitr)
+library(ggmcmc)
+library(ggridges)
+library(rstan)
+library(insight)
+library(shiny)
+library(gridExtra)
+library(ggpubr)
+library(gghighlight)
+library(ggtext)
+library(readr)
+library(ggcorrplot)
+library(ggprism)
+library(brms)
+library(parameters)
+library(rmarkdown)
+library(DT)
+library(ggplot2)
+library(ggthemes)
 library(brms)
 library(cmdstanr)
-library(correlation)
-library(corrplot)
-library(data.table)
-library(DiagrammeR)
-library(dplyr)
-library(DT)
-library(formatR)
-library(ggcorrplot)
-library(gghighlight)
-library(ggmcmc)
-library(ggplot2)
-library(ggprism)
-library(ggpubr)
-library(ggridges)
-library(ggtext)
-library(ggthemes)
-library(grid)
-library(gridExtra)
-library(gtable)
-library(gtsummary)
-library(htmlTable)
-library(htmlwidgets)
-library(huxtable)
-library(insight)
-library(kableExtra)
-library(knitr)
-library(lubridate)
-library(papaja)
-library(parameters)
-library(plotly)
-library(psych)
-library(purrr)
-library(RColorBrewer)
-library(readr)
-library(readxl)
-library(rmarkdown)
 library(rstan)
-library(semPlot)
-library(shiny)
+library(bayestestR)
 library(sjPlot)
-library(stringi)
-library(stringr)
-library(svgPanZoom)
-library(table1)
-library(tidybayes)
+library(psych)
+library(BayesFactor)
+library(bayesplot)
+library(kableExtra)
+library(gtsummary)
 library(tidyr)
-library(tidySEM)
-library(xtable)
+library(table1)
+library(huxtable)
+library(lubridate)
+library(correlation)
 options(mc.corrs = parallel::detectCores(), brms.backend = "cmdstanr")
 rstan_options(auto_write = TRUE)
 load("./Questions.RData")
-source("./R/Chapter_2_index.r")
+source("./R/data_file_index.r")
 theme_set(theme_apa())
 sign_match <- function(m) {
   (m > 0) - (m < 0)
 }
-Remove <- "/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation"
 
-if (interactive() && Sys.getenv("RSTUDIO") == "") {
-  Sys.setenv(TERM_PROGRAM = "vscode")
-  source(file.path(Sys.getenv(
-    if (.Platform$OS.type == "windows") "USERPROFILE" else "HOME"
-  ), ".vscode-R", "init.R"))
-}
-options(
-  radian.auto_match = TRUE,
-  radian.auto_indentation = TRUE,
-  radian.complete_while_typing = TRUE,
-  radian.completion_adding_spaces_around_equals = TRUE,
-  radian.auto_suggest = TRUE,
-  radian.color_scheme = "monokai",
-  radian.editing_mode = "vi",
-  radian.insert_new_line = TRUE,
-  radian.global_history_file = "~/.radian_history",
-  radian.prompt = paste0(basename(getwd()), " > "),
-  lintr::linters_with_defaults(
-    line_length_linter = line_length_linter(300L),
-    object_length_linter = NULL,
-    object_name_linter = NULL,
-    came_case_linter = NULL,
-    snake_case_linter = NULL
-  )
-)
+
+
+Remove <- "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/"
+
+
+# ```{r}
+# m3_perception_interaction <- brm(mvbind(ethicalQuestionsPerceptionSum, financialQuestionsPerceptionSum, socialQuestionsPerceptionSum, healthAndSafetyQuestionsPerceptionSum, recreationalQuestionsPerceptionSum) ~ dominanceSum * Gender + prestigeSum * Gender + leadershipSum * Gender + Age,
+#   data = experiment_dataset_analysis_scaled, backend = "cmdstanr", cores = parallel::detectCores(), save_pars = save_pars(all = TRUE), iter = 10000,
+#   prior = c(
+#     prior(normal(0, 1), coef = "Age", resp = "ethicalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1", resp = "ethicalQuestionsPerceptionSum"),
+#     prior(normal(2, 1), coef = "dominanceSum", resp = "ethicalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "leadershipSum", resp = "ethicalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "prestigeSum", resp = "ethicalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "dominanceSum:Gender1", resp = "ethicalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:prestigeSum", resp = "ethicalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:leadershipSum", resp = "ethicalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "Intercept", resp = "ethicalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "sigma", resp = "ethicalQuestionsPerceptionSum"),
+#     #
+#     prior(normal(0, 1), coef = "Age", resp = "financialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1", resp = "financialQuestionsPerceptionSum"),
+#     prior(normal(2, 1), coef = "dominanceSum", resp = "financialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "leadershipSum", resp = "financialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "prestigeSum", resp = "financialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "dominanceSum:Gender1", resp = "financialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:prestigeSum", resp = "financialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:leadershipSum", resp = "financialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "Intercept", resp = "financialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "sigma", resp = "financialQuestionsPerceptionSum"),
+#     #
+#     prior(normal(0, 1), coef = "Age", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     prior(normal(2, 1), coef = "dominanceSum", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "leadershipSum", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "prestigeSum", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "dominanceSum:Gender1", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:prestigeSum", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:leadershipSum", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "Intercept", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "sigma", resp = "healthAndSafetyQuestionsPerceptionSum"),
+#     #
+#     prior(normal(0, 1), coef = "Age", resp = "recreationalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1", resp = "recreationalQuestionsPerceptionSum"),
+#     prior(normal(2, 1), coef = "dominanceSum", resp = "recreationalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "leadershipSum", resp = "recreationalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "prestigeSum", resp = "recreationalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "dominanceSum:Gender1", resp = "recreationalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:prestigeSum", resp = "recreationalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:leadershipSum", resp = "recreationalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "Intercept", resp = "recreationalQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "sigma", resp = "recreationalQuestionsPerceptionSum"),
+#     #
+#     prior(normal(0, 1), coef = "Age", resp = "socialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1", resp = "socialQuestionsPerceptionSum"),
+#     prior(normal(2, 1), coef = "dominanceSum", resp = "socialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "leadershipSum", resp = "socialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "prestigeSum", resp = "socialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "dominanceSum:Gender1", resp = "socialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:prestigeSum", resp = "socialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), coef = "Gender1:leadershipSum", resp = "socialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "Intercept", resp = "socialQuestionsPerceptionSum"),
+#     prior(normal(0, 1), class = "sigma", resp = "socialQuestionsPerceptionSum")
+#   )
+# )
+
+
+
+# saveRDS(m3_perception_interaction, "/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/Dissertation/RDS_Files/m3_perception_interaction_exp_1.rds")
+# ```
+
+
+# ```{r}
+# summary(m3_perception_interaction)
+# ```

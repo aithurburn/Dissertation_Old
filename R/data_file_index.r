@@ -53,11 +53,6 @@ experiment_dataset_analysis <- read.csv("./CSV_Files/experiment_dataset_analysis
 Experiment_2_dataset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Experiment_2_demographics.csv")
 Experiment_2_dataset_raw <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Experiment_with_J_version_two.csv")
 Experiment_2_demographic_dataset <- read.csv("/Users/andrew/Library/CloudStorage/OneDrive-Personal/Documents/1_UoE/Research/PhD/DoPL/Experiments/DoPL_Experiment_Two/Analysis/Experiment_2_demographics.csv")
-
-
-
-
-
 d2 <- Experiment_2_demographic_dataset %>%
   mutate_at(vars(locfunc(Experiment_2_demographic_dataset, "Gender")), ~ as.factor(recode(., "1" = "Female", "2" = "Male", "3" = "Gender Non-Binary", "6" = "Prefer not to respond"))) %>%
   mutate_at(vars(locfunc(Experiment_2_demographic_dataset, "Ethnicity")), ~ as.factor(recode(.,
