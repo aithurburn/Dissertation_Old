@@ -60,30 +60,4 @@ theme_set(theme_apa())
 sign_match <- function(m) {
   (m > 0) - (m < 0)
 }
-Remove <- "/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation"
-
-if (interactive() && Sys.getenv("RSTUDIO") == "") {
-  Sys.setenv(TERM_PROGRAM = "vscode")
-  source(file.path(Sys.getenv(
-    if (.Platform$OS.type == "windows") "USERPROFILE" else "HOME"
-  ), ".vscode-R", "init.R"))
-}
-options(
-  radian.auto_match = TRUE,
-  radian.auto_indentation = TRUE,
-  radian.complete_while_typing = TRUE,
-  radian.completion_adding_spaces_around_equals = TRUE,
-  radian.auto_suggest = TRUE,
-  radian.color_scheme = "monokai",
-  radian.editing_mode = "vi",
-  radian.insert_new_line = TRUE,
-  radian.global_history_file = "~/.radian_history",
-  radian.prompt = paste0(basename(getwd()), " > "),
-  lintr::linters_with_defaults(
-    line_length_linter = line_length_linter(300L),
-    object_length_linter = NULL,
-    object_name_linter = NULL,
-    came_case_linter = NULL,
-    snake_case_linter = NULL
-  )
-)
+Remove <- "/Users/andrew/Documents/1_UoE/Research/PhD/Writing/Dissertation/"
